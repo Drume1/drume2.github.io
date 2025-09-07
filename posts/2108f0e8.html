@@ -1,0 +1,515 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>群友靶机-Ahiz | Moriiの博客</title><meta name="keywords" content="群友靶机"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="群友靶机-Ahiz信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# nmap 192.168.1.106 Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-07 03:49 EDT Nmap scan report for bogon (192.168.1.106) Host is u">
+<meta property="og:type" content="article">
+<meta property="og:title" content="群友靶机-Ahiz">
+<meta property="og:url" content="https://drume2.github.io/posts/2108f0e8.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="群友靶机-Ahiz信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali] └─# nmap 192.168.1.106 Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-07 03:49 EDT Nmap scan report for bogon (192.168.1.106) Host is u">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2025-09-07T07:48:58.000Z">
+<meta property="article:modified_time" content="2025-09-07T08:17:10.223Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="群友靶机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/2108f0e8"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '群友靶机-Ahiz',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-09-07 16:17:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">74</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">群友靶机-Ahiz</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-09-07T07:48:58.000Z" title="发表于 2025-09-07 15:48:58">2025-09-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-09-07T08:17:10.223Z" title="更新于 2025-09-07 16:17:10">2025-09-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="群友靶机-Ahiz"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="群友靶机-Ahiz"><a href="#群友靶机-Ahiz" class="headerlink" title="群友靶机-Ahiz"></a>群友靶机-Ahiz</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# nmap 192.168.1.106
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-09-07 03:49 EDT
+Nmap scan report for bogon (192.168.1.106)
+Host is up (0.00011s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE
+22&#x2F;tcp open  ssh
+80&#x2F;tcp open  http
+MAC Address: 08:00:27:85:9E:D7 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.22 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><p><img src="/posts/2108f0e8/image-20250907155010956.png" alt="image-20250907155010956"></p>
+<p>提示密码分成了好多串，猜测是需要扫一下目录</p>
+<p>猜测welcome为用户名称，可以尝试进行ssh登陆</p>
+<h3 id="扫目录"><a href="#扫目录" class="headerlink" title="扫目录"></a>扫目录</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# gobuster dir -u http:&#x2F;&#x2F;192.168.1.106 -w &#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;dirbuster&#x2F;directory-list-2.3-medium.txt -r  -x php,html
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+[+] Url:                     http:&#x2F;&#x2F;192.168.1.106
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                &#x2F;usr&#x2F;share&#x2F;wordlists&#x2F;dirbuster&#x2F;directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster&#x2F;3.6
+[+] Extensions:              php,html
+[+] Follow Redirect:         true
+[+] Timeout:                 10s
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+Starting gobuster in directory enumeration mode
+&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
+&#x2F;12.php               (Status: 200) [Size: 4]
+&#x2F;10.php               (Status: 200) [Size: 4]
+&#x2F;11.php               (Status: 200) [Size: 4]
+&#x2F;1.php                (Status: 200) [Size: 4]
+&#x2F;3.php                (Status: 200) [Size: 4]
+&#x2F;13.php               (Status: 200) [Size: 4]
+&#x2F;4.php                (Status: 200) [Size: 4]
+&#x2F;14.php               (Status: 200) [Size: 4]
+&#x2F;16.php               (Status: 200) [Size: 4]
+&#x2F;2.php                (Status: 200) [Size: 4]
+&#x2F;18.php               (Status: 200) [Size: 4]
+&#x2F;20.php               (Status: 200) [Size: 4]
+&#x2F;5.php                (Status: 200) [Size: 4]
+&#x2F;21.php               (Status: 200) [Size: 4]
+&#x2F;22.php               (Status: 200) [Size: 4]
+&#x2F;6.php                (Status: 200) [Size: 4]
+&#x2F;19.php               (Status: 200) [Size: 4]
+&#x2F;24.php               (Status: 200) [Size: 4]
+&#x2F;23.php               (Status: 200) [Size: 4]
+&#x2F;15.php               (Status: 200) [Size: 4]
+&#x2F;27.php               (Status: 200) [Size: 4]
+&#x2F;26.php               (Status: 200) [Size: 4]
+&#x2F;17.php               (Status: 200) [Size: 4]
+&#x2F;9.php                (Status: 200) [Size: 4]
+&#x2F;30.php               (Status: 200) [Size: 4]
+&#x2F;28.php               (Status: 200) [Size: 4]
+&#x2F;29.php               (Status: 200) [Size: 4]
+&#x2F;7.php                (Status: 200) [Size: 4]
+&#x2F;25.php               (Status: 200) [Size: 4]
+&#x2F;8.php                (Status: 200) [Size: 4]
+&#x2F;31.php               (Status: 200) [Size: 4]
+&#x2F;32.php               (Status: 200) [Size: 4]
+&#x2F;36.php               (Status: 200) [Size: 4]
+&#x2F;40.php               (Status: 200) [Size: 4]
+&#x2F;33.php               (Status: 200) [Size: 4]
+&#x2F;35.php               (Status: 200) [Size: 4]
+&#x2F;37.php               (Status: 200) [Size: 4]
+&#x2F;39.php               (Status: 200) [Size: 4]
+&#x2F;34.php               (Status: 200) [Size: 4]
+&#x2F;42.php               (Status: 200) [Size: 4]
+&#x2F;41.php               (Status: 200) [Size: 4]
+&#x2F;48.php               (Status: 200) [Size: 4]
+&#x2F;50.php               (Status: 200) [Size: 4]
+&#x2F;38.php               (Status: 200) [Size: 4]
+&#x2F;47.php               (Status: 200) [Size: 4]
+&#x2F;43.php               (Status: 200) [Size: 4]
+&#x2F;45.php               (Status: 200) [Size: 4]
+&#x2F;44.php               (Status: 200) [Size: 4]
+&#x2F;51.php               (Status: 200) [Size: 4]
+&#x2F;46.php               (Status: 200) [Size: 4]
+&#x2F;49.php               (Status: 200) [Size: 4]
+&#x2F;55.php               (Status: 200) [Size: 4]
+&#x2F;59.php               (Status: 200) [Size: 4]
+&#x2F;60.php               (Status: 200) [Size: 4]
+&#x2F;54.php               (Status: 200) [Size: 4]
+&#x2F;53.php               (Status: 200) [Size: 4]
+&#x2F;57.php               (Status: 200) [Size: 4]
+&#x2F;61.php               (Status: 200) [Size: 4]
+&#x2F;52.php               (Status: 200) [Size: 4]
+&#x2F;63.php               (Status: 200) [Size: 4]
+&#x2F;56.php               (Status: 200) [Size: 4]
+&#x2F;64.php               (Status: 200) [Size: 4]
+&#x2F;58.php               (Status: 200) [Size: 4]
+&#x2F;62.php               (Status: 200) [Size: 4]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这里可以看到有很多个php文件，并且size是 4 bytes，并且一个一个打开后是4个字符串，猜测是需要把这些php文件内字符串输出了</p>
+<p>那么写一个脚本对靶机ip内的php文件进行请求，并且将请求到的内容合并输出</p>
+<pre class="line-numbers language-none"><code class="language-none">import requests
+
+TARGET_URL &#x3D; &quot;http:&#x2F;&#x2F;192.168.1.106&quot;
+
+# ✅ 自动生成 PHP 文件名列表：index.php + 1.php 到 64.php
+php_files &#x3D; [&quot;index.php&quot;] + [f&quot;&#123;i&#125;.php&quot; for i in range(1, 65)]
+
+four_byte_parts &#x3D; []
+
+for php_file in php_files:
+    url &#x3D; f&quot;&#123;TARGET_URL&#125;&#x2F;&#123;php_file&#125;&quot;
+    try:
+        resp &#x3D; requests.get(url, timeout&#x3D;10)
+        if resp.status_code &#x3D;&#x3D; 200 and len(resp.content) &#x3D;&#x3D; 4:
+            # 使用 latin-1 解码，可以正确处理任意 4 字节的二进制内容
+            four_byte_parts.append(resp.content.decode(&#39;latin-1&#39;))
+    except:
+        continue  # 出现任何错误（如 404、超时等），跳过该文件
+
+if not four_byte_parts:
+    print(&quot;[!] 没有找到任何有效的 4 字节内容&quot;)
+else:
+    # 拼接所有 4 字节内容为一个完整的字符串（无换行、无分隔符）
+    combined &#x3D; &#39;&#39;.join(four_byte_parts)
+    print(combined)  # ✅ 直接输出拼接后的 4 字节字符串，不进行 base64 解码<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="/posts/2108f0e8/image-20250907155447285.png" alt="image-20250907155447285"></p>
+<p>得到了一长串的字符串，用厨子进行解码</p>
+<p>多层base64加密</p>
+<p><img src="/posts/2108f0e8/image-20250907155531444.png" alt="image-20250907155531444"></p>
+<p>得到了密码passwd@123ZZZZ123</p>
+<p>拿去登陆</p>
+<h2 id="ssh登陆"><a href="#ssh登陆" class="headerlink" title="ssh登陆"></a>ssh登陆</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# ssh welcome@192.168.1.106
+welcome@192.168.1.106&#39;s password: 
+Linux Ahiz 4.19.0-27-amd64 #1 SMP Debian 4.19.316-1 (2024-06-25) x86_64
+
+The programs included with the Debian GNU&#x2F;Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in &#x2F;usr&#x2F;share&#x2F;doc&#x2F;*&#x2F;copyright.
+
+Debian GNU&#x2F;Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Sun Sep  7 03:06:11 2025 from 192.168.1.101
+welcome@Ahiz:~$ id
+uid&#x3D;1000(welcome) gid&#x3D;1000(welcome) groups&#x3D;1000(welcome)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在welcome用户的家目录下看见了一个程序<strong>1</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ file 1
+1: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter &#x2F;lib64&#x2F;ld-linux-x86-64.so.2, for GNU&#x2F;Linux 3.2.0, BuildID[sha1]&#x3D;81544629ae0a32249a48b0bc5134fb7b1455adea, stripped<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>是一个 64 位的 Linux 可执行程序,尝试运行一下</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ .&#x2F;1
+Usage: .&#x2F;1 &lt;string&gt;大于密码长度
+welcome@Ahiz:~$ .&#x2F;1 123123123
+❌ Input too short, try again.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>输入什么东西都提示输入的内容太短，尝试使用命令，使其可以生成一个足够长的字符串，并且将字符串作为程序的输入参数，绕过长度检测</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ .&#x2F;1 &quot;$(yes A | head -n 1000 | tr -d &#39;\n&#39;)&quot;
+✅ Good job! Here is your flag:
+user_FLAG&#123;this_is_a_safe_demo_flag&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="提取"><a href="#提取" class="headerlink" title="提取"></a>提取</h2><p>看一下有没有提权的东西</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ sudo find &#x2F; -type f -exec getcap &#123;&#125; 2&gt;&#x2F;dev&#x2F;null \;
+welcome@Ahiz:~$ sudo -l
+-bash: &#x2F;usr&#x2F;bin&#x2F;sudo: Permission denied
+welcome@Ahiz:~$ find &#x2F; -perm -u&#x3D;s -type f 2&gt;&#x2F;dev&#x2F;null
+&#x2F;usr&#x2F;bin&#x2F;chsh
+&#x2F;usr&#x2F;bin&#x2F;chfn
+&#x2F;usr&#x2F;bin&#x2F;newgrp
+&#x2F;usr&#x2F;bin&#x2F;gpasswd
+&#x2F;usr&#x2F;bin&#x2F;mount
+&#x2F;usr&#x2F;bin&#x2F;su
+&#x2F;usr&#x2F;bin&#x2F;umount
+&#x2F;usr&#x2F;bin&#x2F;pkexec
+&#x2F;usr&#x2F;bin&#x2F;passwd
+&#x2F;usr&#x2F;lib&#x2F;dbus-1.0&#x2F;dbus-daemon-launch-helper
+&#x2F;usr&#x2F;lib&#x2F;eject&#x2F;dmcrypt-get-device
+&#x2F;usr&#x2F;lib&#x2F;openssh&#x2F;ssh-keysign
+&#x2F;usr&#x2F;libexec&#x2F;polkit-agent-helper-1
+welcome@Ahiz:~$ sudo find &#x2F; -type f -exec getcap &#123;&#125; 2&gt;&#x2F;dev&#x2F;null \;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>并没有找到提权的方案，并且在&#x2F;opt下找到了一个dns_data.pacp的流量包，拿到本地用wireshark看一下</p>
+<p><img src="/posts/2108f0e8/image-20250907161333675.png" alt="image-20250907161333675"></p>
+<p>可以看到除了<code>.example.com</code>之前的内容不同，其他内容大差不差，并且子域名都是十六进制的字符串，那么就尝试提取<code>.example.com</code>之前的十六进制内容</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(kali㉿kali)-[~&#x2F;aaa]
+└─$ tshark -r dns_data.pcap -Y &quot;dns.qry.type&#x3D;&#x3D;1&quot; -T fields -e dns.qry.name | awk -F. &#39;$1~&#x2F;^[0-9a-zA-Z]&#x2F;&#123;printf $1&#125;&#39;
+566d30786431497856586853574778545630646f565659775a445258526d78305a55563056324a4762444e5a56565a5059555a4b63316475614664534d326851566d317a654659785a485669526d52705630646f65565a72556b645a563031345647354f57474a476346685556455a4c5a565a6b56316473576d78534d4456365632746f54324673536e5652626b4a61596b5a4b655670586547465762475279563278435632457763465257565670535a444643556c42554d44303d <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>解码发现是一层hex，剩下的都是base64</p>
+<p><img src="/posts/2108f0e8/image-20250907161618141.png" alt="image-20250907161618141"></p>
+<p>猜测是root密码，进行切换</p>
+<pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ su
+Password: 
+root@Ahiz:&#x2F;home&#x2F;welcome# id
+uid&#x3D;0(root) gid&#x3D;0(root) groups&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h2><pre class="line-numbers language-none"><code class="language-none">welcome@Ahiz:~$ .&#x2F;1 &quot;$(yes A | head -n 1000 | tr -d &#39;\n&#39;)&quot;
+✅ Good job! Here is your flag:
+user_FLAG&#123;this_is_a_safe_demo_flag&#125;
+root@Ahiz:~# cat root.txt 
+flag&#123;root&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/2108f0e8.html">https://drume2.github.io/posts/2108f0e8.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/e94215f1.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">群友靶机-Poppins</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f20c21c3.html" title="群友靶机-5ud0"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-15</div><div class="title">群友靶机-5ud0</div></div></a></div><div><a href="/posts/6233c82f.html" title="群友靶机-Mayuri"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-09</div><div class="title">群友靶机-Mayuri</div></div></a></div><div><a href="/posts/6768e8fd.html" title="群友靶机-Monitor"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-11</div><div class="title">群友靶机-Monitor</div></div></a></div><div><a href="/posts/894d00c3.html" title="群友靶机-Per1"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-10</div><div class="title">群友靶机-Per1</div></div></a></div><div><a href="/posts/81348b1b.html" title="群友靶机-Rrrdesk"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-14</div><div class="title">群友靶机-Rrrdesk</div></div></a></div><div><a href="/posts/e94215f1.html" title="群友靶机-Poppins"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-03</div><div class="title">群友靶机-Poppins</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">74</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA-Ahiz"><span class="toc-number">1.</span> <span class="toc-text">群友靶机-Ahiz</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">web探测</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%AB%E7%9B%AE%E5%BD%95"><span class="toc-number">1.2.1.</span> <span class="toc-text">扫目录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ssh%E7%99%BB%E9%99%86"><span class="toc-number">1.3.</span> <span class="toc-text">ssh登陆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%90%E5%8F%96"><span class="toc-number">1.4.</span> <span class="toc-text">提取</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">1.5.</span> <span class="toc-text">flag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/2108f0e8.html" title="群友靶机-Ahiz"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Ahiz"/></a><div class="content"><a class="title" href="/posts/2108f0e8.html" title="群友靶机-Ahiz">群友靶机-Ahiz</a><time datetime="2025-09-07T07:48:58.000Z" title="发表于 2025-09-07 15:48:58">2025-09-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/e94215f1.html" title="群友靶机-Poppins"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Poppins"/></a><div class="content"><a class="title" href="/posts/e94215f1.html" title="群友靶机-Poppins">群友靶机-Poppins</a><time datetime="2025-09-03T01:59:35.000Z" title="发表于 2025-09-03 09:59:35">2025-09-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/877cf9fc.html" title="HMV-Art"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Art"/></a><div class="content"><a class="title" href="/posts/877cf9fc.html" title="HMV-Art">HMV-Art</a><time datetime="2025-09-01T09:07:52.000Z" title="发表于 2025-09-01 17:07:52">2025-09-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/fd86349b.html" title="HMV-Dejavu"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Dejavu"/></a><div class="content"><a class="title" href="/posts/fd86349b.html" title="HMV-Dejavu">HMV-Dejavu</a><time datetime="2025-08-25T11:42:23.000Z" title="发表于 2025-08-25 19:42:23">2025-08-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7cf3d774.html" title="HMV-translator"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-translator"/></a><div class="content"><a class="title" href="/posts/7cf3d774.html" title="HMV-translator">HMV-translator</a><time datetime="2025-08-24T12:37:11.000Z" title="发表于 2025-08-24 20:37:11">2025-08-24</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
