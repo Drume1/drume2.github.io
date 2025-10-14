@@ -174,7 +174,7 @@ Nmap done: 1 IP address (1 host up) scanned in 9.30 seconds<span aria-hidden="tr
 <h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><p><img src="/posts/7d85869a/image-20250710013938128.png" alt="image-20250710013938128"></p>
 <p>服务器是nginx的，结合群主在群里说的是nginx的配置错误，猜测有目录穿越的漏洞，这是sublarge<a target="_blank" rel="noopener" href="https://vortex.blog.csdn.net/article/details/149136592?spm=1011.2415.3001.5331">给出的参考文献</a></p>
 <p>这是我自己找的<a target="_blank" rel="noopener" href="https://blog.csdn.net/nzjdsds/article/details/97624122">文章</a></p>
-<style>.sisojxqdlxee{zoom:67%;}</style><img src="/posts/7d85869a/7d85869a/image-20250710014433211.png" class="sisojxqdlxee" alt="image-20250710014433211">
+<style>.iulswhkgtnch{zoom:67%;}</style><img src="/posts/7d85869a/7d85869a/image-20250710014433211.png" class="iulswhkgtnch" alt="image-20250710014433211">
 
 <p>接下来就需要一个目录了，扫目录</p>
 <pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
@@ -313,7 +313,7 @@ nginx: [emerg] bind() to 0.0.0.0:8080 failed (98: Address already in use)
 nginx: [emerg] still could not bind()<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>去web界面访问8080端口即可</p>
-<style>.sqkjanhjjwyw{zoom:67%;}</style><img src="/posts/7d85869a/7d85869a/image-20250710020232690.png" class="sqkjanhjjwyw" alt="image-20250710020232690">
+<style>.xfldekwhhmdb{zoom:67%;}</style><img src="/posts/7d85869a/7d85869a/image-20250710020232690.png" class="xfldekwhhmdb" alt="image-20250710020232690">
 
 <h3 id="rootflag"><a href="#rootflag" class="headerlink" title="rootflag"></a>rootflag</h3><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
 └─# curl http:&#x2F;&#x2F;192.168.161.77:8080&#x2F;root&#x2F;root.txt
