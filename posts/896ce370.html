@@ -1,0 +1,612 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>好靶场杯第一届综合赛-古法赛道-FTP | Moriiの博客</title><meta name="keywords" content="CTF"><meta name="author" content="Morii"><meta name="copyright" content="Morii"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="FTP 流量分析 WriteUp环境拓扑   角色 IP 备注    攻击者 192.168.39.88 Kali&#x2F;攻击机   受害服务器 192.168.39.90 Windows (FileZilla FTP)   网关 192.168.39.2 &#x2F; 192.168.39.254    其他存活主机 192.168.39.1, 192.168.39.89, 192.168.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="好靶场杯第一届综合赛-古法赛道-FTP">
+<meta property="og:url" content="https://drume2.github.io/posts/896ce370.html">
+<meta property="og:site_name" content="Moriiの博客">
+<meta property="og:description" content="FTP 流量分析 WriteUp环境拓扑   角色 IP 备注    攻击者 192.168.39.88 Kali&#x2F;攻击机   受害服务器 192.168.39.90 Windows (FileZilla FTP)   网关 192.168.39.2 &#x2F; 192.168.39.254    其他存活主机 192.168.39.1, 192.168.39.89, 192.168.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp">
+<meta property="article:published_time" content="2026-07-19T08:52:55.000Z">
+<meta property="article:modified_time" content="2026-07-19T08:53:29.234Z">
+<meta property="article:author" content="Morii">
+<meta property="article:tag" content="CTF">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp"><link rel="shortcut icon" href="https://imgtu.com/uploads/1jto6hwz/r-file_64e053.webp"><link rel="canonical" href="https://drume2.github.io/posts/896ce370"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":500,"position":"top","messagePrev":"一年之内的产物","messageNext":"技术可能存在过期"},
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '好靶场杯第一届综合赛-古法赛道-FTP',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2026-07-19 16:53:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link defer rel="stylesheet" href="/css/customm.css" ><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/icon.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/background.css"><link defer rel="stylesheet" href="https://npm.elemecdn.com/xianqi-hexo/css/index_ee.css"><link defer rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@master/Hexo/css/flink.min.css"><meta name="generator" content="Hexo 6.2.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://free.boltp.com/2026/06/21/6a37b6dec29eb.webp" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">142</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Moriiの博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fas fa-book"></i><span> 说说</span></a></li><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时轴</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/List/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/List/gallery/"><i class="fa-fw fas fa-image"></i><span> 相册</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/comments/"><i class="fa-fw fas fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于我</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">好靶场杯第一届综合赛-古法赛道-FTP</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-07-19T08:52:55.000Z" title="发表于 2026-07-19 16:52:55">2026-07-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-07-19T08:53:29.234Z" title="更新于 2026-07-19 16:53:29">2026-07-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="好靶场杯第一届综合赛-古法赛道-FTP"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="FTP-流量分析-WriteUp"><a href="#FTP-流量分析-WriteUp" class="headerlink" title="FTP 流量分析 WriteUp"></a>FTP 流量分析 WriteUp</h1><h2 id="环境拓扑"><a href="#环境拓扑" class="headerlink" title="环境拓扑"></a>环境拓扑</h2><table>
+<thead>
+<tr>
+<th>角色</th>
+<th>IP</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>攻击者</td>
+<td>192.168.39.88</td>
+<td>Kali&#x2F;攻击机</td>
+</tr>
+<tr>
+<td>受害服务器</td>
+<td>192.168.39.90</td>
+<td>Windows (FileZilla FTP)</td>
+</tr>
+<tr>
+<td>网关</td>
+<td>192.168.39.2 &#x2F; 192.168.39.254</td>
+<td></td>
+</tr>
+<tr>
+<td>其他存活主机</td>
+<td>192.168.39.1, 192.168.39.89, 192.168.39.91, 192.168.39.92</td>
+<td></td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="1-攻击者-IP"><a href="#1-攻击者-IP" class="headerlink" title="1. 攻击者 IP"></a>1. 攻击者 IP</h2><blockquote>
+<p><strong>192.168.39.88</strong></p>
+</blockquote>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp"</span> -T fields -e ip.src <span class="token operator">|</span> <span class="token function">sort</span> -u
+<span class="token comment"># 192.168.39.88 → FTP 客户端（攻击者）</span>
+<span class="token comment"># 192.168.39.90 → FTP 服务器（受害）</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="2-存活探测网段-x2F-存活主机数"><a href="#2-存活探测网段-x2F-存活主机数" class="headerlink" title="2. 存活探测网段 &#x2F; 存活主机数"></a>2. 存活探测网段 &#x2F; 存活主机数</h2><blockquote>
+<p><strong>192.168.39.0&#x2F;24</strong>，共 <strong>8 台</strong></p>
+</blockquote>
+<p>攻击者从 192.168.39.88 向整个 &#x2F;24 网段发送 ARP 请求（opcode&#x3D;1），收到 8 个 ARP 应答（opcode&#x3D;2）：</p>
+<pre class="line-numbers language-none"><code class="language-none">192.168.39.1, 192.168.39.2, 192.168.39.254, 192.168.39.88, 192.168.39.89, 192.168.39.90, 192.168.39.91, 192.168.39.92<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"arp.opcode == 2"</span> -T fields -e arp.src.proto_ipv4 <span class="token operator">|</span> <span class="token function">sort</span> -u<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="3-受害服务器开放端口"><a href="#3-受害服务器开放端口" class="headerlink" title="3. 受害服务器开放端口"></a>3. 受害服务器开放端口</h2><blockquote>
+<p><strong>21, 135, 139, 445, 5985</strong></p>
+</blockquote>
+<p>攻击者对 192.168.39.90 进行了 TCP SYN 端口扫描，通过 SYN-ACK 响应确认开放端口：</p>
+<table>
+<thead>
+<tr>
+<th>端口</th>
+<th>服务</th>
+<th>SYN-ACK 数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>21</td>
+<td>FTP</td>
+<td>63</td>
+</tr>
+<tr>
+<td>135</td>
+<td>MSRPC</td>
+<td>3</td>
+</tr>
+<tr>
+<td>139</td>
+<td>NetBIOS</td>
+<td>3</td>
+</tr>
+<tr>
+<td>445</td>
+<td>SMB</td>
+<td>31</td>
+</tr>
+<tr>
+<td>5985</td>
+<td>WinRM</td>
+<td>9</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ip.src==192.168.39.90 &amp;&amp; ip.dst==192.168.39.88 &amp;&amp; tcp.flags.syn==1 &amp;&amp; tcp.flags.ack==1"</span> -T fields -e tcp.srcport <span class="token operator">|</span> <span class="token function">sort</span> -n <span class="token operator">|</span> <span class="token function">uniq</span> -c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="4-FTP-服务软件和版本"><a href="#4-FTP-服务软件和版本" class="headerlink" title="4. FTP 服务软件和版本"></a>4. FTP 服务软件和版本</h2><blockquote>
+<p><strong>FileZilla Server 0.9.60 beta</strong></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">Frame 2639  220  FileZilla Server 中文版 0.9.60 beta<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.response.code==220"</span> -T fields -e ftp.response.arg <span class="token operator">|</span> <span class="token function">head</span> -1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="5-Nmap-匿名登录探测用户名"><a href="#5-Nmap-匿名登录探测用户名" class="headerlink" title="5. Nmap 匿名登录探测用户名"></a>5. Nmap 匿名登录探测用户名</h2><blockquote>
+<p><strong>anonymous</strong></p>
+</blockquote>
+<p>Nmap ftp-anon 脚本探测，密码使用 <code>IEUser@</code>：</p>
+<pre class="line-numbers language-none"><code class="language-none">Frame 3193  USER  anonymous
+Frame 3198  331   Password required for anonymous
+Frame 3199  PASS  IEUser@
+Frame 3201  530   Login or password incorrect!<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==USER"</span> -T fields -e frame.number -e ftp.request.arg <span class="token operator">|</span> <span class="token function">head</span> -1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="6-暴力破解工具"><a href="#6-暴力破解工具" class="headerlink" title="6. 暴力破解工具"></a>6. 暴力破解工具</h2><blockquote>
+<p><strong>Hydra</strong></p>
+</blockquote>
+<p>特征：4 线程并发，每轮同时发送 4 个 <code>USER ftpuser</code> → 4 个 <code>PASS &lt;password&gt;</code>，响应超时时触发 <code>421 Login time exceeded</code> 后重建连接。</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 查看并发连接模式</span>
+tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==USER &amp;&amp; ftp.request.arg==ftpuser"</span> -T fields -e frame.number -e frame.time -e tcp.stream<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="7-暴力破解目标用户名-x2F-成功密码"><a href="#7-暴力破解目标用户名-x2F-成功密码" class="headerlink" title="7. 暴力破解目标用户名 &#x2F; 成功密码"></a>7. 暴力破解目标用户名 &#x2F; 成功密码</h2><p><img src="/posts/896ce370/image-20260719165028697.png" alt="image-20260719165028697"></p>
+<blockquote>
+<p><strong>ftpuser &#x2F; ftp@2026</strong></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">Frame 4143  PASS  ftp@2026
+Frame 4161  230   Logged on<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.response.code==230"</span> -T fields -e frame.number -e ftp.response.arg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="8-暴力破解尝试次数和登录失败"><a href="#8-暴力破解尝试次数和登录失败" class="headerlink" title="8. 暴力破解尝试次数和登录失败"></a>8. 暴力破解尝试次数和登录失败</h2><blockquote>
+<p><strong>30,33</strong></p>
+</blockquote>
+<ul>
+<li><strong>30</strong> &#x3D; Hydra 字典爆破 ftpuser 的密码数（password → ftp@2026）</li>
+<li><strong>33</strong> &#x3D; 全局 530 登录失败总数（匿名 1 + 手动 ftp 3 + Hydra 29）</li>
+</ul>
+<h3 id="完整登录尝试日志"><a href="#完整登录尝试日志" class="headerlink" title="完整登录尝试日志"></a>完整登录尝试日志</h3><pre class="line-numbers language-none"><code class="language-none">失败  anonymous : IEUser@              ← Nmap 匿名探测
+失败  ftp : [终端控制字符]              ← 手动试探
+失败  ftp : e                          ← 手动试探
+失败  ftp : [终端控制字符]              ← 手动试探
+失败  ftpuser : password               ← Hydra R1
+失败  ftpuser : 123456                 ← Hydra R1
+失败  ftpuser : admin                  ← Hydra R1
+失败  ftpuser : ftp123                 ← Hydra R1
+失败  ftpuser : letmein                ← Hydra R2
+失败  ftpuser : welcome                ← Hydra R2
+失败  ftpuser : test123                ← Hydra R2
+失败  ftpuser : ftp2026                ← Hydra R2
+失败  ftpuser : root                   ← Hydra R3
+失败  ftpuser : abc123                 ← Hydra R3
+失败  ftpuser : qwerty                 ← Hydra R3
+失败  ftpuser : ftpuser                ← Hydra R3
+失败  ftpuser : dragon                 ← Hydra R4
+失败  ftpuser : 111111                 ← Hydra R4
+失败  ftpuser : iloveyou               ← Hydra R4
+失败  ftpuser : P@ssw0rd               ← Hydra R4
+失败  ftpuser : passwd                 ← Hydra R5
+失败  ftpuser : login                  ← Hydra R5
+失败  ftpuser : master                 ← Hydra R5
+失败  ftpuser : 666666                 ← Hydra R5
+失败  ftpuser : backup                 ← Hydra R6
+失败  ftpuser : server                 ← Hydra R6
+失败  ftpuser : 888888                 ← Hydra R6
+失败  ftpuser : ftp@2025               ← Hydra R6
+失败  ftpuser : guest                  ← Hydra R7
+失败  ftpuser : ftpftp                 ← Hydra R7
+失败  ftpuser : changeme               ← Hydra R7
+失败  ftpuser : default                ← Hydra R7
+失败  ftpuser : user123                ← Hydra R8
+登录成功 ftpuser : ftp@2026             ← 爆破成功<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Hydra 阶段 PASS 命令</span>
+tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==PASS &amp;&amp; frame.number>=3457 &amp;&amp; frame.number&lt;=4143"</span> -T fields -e ftp.request.arg<span class="token operator">|</span><span class="token function">wc</span> -l
+
+<span class="token comment"># 全局 530 失败</span>
+tshark -r FTP.pcapng -Y <span class="token string">"ftp.response.code==530"</span> -T fields -e frame.number <span class="token operator">|</span> <span class="token function">wc</span> -l<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="9-浏览的目录（按访问顺序）"><a href="#9-浏览的目录（按访问顺序）" class="headerlink" title="9. 浏览的目录（按访问顺序）"></a>9. 浏览的目录（按访问顺序）</h2><blockquote>
+<p><strong>人事档案, 财务报表, 运维文档, 项目投标</strong></p>
+</blockquote>
+<pre class="line-numbers language-none"><code class="language-none">Frame 4283  CWD  人事档案
+Frame 4312  CWD  ..        ← 返回 &#x2F;
+Frame 4328  CWD  财务报表
+Frame 4349  CWD  ..        ← 返回 &#x2F;
+Frame 4352  CWD  运维文档
+Frame 4370  CWD  ..        ← 返回 &#x2F;
+Frame 4375  CWD  项目投标<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==CWD &amp;&amp; ip.src==192.168.39.88"</span> -T fields -e frame.number -e ftp.request.arg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="10-下载文件"><a href="#10-下载文件" class="headerlink" title="10. 下载文件"></a>10. 下载文件</h2><blockquote>
+<p><strong>5 个文件</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>路径</th>
+<th>大小</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>README.txt</td>
+<td>&#x2F;README.txt</td>
+<td>106 B</td>
+</tr>
+<tr>
+<td>华章科技-2026年6月薪资明细.pdf</td>
+<td>&#x2F;人事档案&#x2F;</td>
+<td>54,497 B</td>
+</tr>
+<tr>
+<td>华章科技-2026年Q2财务报告.pdf</td>
+<td>&#x2F;财务报表&#x2F;</td>
+<td>61,270 B</td>
+</tr>
+<tr>
+<td>华章科技-内部系统凭据清单.pdf</td>
+<td>&#x2F;运维文档&#x2F;</td>
+<td>51,590 B</td>
+</tr>
+<tr>
+<td>华章科技-山东政务项目投标方案.pdf</td>
+<td>&#x2F;项目投标&#x2F;</td>
+<td>73,281 B</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-none"><code class="language-none">Frame 4937  RETR  README.txt
+Frame 5460  RETR  华章科技-2026年6月薪资明细.pdf
+Frame 11002 RETR  华章科技-2026年Q2财务报告.pdf
+Frame 11108 RETR  华章科技-内部系统凭据清单.pdf
+Frame 11225 RETR  华章科技-山东政务项目投标方案.pdf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==RETR"</span> -T fields -e frame.number -e ftp.request.arg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 导出文件</span>
+tshark -r FTP.pcapng --export-objects <span class="token string">"ftp-data,/tmp/ftp_data"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="11-下载-PDF-前的传输模式"><a href="#11-下载-PDF-前的传输模式" class="headerlink" title="11. 下载 PDF 前的传输模式"></a>11. 下载 PDF 前的传输模式</h2><blockquote>
+<p><strong>BINARY</strong></p>
+</blockquote>
+<p>攻击者在目录浏览时使用 <code>TYPE A</code>（ASCII），下载文件前切换为 <code>TYPE I</code>（Binary）：</p>
+<pre class="line-numbers language-none"><code class="language-none">Frame 5303  TYPE  A       ← 列目录前
+Frame 5306  EPSV          ← 被动模式
+Frame 5311  LIST          ← 列出文件
+  ...
+Frame 5451  TYPE  I       ← ★ 切换为 Binary
+Frame 5455  EPSV          ← 被动模式
+Frame 5460  RETR  薪资明细.pdf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">tshark -r FTP.pcapng -Y <span class="token string">"ftp.request.command==TYPE"</span> -T fields -e frame.number -e ftp.request.arg<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="12-公司-Q2-总营收"><a href="#12-公司-Q2-总营收" class="headerlink" title="12. 公司 Q2 总营收"></a>12. 公司 Q2 总营收</h2><blockquote>
+<p><strong>8,743.2 万元</strong>（同比 +18.3%）</p>
+</blockquote>
+<p>提取自 <code>/财务报表/华章科技-2026年Q2财务报告.pdf</code>：</p>
+<pre class="line-numbers language-none"><code class="language-none">二、营业收入（合计8,743.2万元 同比+18.3%）
+云服务事业部      3,517.2万元 占比40.2%
+企业软件事业部     2,623.0万元 占比30.0%
+技术咨询事业部     1,573.8万元 占比18.0%
+培训服务事业部     1,029.2万元 占比11.8%<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pdftotext -layout /tmp/ftp_data/华章科技-2026年Q2财务报告.pdf -<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="13-CEO-王建国月薪总额"><a href="#13-CEO-王建国月薪总额" class="headerlink" title="13. CEO 王建国月薪总额"></a>13. CEO 王建国月薪总额</h2><blockquote>
+<p><strong>110,000 元</strong>（基本 85,000 + 绩效 25,000）</p>
+</blockquote>
+<p>提取自 <code>/人事档案/华章科技-2026年6月薪资明细.pdf</code>：</p>
+<pre class="line-numbers language-none"><code class="language-none">王建国  总经理  基本85,000  绩效25,000  合计110,000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pdftotext -layout /tmp/ftp_data/华章科技-2026年6月薪资明细.pdf -<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="14-生产环境数据库主库密码"><a href="#14-生产环境数据库主库密码" class="headerlink" title="14. 生产环境数据库主库密码"></a>14. 生产环境数据库主库密码</h2><blockquote>
+<p><strong>PgMaster#2026db</strong></p>
+</blockquote>
+<p>提取自 <code>/运维文档/华章科技-内部系统凭据清单.pdf</code>：</p>
+<pre class="line-numbers language-none"><code class="language-none">数据库主库  192.168.10.101  postgres &#x2F; PgMaster#2026db<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pdftotext -layout /tmp/ftp_data/华章科技-内部系统凭据清单.pdf -<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="15-投标总价"><a href="#15-投标总价" class="headerlink" title="15. 投标总价"></a>15. 投标总价</h2><blockquote>
+<p><strong>2,350 万元</strong></p>
+</blockquote>
+<p>提取自 <code>/项目投标/华章科技-山东政务项目投标方案.pdf</code>：</p>
+<pre class="line-numbers language-none"><code class="language-none">项目：山东智慧城市三期-政务安全运营中心
+硬件 850万 + 软件 920万 + 实施 580万 &#x3D; 总价：2,350万<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">pdftotext -layout /tmp/ftp_data/华章科技-山东政务项目投标方案.pdf -<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<hr>
+<h2 id="16-隐藏-Flag"><a href="#16-隐藏-Flag" class="headerlink" title="16. 隐藏 Flag"></a>16. 隐藏 Flag</h2><blockquote>
+<p><strong>flag{420E8A8C540D4BE07F0221F46CCFB8EE}</strong></p>
+</blockquote>
+<p>提取自 <code>/运维文档/华章科技-内部系统凭据清单.pdf</code> → 应急恢复密钥（BitLocker）：</p>
+<pre class="line-numbers language-none"><code class="language-none">数据库服务器：
+flag&#123;420E8A8C540D4BE07F0221F46CCFB8EE&#125;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://drume2.github.io">Morii</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://drume2.github.io/posts/896ce370.html">https://drume2.github.io/posts/896ce370.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://drume2.github.io" target="_blank">Moriiの博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CTF/">CTF</a></div><div class="post_share"><div class="social-share" data-image="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/cfac8c7a.html"><img class="next-cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">好靶场杯第一届综合赛-古法赛道-SSH</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/cfac8c7a.html" title="好靶场杯第一届综合赛-古法赛道-SSH"><img class="cover" src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2026-07-19</div><div class="title">好靶场杯第一届综合赛-古法赛道-SSH</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div><div id="comment-switch"><span class="first-comment">Twikoo</span><span class="switch-btn"></span><span class="second-comment">Valine</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://free.boltp.com/2026/06/21/6a37b6dec29eb.webp" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Morii</div><div class="author-info__description">博客因兴趣诞生,在不断完善中</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">142</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn"><i class="fab fa-home"></i><span>个人主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Drume1/drume1.github.io" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="tencent://AddContact/?fromId=45&amp;fromSubId=1&amp;subcmd=all&amp;uin=1159927667&amp;website=www.qtxml.cn" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">兴趣爱好才是最大的动力，何不与我共同来攀知识高峰，品翘楚美人！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#FTP-%E6%B5%81%E9%87%8F%E5%88%86%E6%9E%90-WriteUp"><span class="toc-number">1.</span> <span class="toc-text">FTP 流量分析 WriteUp</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E6%8B%93%E6%89%91"><span class="toc-number">1.1.</span> <span class="toc-text">环境拓扑</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%94%BB%E5%87%BB%E8%80%85-IP"><span class="toc-number">1.2.</span> <span class="toc-text">1. 攻击者 IP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AD%98%E6%B4%BB%E6%8E%A2%E6%B5%8B%E7%BD%91%E6%AE%B5-x2F-%E5%AD%98%E6%B4%BB%E4%B8%BB%E6%9C%BA%E6%95%B0"><span class="toc-number">1.3.</span> <span class="toc-text">2. 存活探测网段 &#x2F; 存活主机数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%8F%97%E5%AE%B3%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.4.</span> <span class="toc-text">3. 受害服务器开放端口</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-FTP-%E6%9C%8D%E5%8A%A1%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%89%88%E6%9C%AC"><span class="toc-number">1.5.</span> <span class="toc-text">4. FTP 服务软件和版本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-Nmap-%E5%8C%BF%E5%90%8D%E7%99%BB%E5%BD%95%E6%8E%A2%E6%B5%8B%E7%94%A8%E6%88%B7%E5%90%8D"><span class="toc-number">1.6.</span> <span class="toc-text">5. Nmap 匿名登录探测用户名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E5%B7%A5%E5%85%B7"><span class="toc-number">1.7.</span> <span class="toc-text">6. 暴力破解工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E7%9B%AE%E6%A0%87%E7%94%A8%E6%88%B7%E5%90%8D-x2F-%E6%88%90%E5%8A%9F%E5%AF%86%E7%A0%81"><span class="toc-number">1.8.</span> <span class="toc-text">7. 暴力破解目标用户名 &#x2F; 成功密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%9A%B4%E5%8A%9B%E7%A0%B4%E8%A7%A3%E5%B0%9D%E8%AF%95%E6%AC%A1%E6%95%B0%E5%92%8C%E7%99%BB%E5%BD%95%E5%A4%B1%E8%B4%A5"><span class="toc-number">1.9.</span> <span class="toc-text">8. 暴力破解尝试次数和登录失败</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%8C%E6%95%B4%E7%99%BB%E5%BD%95%E5%B0%9D%E8%AF%95%E6%97%A5%E5%BF%97"><span class="toc-number">1.9.1.</span> <span class="toc-text">完整登录尝试日志</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E6%B5%8F%E8%A7%88%E7%9A%84%E7%9B%AE%E5%BD%95%EF%BC%88%E6%8C%89%E8%AE%BF%E9%97%AE%E9%A1%BA%E5%BA%8F%EF%BC%89"><span class="toc-number">1.10.</span> <span class="toc-text">9. 浏览的目录（按访问顺序）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-number">1.11.</span> <span class="toc-text">10. 下载文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-%E4%B8%8B%E8%BD%BD-PDF-%E5%89%8D%E7%9A%84%E4%BC%A0%E8%BE%93%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.12.</span> <span class="toc-text">11. 下载 PDF 前的传输模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-%E5%85%AC%E5%8F%B8-Q2-%E6%80%BB%E8%90%A5%E6%94%B6"><span class="toc-number">1.13.</span> <span class="toc-text">12. 公司 Q2 总营收</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-CEO-%E7%8E%8B%E5%BB%BA%E5%9B%BD%E6%9C%88%E8%96%AA%E6%80%BB%E9%A2%9D"><span class="toc-number">1.14.</span> <span class="toc-text">13. CEO 王建国月薪总额</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%BB%E5%BA%93%E5%AF%86%E7%A0%81"><span class="toc-number">1.15.</span> <span class="toc-text">14. 生产环境数据库主库密码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-%E6%8A%95%E6%A0%87%E6%80%BB%E4%BB%B7"><span class="toc-number">1.16.</span> <span class="toc-text">15. 投标总价</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16-%E9%9A%90%E8%97%8F-Flag"><span class="toc-number">1.17.</span> <span class="toc-text">16. 隐藏 Flag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/896ce370.html" title="好靶场杯第一届综合赛-古法赛道-FTP"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="好靶场杯第一届综合赛-古法赛道-FTP"/></a><div class="content"><a class="title" href="/posts/896ce370.html" title="好靶场杯第一届综合赛-古法赛道-FTP">好靶场杯第一届综合赛-古法赛道-FTP</a><time datetime="2026-07-19T08:52:55.000Z" title="发表于 2026-07-19 16:52:55">2026-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/cfac8c7a.html" title="好靶场杯第一届综合赛-古法赛道-SSH"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="好靶场杯第一届综合赛-古法赛道-SSH"/></a><div class="content"><a class="title" href="/posts/cfac8c7a.html" title="好靶场杯第一届综合赛-古法赛道-SSH">好靶场杯第一届综合赛-古法赛道-SSH</a><time datetime="2026-07-19T07:08:24.000Z" title="发表于 2026-07-19 15:08:24">2026-07-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/7603c458.html" title="HMV-Iot"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Iot"/></a><div class="content"><a class="title" href="/posts/7603c458.html" title="HMV-Iot">HMV-Iot</a><time datetime="2026-07-16T06:03:08.000Z" title="发表于 2026-07-16 14:03:08">2026-07-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/854f4ffb.html" title="HMV-Azer"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="HMV-Azer"/></a><div class="content"><a class="title" href="/posts/854f4ffb.html" title="HMV-Azer">HMV-Azer</a><time datetime="2026-07-06T13:00:07.000Z" title="发表于 2026-07-06 21:00:07">2026-07-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/18446d27.html" title="群友靶机-Netdata"><img src="https://npm.elemecdn.com/xianqi-hexo/imgg/2.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="群友靶机-Netdata"/></a><div class="content"><a class="title" href="/posts/18446d27.html" title="群友靶机-Netdata">群友靶机-Netdata</a><time datetime="2026-07-04T07:06:32.000Z" title="发表于 2026-07-04 15:06:32">2026-07-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;undefined - 2026  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Morii</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></head></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikooo-one.vercel.app/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo@1/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'BF23duYcvhYPZIqUHv6NigOn-MdYXbMMI',
+      appKey: 'Bb6SG97mQjBt3SKeopWEnnQU',
+      avatar: 'monsterid',
+      serverURLs: 'https://bf23duyc.api.lncldglobal.com',
+      emojiMaps: "",
+      path: window.location.pathname,
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js').then(initValine)
+}
+
+if ('Twikoo' === 'Valine' || !true) {
+  if (true) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script defer data-pjax type="text/javascript" src="https://npm.elemecdn.com/xianqi-hexo/js/animate.js"></script><div class="aplayer no-destroy" data-id="3485712867" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="//code.tidio.co/null.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#posts-chart","#tags-chart","#categories-chart",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":160,"height":260},"mobile":{"show":false},"marked":{"prependRoot":true,"postAsset":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html>
